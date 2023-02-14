@@ -1,0 +1,147 @@
+.nav-bar{
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    display: flex;
+    z-index: 4;
+    justify-content: space-between;
+
+  
+    .logo1-con{
+        margin: 2rem;
+        // display: none;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        a{
+            color: white;
+            font-weight: 600;
+    
+           
+        }
+    
+        // ul li{
+        //     color: white;
+        // }
+    
+        .dropdown{
+            width: max-content;
+            display: relative;
+            z-index: 100;
+            
+            .drop-btn{
+                background: none;
+                border: none;
+                color: white;
+                font-weight: 600;
+            }
+            
+            .menu{
+                opacity: 0;
+                transform: scale(0);
+                height: 0px;
+               position: absolute;
+               z-index: 101;
+               transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+                a{
+                    font-size: 14px;
+                    
+                }
+               
+            }
+            &:hover{
+                .drop-btn{
+                    opacity: 0.6;
+                }
+              .menu{
+                opacity: 1;
+                transform: scale(1);
+              }
+            }
+           
+        }
+       
+       
+    
+    }
+    .logo2-con{
+        display: none;
+        // opacity: 0;
+        margin: 2rem;
+        //  display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+
+       
+        a{
+            color: white;
+            font-weight: 600;
+    
+           
+        }
+
+        .dropdown{
+            width: max-content;
+            display: relative;
+            z-index: 100;
+            
+            .drop-btn{
+                background: none;
+                border: none;
+                color: white;
+                font-weight: 600;
+            }
+            
+            .menu{
+               opacity: 1;
+            //    top: 15px;
+            //    bottom: 0;
+               transform: scale(0);
+               position: absolute;
+               z-index: 101;
+               transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+            //    bottom: 15px;
+               overflow: hidden;
+               
+
+                a{
+                    font-size: 14px;
+                    
+                }
+               
+            }
+            &:hover{
+              .menu{
+               opacity: 1;
+               transform: scale(1);
+              }
+            }
+           
+        }
+        
+    }
+    
+    
+    
+
+    nav{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin: 2.5rem;
+        background: transparent;
+        font-weight: 700;
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+        }
+        // .menu{
+        //     border-bottom: 1px solid white;
+        // }
+    }
+}
+
