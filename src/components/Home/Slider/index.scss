@@ -91,4 +91,14 @@
 .disable{
     opacity: 0.2;
 }
+@media (width <= 820px) {
+    .slides{
+        width: 21rem;
+    }
+}
+@media (width <= 420px) {
+    .slides{
+        width: 18rem;
+    }
+}
 

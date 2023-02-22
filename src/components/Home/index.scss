@@ -64,7 +64,7 @@ body{
                 align-items: center;
                 display: flex;
                 margin-top: 7%;
-                
+                mix-blend-mode: difference;
     
                 h1{
                     // padding: 3rem;
@@ -122,7 +122,7 @@ body{
         width: 100%;
         // border: 1px solid white;
         h3{
-            padding: 4rem;
+            padding: 2rem;
             height: auto;
         }
         
@@ -141,7 +141,6 @@ body{
             // display: block;
             // justify-content: center;
             // align-items: center;
-            // border: 1px solid white;
             height: 30rem;
             margin-top: 1rem;
             margin-bottom: 5rem;
@@ -179,20 +178,24 @@ body{
 //         // }
 //     }
 // }
-// @media (width <= 600px) {
-//     .contain{
-//         // .carousel{
-//         //     display: none;
-//         // }
+@media (width <= 600px) {
+    .contain{
+        .carousel{
+            height: 25rem;
+            margin-top: 0;
+        }
       
-//     }
-//     .slide{
-//         // display: block;
-//         // display:flex ;
-//         // flex-direction: column;
-//     }
+    }
+    .place{
+        text-align: center;
+    }
+    // .slide{
+    //     // display: block;
+    //     // display:flex ;
+    //     // flex-direction: column;
+    // }
   
    
-// }
+}
 
 

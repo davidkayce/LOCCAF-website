@@ -21,7 +21,7 @@ const Messages = () => {
         },
         desktop: {
           breakpoint: { max: 3000, min: 1024 },
-          items: 1.7,
+          items: 2,
           slidesToSlide: 1
         },
         tablet: {
@@ -46,13 +46,14 @@ const Messages = () => {
       };
   return (
     <>
-    <div className='messages'>
+    <div className='messages-con'>
+      <div className="message">
         <div className="message-text">
             <h2>LATEST MESSAGES FROM PASSION CITY CHURCH ATLANTA + PASSION CITY CHURCH DC</h2>
         </div>
         <div className="message-slide">
                 <Carousel responsive={responsive}
-                    swipeable={false}
+                    swipeable={true}
                     draggable={true}
                     containerClass="carousel-container"
                     className='caros1'
@@ -70,46 +71,11 @@ const Messages = () => {
                             <h5>MOVING FROM A LIFE OF DISTRACTION TO A LIFE OF DEVOTION</h5>
                             <h4>Grant Patrick</h4>
                         </Link>
-
                     </div>
-                    <div className='slides1'>
-                    <Link className='message-box' to='/signup'>
-                        <img src={Pic2} alt="" id='pic' />
-                        <div className="message-top">
-                                <h5>PRIORITIES</h5>
-                                <h5>02.06.23</h5>
-                            </div>
-                            <h5>MOVING FROM A LIFE OF DISTRACTION TO A LIFE OF DEVOTION</h5>
-                            <h4>Grant Patrick</h4>
-                    </Link>
-                    </div>
-
-                    <div className='slides1'>
-                        <Link className='message-box' to='/us'>
-                            <img src={Pic3} alt="" id='pic' />
-                            <div className="message-top">
-                                <h5>PRIORITIES</h5>
-                                <h5>02.06.23</h5>
-                            </div>
-                            <h5>MOVING FROM A LIFE OF DISTRACTION TO A LIFE OF DEVOTION</h5>
-                            <h4>Grant Patrick</h4>
-                        </Link>
-
-                    </div>
-                    <div className='slides1'>
-                        <Link className='message-box' to='/give'>
-                             <img src={Pic4} alt="" id='pic'/>
-                             <div className="message-top">
-                                <h5>PRIORITIES</h5>
-                                <h5>02.06.23</h5>
-                            </div>
-                            <h5>MOVING FROM A LIFE OF DISTRACTION TO A LIFE OF DEVOTION</h5>
-                            <h4>Grant Patrick</h4>
-                        </Link>
-
-                    </div> 
+                   
                 </Carousel>
             </div>
+        </div>
     </div>
     
     </>

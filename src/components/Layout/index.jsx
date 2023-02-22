@@ -5,6 +5,7 @@ import Footer from '../Footer'
 import './index.scss'
 
 const Layout = () => {
+
   return (
     <>
     <div className='oga'>

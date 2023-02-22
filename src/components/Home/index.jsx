@@ -1,5 +1,4 @@
-import React from 'react'
-import churchVid from '../../assets/church-vid.mp4'
+import Passion from '../../assets/passion.mp4'
 import Slider from './Slider'
 import Locations from './Locations'
 import './index.scss'
@@ -11,10 +10,12 @@ import Footer from '../Footer'
 const Home = () => {
 
   return (
+    <>
+    
     <div className='main'>
       <div className="overlay">
       </div>
-      <video src={churchVid} autoPlay loop muted className='vid'/>
+      <video src={Passion} autoPlay loop muted className='vid'/>
       <div className="contents">
         <div className="in-contents">
           <div className="watch">
@@ -41,13 +42,14 @@ const Home = () => {
         {/* <div className="slide"><Slide/></div> */}
         {/* <div className='loc-div'><Locations/></div> */}
        </div>
-       <Messages/>
+       {/* <Messages/> */}
        <Events/>
        <Footer/>
 
        
         
     </div>
+    </>
   )
 }
 
