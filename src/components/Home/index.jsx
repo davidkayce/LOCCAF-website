@@ -2,7 +2,6 @@ import Passion from '../../assets/passion.mp4'
 import Slider from './Slider'
 import Locations from './Locations'
 import './index.scss'
-import Slide from './Slide'
 import Messages from './Messages'
 import Events from './Events'
 import Footer from '../Footer'
@@ -39,8 +38,7 @@ const Home = () => {
        </div>
        <div className="contain">
         <div className='carousel'><Slider/></div>
-        {/* <div className="slide"><Slide/></div> */}
-        {/* <div className='loc-div'><Locations/></div> */}
+        <Locations/>
        </div>
        {/* <Messages/> */}
        <Events/>

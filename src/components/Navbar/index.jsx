@@ -76,7 +76,7 @@ const Navbar = () => {
           <NavLink exact="true" activeclassname="active" to="/start" className='hide'>
             START HERE
           </NavLink>
-          <NavLink exact="true" activeclassname="active" to="/sundays" className='hide'>
+          <NavLink exact="true" activeclassname="active" to="/trilith/sundays" className='hide'>
             SUNDAYS
           </NavLink>
           <NavLink exact="true" activeclassname="active" to="/give" className='hide'>

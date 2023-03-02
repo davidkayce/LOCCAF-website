@@ -72,7 +72,7 @@ const Start = () => {
                 <Link className="k-pics kp1">
                   <img src={Us} alt="" />
                   <div className="k-contents">
-                    <h5>WHO WE ARE AND WHAT WE BELIEVE</h5>
+                    <h6 className="color">WHO WE ARE AND WHAT WE BELIEVE</h6>
                     <h1>LEARN ABOUT US</h1>
                     <h6>LEARN MORE</h6>
                     <p>
@@ -86,7 +86,7 @@ const Start = () => {
                 <Link className="k-pics kp2">
                   <img src={House} alt="" />
                   <div className="k-contents">
-                    <h5>WHO WE ARE AND WHAT WE BELIEVE</h5>
+                    <h6 className="color">WHO WE ARE AND WHAT WE BELIEVE</h6>
                     <h1>LEARN ABOUT US</h1>
                     <h6>LEARN MORE</h6>
                     <p>
@@ -100,7 +100,7 @@ const Start = () => {
                 <Link className="k-pics kp3">
                   <img src={Leader} alt="" />
                   <div className="k-contents">
-                    <h5>WHO WE ARE AND WHAT WE BELIEVE</h5>
+                    <h6 className="color">WHO WE ARE AND WHAT WE BELIEVE</h6>
                     <h1>LEARN ABOUT US</h1>
                     <h6>LEARN MORE</h6>
                     <p>
@@ -116,14 +116,17 @@ const Start = () => {
           </div>
           <div className="us-picsCon">
             <div className="us-pics">
-              <div className="uspic1">
-                <img src={WorshipPic} alt="" />
+              <div className="pics">
+                <div className="uspic1">
+                  <img src={WorshipPic} alt="" />
+                </div>
+                <div className="uspic2">
+                  <div className="overlaid"></div>
+                  <img src={WorshipPic} alt="" />
+                </div>
               </div>
-              <div className="uspic2">
-                <img src={WorshipPic} alt="" />
-              </div>
+              
               <div className="uspic-contents">
-                <div className="overlaid"></div>
                 <h1>JOIN US ON A SUNDAY</h1>
                 <p>
                   Our rhythm at Passion City Church is to gather together to
@@ -152,6 +155,7 @@ const Start = () => {
                     </div>
                   </div>
                 </div>
+                <Link className="arr">&rarr;</Link>
               </div>
             </div>
           </div>
@@ -192,7 +196,7 @@ const Start = () => {
                   <div className="location-drop">
                     <div className="dropdown">
                       <button className="drop-btn">
-                        CHOOSE A LOCATION <FiChevronDown />
+                        CHOOSE YOUR LOCATION <FiChevronDown  fill="#000" size={20}/>
                       </button>
                       <div className="menu">
                         <ul>
@@ -216,6 +220,7 @@ const Start = () => {
               </div>
             </div>
           </div>
+          <div className="growCon">
           <div className="grow">
             <div className="grow-top">
               <h1>GROW CLOSER TO JESUS</h1>
@@ -224,7 +229,7 @@ const Start = () => {
               <Link className="k-pics kp1">
                 <img src={Us} alt="" />
                 <div className="k-contents">
-                  <h5>WHO WE ARE AND WHAT WE BELIEVE</h5>
+                  <h6  className="color">WHO WE ARE AND WHAT WE BELIEVE</h6>
                   <h1>LEARN ABOUT US</h1>
                   <h6>LEARN MORE</h6>
                   <p>
@@ -238,7 +243,7 @@ const Start = () => {
               <Link className="k-pics kp1">
                 <img src={House} alt="" />
                 <div className="k-contents">
-                  <h5>WHO WE ARE AND WHAT WE BELIEVE</h5>
+                  <h6 className="color">WHO WE ARE AND WHAT WE BELIEVE</h6>
                   <h1>LEARN ABOUT US</h1>
                   <h6>LEARN MORE</h6>
                   <p>
@@ -252,7 +257,7 @@ const Start = () => {
               <Link className="k-pics kp1">
                 <img src={Leader} alt="" />
                 <div className="k-contents">
-                  <h5>WHO WE ARE AND WHAT WE BELIEVE</h5>
+                  <h6 className="color">WHO WE ARE AND WHAT WE BELIEVE</h6>
                   <h1>LEARN ABOUT US</h1>
                   <h6>LEARN MORE</h6>
                   <p>
@@ -264,6 +269,7 @@ const Start = () => {
                 </div>
               </Link>
             </div>
+          </div>
           </div>
           <div className="holderCon">
             <div className="holder">
@@ -293,17 +299,19 @@ const Start = () => {
           </div>
           <div className="start-text">
             <div className="text">
-              <h3>
+              <h4>
                 Better is one day in your courts than a thousand elsewhere; I
                 would rather be a doorkeeper [door holder] in the house of my
                 God than dwell in the tents of the wicked. – Psalm 84:10
-              </h3>
+              </h4>
             </div>
           </div>
           <div className="communityCon">
             <div className="community">
-            <div className="overlay"></div>
-              <img src={Community} alt="" width={500} />
+              <div className="pics">
+                <div className="over"></div>
+                <img src={Community} alt="" width={500} />
+              </div>
               <div className="comm-contents">
                 <h5>BIG CHURCH MADE SMALL</h5>
                 <h1>COMMUNITY</h1>
@@ -327,7 +335,7 @@ const Start = () => {
                 <Link className="k-pics kp1">
                 <img src={Pic5} alt="" />
                 <div className="k-contents">
-                  <h6>515 GARSON DRIVE</h6>
+                  <h6 className="color">515 GARSON DRIVE</h6>
                   <h1>515</h1>
                   <h6>LEARN MORE</h6>
                  
@@ -336,8 +344,8 @@ const Start = () => {
               <Link className="k-pics kp1">
                 <img src={Cumber} alt="" />
                 <div className="k-contents">
-                  <h6>2625 CUMBERLAND PKWY</h6>
-                  <h1>CUMBERLAND</h1>
+                  <h6 className="color">2625 CUMBERLAND PKWY</h6>
+                  <h1>CUMBERLAND </h1>
                   <h6>LEARN MORE</h6>
                  
                 </div>
@@ -345,7 +353,7 @@ const Start = () => {
               <Link className="k-pics kp1">
                 <img src={Trilith} alt="" />
                 <div className="k-contents">
-                  <h6>250 TRILITH PARKWAY</h6>
+                  <h6 className="color">250 TRILITH PARKWAY</h6>
                   <h1>TRILITH</h1>
                   <h6>LEARN MORE</h6>
                  

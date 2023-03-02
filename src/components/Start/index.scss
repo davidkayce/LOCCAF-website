@@ -1,5 +1,3 @@
-
-
 .startCon{
     width: 100%;
     height: 100vh;
@@ -16,7 +14,7 @@
         display: flex;
         flex-direction: column;
         gap: 3rem;
-
+         overflow-x: hidden;
         .godCon{
          
             .for-god{
@@ -24,18 +22,19 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                
 
                 .god-text{
                     mix-blend-mode: difference;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 70%;
+                    width: 77%;
                     z-index: 4;
 
                     h1{
-                        font-size: 70px;
+                        font-size: 69px;
+                    font-weight: 400;
+
                     }
                 }
                 .text-vid{
@@ -52,7 +51,7 @@
                     .text-side{
                         display: flex;
                         flex-direction: column;
-                        width: 36%;
+                        width: 35%;
                         // padding: 10px;
                         // letter-spacing: 2px;
                         word-spacing: 4px;
@@ -67,7 +66,7 @@
                     }
                     .video-side{
                         display: flex;
-                        width: 50%;
+                        width: 52%;
                         height: 24rem;
                         position: relative;
                         bottom: 18% ;
@@ -114,10 +113,11 @@
                 
 
                 h1{
-                    font-size: 62px;
+                    font-size: 55px;
+                    font-weight: 400;
                 }
                 .jesus-text{
-                    width: 38%;
+                    width: 41%;
                 }
             }
         }
@@ -126,6 +126,7 @@
             margin-top: 5rem;
             margin-bottom: 5rem;
             overflow: hidden;
+
             .kingdom{
                 display: flex;
                 flex-direction: column;
@@ -145,20 +146,23 @@
                     left: 10%;
                     margin-top: 5rem;
                     position: relative;
+
                 }
 
                 .kingdom-pics{
                     display: flex;
+                    flex-direction: row;
                     flex-wrap: wrap;
-                    gap: 3rem;
+                    gap: 2rem;
                     justify-content: center;
                     align-items: center;
+
                     .k-pics{
                         position: relative;
                         flex: 1 1 20%;
                         height: 470px;
                         overflow: hidden;
-                        max-width: calc(25% - 10px);
+                        max-width: calc(27% - 7px);
 
                         img{
                             position: absolute;
@@ -176,10 +180,23 @@
                             padding: 10px 20px;
                             transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
                             background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 1));
-                            bottom: -136px;
+                            bottom: -149px;
                             display: flex;
                             flex-direction: column;
                             gap: 1rem;
+
+                            h6, h1, p{
+                                width: 90%;
+                                font-weight: 200;
+                            }
+                            h1{
+                                font-size: 47px;
+                                font-weight: 200;
+                            }
+                            .color{
+                                color: aqua;
+                            }
+
                         }
                         &:after {
                             content: "";
@@ -217,51 +234,73 @@
             justify-content: center;
             align-items: center;
             position: relative;
-
+            // overflow-x: hidden;
+            background: #fff;
             .us-pics{
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 position: relative;
-                width: 95%;
-                height: 46rem;
+                width: 100%;
 
-                .uspic1{
-                    width: 95%;
-                    height: 95%;
-                    right: 3%;
-                    bottom: 5%;
-                    position: relative;
-                    img{
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover; 
+                    .pics{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        width: 95%;
+                        height: 46rem;
 
-
+                        .uspic1{
+                            width: 95%;
+                            height: 92%;
+                            right: 2%;
+                            bottom: 3%;
+                            position: relative;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover; 
+        
+        
+                            }
+                        }
+        
+                        .uspic2{
+                            position: absolute;
+                            width: 96%;
+                            height: 92%;
+                            left: 4%;
+                            // display: none;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+        
+        
+                            }
+                            .overlaid{
+                                opacity: 1;
+                                position: absolute;
+                                // mix-blend-mode:difference;
+                                background: rgba(0, 0, 0, .3);
+                                z-index: 3;
+                                // left: 0;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
                     }
-                }
 
-                .uspic2{
-                    position: absolute;
-                    width: 95%;
-                    height: 95%;
-                    // display: none;
-                    img{
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-
-
-                    }
-                }
+                
                 .uspic-contents{
                     opacity: 1;
                     position: absolute;
-                    // mix-blend-mode:difference;
+                    mix-blend-mode:normal;
                     // background: rgba(0, 0, 0, .1);
                     z-index: 6;
                     width: 40%;
-                    left: 2.5%;
+                    left: 10%;
                     padding: 60px;
                     display: flex;
                     flex-direction: column;
@@ -276,16 +315,10 @@
                     p{
                         font-size: 17px;
                     }
-                    .overlaid{
-                        opacity: 0.1;
-                        position: absolute;
-                        mix-blend-mode:difference;
-                        background: rgba(0, 0, 0, .2);
-                        // z-index: 1;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
+                    .arr{
+                        visibility: hidden;
                     }
+                
 
                     .location-drop{
                         
@@ -414,6 +447,7 @@
                 justify-content: center;
                 align-items: center;
                 margin-top: 5rem;
+                background: #fff;
             .welcome{
                 display: flex;
                 flex-wrap: wrap;
@@ -422,6 +456,7 @@
                 width: 100%;
                 height: 43rem;
                 gap: 4rem;
+                // position: relative;
 
                 .welcome-left{
                     display: flex;
@@ -429,12 +464,17 @@
                     gap: 2rem;
                     flex: 1 1 40%;
                     align-items: center;
+                    h1, p, h3{
+                        color: #000;
                     
+
+                    }
 
                     .wel-top{
                         padding-left: 10px;
                         left: 10%;
                         position: relative;
+
                         h1{
                             font-size: 51px;
                         }
@@ -456,6 +496,7 @@
                         // opacity: 0;
                          display: flex;
                         flex-direction: row;
+
                         gap: 1.5rem;
                 
                        
@@ -469,9 +510,13 @@
                             .drop-btn{
                                 background: none;
                                 border: none;
-                                color: white;
+                                color: #000;
                                 font-weight: 600;
                                 font-size: 15px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                               
                             }
                             
                             .menu{
@@ -481,15 +526,18 @@
                             //    transform: scale(0);
                                 height: 1%;
                                position: absolute;
-                               z-index: 101;
+                               z-index: 7;
                                transition: all 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);
                             //    bottom: 15px;
                                overflow: hidden;
-                               
+                               mix-blend-mode: difference;
                 
                                 a{
                                     font-size: 14px;
-                                    
+                                    color: #000;
+                                    font-weight: 400;
+                               mix-blend-mode: difference;
+
                                 }
                                
                             }
@@ -511,7 +559,7 @@
                 .welcome-right{
                     flex: 2 1 50%;
                     height: 100%;
-
+                    position: relative;
                     img{
                         width: 100%;
                         height: 100%;
@@ -520,84 +568,109 @@
                 }
             }
         }
-
-        .grow{
-            margin-top: 3rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            // align-items: center;
-            overflow: hidden;
-            gap: 2rem;
-
-            .grow-top{
-                left: 10%;
-                position: relative;
-                h1{
-                    font-size: 55px;
-                }
-            }
-            .grow-bot{
+        .growCon{
+            .grow{
+                margin-top: 3rem;
                 display: flex;
-                    flex-wrap: wrap;
-                    gap: 3rem;
-                    justify-content: center;
-                    align-items: center;
-                    .k-pics{
-                        position: relative;
-                        flex: 1 1 20%;
-                        height: 470px;
-                        overflow: hidden;
-                        max-width: calc(25% - 10px);
+                flex-direction: column;
+                justify-content: center;
+                // align-items: center;
+                overflow: hidden;
+                gap: 2rem;
 
-                        img{
-                            position: absolute;
-                            z-index: 2; 
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                            transition: 0.5s ease-in-out;
-                        }
-                        .k-contents{
-                            position: absolute;
-                            width: 100%;
-                            z-index: 3;
-                            padding: 10px 20px;
-                            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-                            background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 1));
-                            bottom: -136px;
-                            display: flex;
-                            flex-direction: column;
-                            gap: 1rem;
-                        }
-                        &:after {
-                            content: "";
-                            background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 1));
-                            position: absolute;
-                            left: 0;
-                            right: 0;
-                            bottom: 0;
-                            top: 0;
-                            width: 100%;
-                            height: 100%;
-                            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-                            z-index: 2;
-                            opacity: 0;
-                        }
-                        &:hover:after{
-                            opacity: 0.7;
-                        }
-                        &:hover .k-contents{
-                            bottom: 0;
-                            background: transparent;
-                        }
-                        &:hover.k-pics{
+                .grow-top{
+                    display: flex;
+                    // flex-direction: column;
+                    // justify-content: center;
+                    text-align: left;
+                    width: 85%;
+                    // left: 10%;
+                    flex-wrap: wrap;
+                    // margin-top: 5rem;
+                    position: relative;
+
+                    h1{
+                    left: 10%;
+                    position: relative;
+                    }
+                    
+                }
+                    .grow-bot{
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 2rem;
+                        justify-content: center;
+                        align-items: center;
+                        .k-pics{
+                            position: relative;
+                            flex: 1 1 20%;
+                            height: 470px;
+                            overflow: hidden;
+                            max-width: calc(27% - 7px);
+
                             img{
-                                transform: scale(1.04);
+                                position: absolute;
+                                z-index: 2; 
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                transition: 0.5s ease-in-out;
+                            }
+                            .k-contents{
+                                position: absolute;
+                                width: 100%;
+                                z-index: 3;
+                                padding: 10px 20px;
+                                transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                                background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 1));
+                                bottom: -149px;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 1rem;
+
+                                h6, h1, p{
+                                    width: 90%;
+                                    font-weight: 200;
+                                }
+                                h1{
+                                    font-size: 47px;
+                                    font-weight: 200;
+
+                                }
+                                .color{
+                                    color: aqua;
+                                }
+    
+                            }
+                            &:after {
+                                content: "";
+                                background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 1));
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                top: 0;
+                                width: 100%;
+                                height: 100%;
+                                transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                                z-index: 2;
+                                opacity: 0;
+                            }
+                            &:hover:after{
+                                opacity: 0.7;
+                            }
+                            &:hover .k-contents{
+                                bottom: 0;
+                                background: transparent;
+                            }
+                            &:hover.k-pics{
+                                img{
+                                    transform: scale(1.04);
+                                }
                             }
                         }
-                    }
                 
+                    }
             }
         }
 
@@ -625,19 +698,20 @@
                     display: flex;
                     flex-direction: column;
                     gap: 2rem;
-                    flex: 1 1 38%;
+                    flex: 1 1 39%;
                     // width: 500px;
                     align-items: center;
                         
     
                     .hol-top{
                             padding-left: 10px;
-                            width: 70%;
-                            right:17%;
+                            width: 90%;
+                            right:7%;
                             // mix-blend-mode: difference;
                             position: relative;
                             h1{
                                 font-size: 51px;
+                                font-weight: 400;
                             }
                     }
                         .hol-down{
@@ -645,10 +719,10 @@
                             flex-direction: column;
                             gap: 1rem;
                             width: 70%;
-                            right: 2%;
+                            // right: 2%;
                             position: relative;
                            p{
-                            font-size: 19px;
+                            font-size: 17px;
                            }
                         }
                 }
@@ -673,9 +747,12 @@
             
             .text{
                 text-align: center;
-                width: 51%;
+                width: 50%;
+                word-spacing: 3px;
                 
-                
+                h4{
+                    font-weight: 500;
+                }
             }
         }
 
@@ -691,12 +768,24 @@
                 height: 35rem;
                 position: relative;
 
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    position: absolute;
-                    z-index: 2;
+                .pics{
+                    .over{
+                        opacity: 1;
+                        position: absolute;
+                        // mix-blend-mode:difference;
+                        background: rgba(0, 0, 0, .4);
+                        z-index: 3;
+                        // left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        position: absolute;
+                        z-index: 2;
+                    }
                 }
 
                 .comm-contents{
@@ -712,17 +801,15 @@
                     h1{
                         font-size: 53px;
                     }
+                    h5, h1, a, p{
+                        font-weight: 400;
+                    }
+                    p{
+                        margin-bottom: 1rem;
+                    }
 
                 }
-                .overlay{
-                    opacity: 0.3;
-                    position: absolute;
-                    z-index: 3;
-                    background: rgba(0, 0, 0, .1);
-                    width: 45%;
-                    height: 100%;
-                    
-                }
+               
 
             }
         }
@@ -743,15 +830,26 @@
                     flex-direction: column;
                     // justify-content: center;
                     text-align: left;
-                    width: 100%;
-                    left: 10%;
+                    width: 80%;
+                    // left: 10%;
                     margin-top: 5rem;
                     position: relative;
+                    gap: 1rem;
+
+                    h1, h6{
+                        left: 10%;
+                        position: relative;
+                    }
+                    h1{
+                        font-size: 64px;
+                        font-weight: 400;
+                    }
+
                 }
                 .select-bot{
                     display: flex;
                     flex-wrap: wrap;
-                    gap: 3rem;
+                    gap: 2rem;
                     justify-content: center;
                     align-items: center;
 
@@ -760,7 +858,7 @@
                         flex: 1 1 25%;
                         height: 470px;
                         overflow: hidden;
-                        max-width: calc(26% - 10px);
+                        max-width: calc(27% - 7px);
                         
 
                         img{
@@ -782,6 +880,21 @@
                             display: flex;
                             flex-direction: column;
                             gap: 1rem;
+
+                            h6,{
+                                width: 90%;
+                                font-weight: 400;
+                            }
+                            h1{
+                                width: 90%;
+                                font-size: 40px;
+                                font-weight: 400;
+                                flex-wrap: wrap;
+
+                            }
+                            .color{
+                                color: aqua;
+                            }
                         }
                         &:after {
                             content: "";
@@ -815,4 +928,1643 @@
         }
     }
     
+}
+
+
+
+@media (width <= 1300px) {
+    .startCon{
+        .main-start{
+            .godCon{
+                .for-god{
+                    .god-text{
+                        width: 76%;
+                        
+                        h1{
+                            font-size: 67px;
+                        }
+                    }
+                    .text-vid{
+                        width: 68%;
+                        gap: 5rem;
+
+                    }
+                }
+            }
+            // .selectCon{
+            //     .select{
+            //         .se
+            //     }
+            // }
+        }
+    }
+}
+@media (width <= 1210px) {
+    .startCon{
+        .main-start{
+            .kingdomCon{
+                .kingdom{
+                    .kingdom-pics{
+                        .k-pics{
+                            .k-contents{
+                                bottom: -170px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            .growCon{
+                .grow{
+                    .grow-bot{
+                        .k-pics{
+                            .k-contents{
+                                bottom: -170px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            // .selectCon{
+            //     .select{
+            //         .select-bot{
+            //             .k-pics{
+            //                 .k-contents{
+            //                     bottom: -170px;
+            //                 }
+            //             }
+                        
+            //         }
+            //     }
+            // }
+        }
+    }
+   
+}
+@media (width <= 1100px) {
+    .startCon{
+        .main-start{
+            .godCon{
+                .for-god{
+                    .god-text{
+                        width: 95%;
+                        
+                        h1{
+                            font-size: 68px;
+                        }
+                    }
+                    .text-vid{
+                        width: 88%;
+                        gap: 4rem;
+
+                        .text-side{
+                        width: 40%;
+
+                        }
+
+                        .video-side{
+                            width: 49%;
+
+                        }
+                    }
+
+                }
+            }
+           .jesusCon{
+            .jesus{
+                .jesus-text{
+                    width: 50%;
+                    font-size: 14px;
+                }
+            }
+           } 
+
+           .kingdomCon{
+            .kingdom{
+                justify-content: center;
+                align-items: center;
+
+                .kingdom-pics{
+                    justify-content: unset;
+                    width: 85%;
+                    flex-wrap: wrap;
+                    .k-pics{
+                        flex: unset;
+                        max-width:unset;
+                        width: 47%;
+
+                        .k-contents{
+                            bottom: -148px;
+
+                            h6, h1, p{
+                                width: 80%;
+                                font-weight: 200;
+                            }
+                        }
+
+                    }
+                    .kp3{
+                        width: 47%;
+                        // flex: 2 1 45%;
+                    }
+                }
+            }
+           }
+           .us-picsCon{
+            .us-pics{
+                .pics{
+                    .uspic1{
+                        width: 92%;
+                        height: 85%;
+                    }
+                    .uspic2{
+                        width: 92%;
+                        height: 85%;
+                        left: 6%;
+                        .overlaid{
+                        background: rgba(0, 0, 0, .5);
+    
+                        }
+                    }
+                }
+                
+                .uspic-contents{
+                    // bottom: 5%;
+                    width: 65%;
+
+
+                }
+            }
+        }
+
+        .signupCon{
+            .signUp{
+                width: 80%;
+                gap: 2rem;
+            }
+        }
+        
+        .welcomeCon{
+            .welcome{
+                .welcome-right{
+                    height: 80%;
+                }
+            }
+        }
+        .growCon{
+            .grow{
+                justify-content: center;
+                align-items: center;
+
+                .grow-top{
+                    h1{
+                        left: unset;
+                    }
+                }
+
+                .grow-bot{
+                    justify-content: unset;
+                    width: 85%;
+                    flex-wrap: wrap;
+                    .k-pics{
+                        flex: unset;
+                        max-width:unset;
+                        width: 47%;
+
+                        .k-contents{
+                            bottom: -148px;
+
+                            h6, h1, p{
+                                width: 80%;
+                                font-weight: 200;
+                            }
+                        }
+
+                    }
+                    .kp3{
+                        width: 47%;
+                        // flex: 2 1 45%;
+                    }
+                }
+            }
+           }
+        .holderCon{
+            .holder{
+                .holder-left{
+                    .hol-top{
+                        right: 9%;
+                    }
+                    .hol-down{
+                        width: 75%;
+
+                    }
+                }
+            }
+        }
+        .start-text{
+            .text{
+                width: 73%;
+            }
+        }
+        .selectCon{
+            .select{
+                justify-content: center;
+                align-items: center;
+
+                .select-top{
+                    width: 85%;
+
+                    h1{
+                        left: unset;
+                        font-size: 58px;
+                    }
+                    h6{
+                        left: unset;
+
+                    }
+                }
+
+                .select-bot{
+                    justify-content: unset;
+                    width: 85%;
+                    flex-wrap: wrap;
+                    .k-pics{
+                        flex: unset;
+                        max-width:unset;
+                        width: 47%;
+
+                        .k-contents{
+
+                            h6, h1, p{
+                                width: 80%;
+                                font-weight: 200;
+                            }
+                        }
+
+                    }
+                    .kp3{
+                        width: 47%;
+                        // flex: 2 1 45%;
+                    }
+                }
+            }
+           }
+        }
+    }
+}
+@media (width <= 940px) {
+    .startCon{
+        .main-start{
+        top: 20%;
+            .godCon{
+                .for-god{
+                    .god-text{
+                        width: 80%;
+                        
+                        h1{
+                            font-size: 60px;
+                        }
+                    }
+                    .text-vid{
+                        width: 88%;
+                        gap: 3rem;
+                        height: 74vh;
+
+
+                        .text-side{
+                        width: 38%;
+                        height: 100%;
+                        align-items: center;
+                        justify-content: center;
+
+                        h3, p{
+                            font-weight: 200;
+                        }
+                        }
+
+                        .video-side{
+                            width: 49%;
+                            height: 100%;
+                            bottom: 5%;
+                        }
+                    }
+
+                }
+            }
+            .jesusCon{
+                .jesus{
+                    h1{
+                        font-size: 45px;
+                        font-weight: 400;
+                    }
+                    .jesus-text{
+                        width: 55%;
+                        font-size: 14px;
+                    }
+                }
+            } 
+            .kingdomCon{
+                .kingdom{
+                    .kingdom-pics{
+                        .k-pics{
+                            .k-contents{
+                                bottom: -145px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            .us-picsCon{
+                .us-pics{
+                    .pics{
+                        .uspic1{
+                            width: 92%;
+                            height: 85%;
+                        }
+                        .uspic2{
+                            width: 92%;
+                            height: 85%;
+                            left: 6%;
+                            .overlaid{
+                            background: rgba(0, 0, 0, .5);
+    
+                            }
+                        }
+                    }
+                   
+                    .uspic-contents{
+                        bottom: 5%;
+                        width: 65%;
+                        left: 5%;
+
+                    }
+                }
+            }
+            .signupCon{
+                .signUp{
+                    width: 85%;
+                    gap: 2rem;
+                }
+            }
+            .welcomeCon{
+                .welcome{
+                //    height: 95vh;
+                    
+                   .welcome-left{
+                    flex: 1 1 41%;
+
+                    h1{
+                        font-weight: 500;
+                        font-size: 37px;
+                    }
+                    
+                   }
+                    .welcome-right{
+                        height: 98%;
+                    }
+                }
+            }
+            .growCon{
+                .grow{
+                    .grow-bot{
+                        .k-pics{
+                            .k-contents{
+                                bottom: -145px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            .holderCon{
+                .holder{
+                    .holder-left{
+                        .hol-top{
+                            width: 100%;
+                            right: 7%;
+                        }
+                    }
+                }
+            }
+            .start-text{
+                .text{
+                    width: 80%;
+                }
+            }
+            .communityCon{
+                .community{
+                    .comm-contents{
+                        bottom: 5%;
+                        width: 55%;
+                        left: 5%;
+                        top: unset;
+                    }
+                }
+            }
+            .selectCon{
+                .select{
+                    .select-top{
+                        width: 85%;
+    
+                        h1{
+                            font-size: 50px;
+                        }
+                        h6{
+                            left: unset;
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (width <= 875px) {
+    .startCon{
+        .main-start{
+        top: 20%;
+            .godCon{
+                .for-god{
+                    .god-text{
+                        width: 90%;
+                        
+                        h1{
+                            font-size: 57px;
+                        }
+                    }
+                    .text-vid{
+                        width: 88%;
+                        gap: 3rem;
+                        height: 71vh;
+
+                    }
+
+                }
+            }
+            .jesusCon{
+                .jesus{
+                    h1{
+                        font-size: 42px;
+                        font-weight: 400;
+                    }
+                    .jesus-text{
+                        width: 58%;
+                        font-size: 13px;
+                    }
+                }
+               }
+            .kingdomCon{
+                .kingdom{
+                    .kingdom-pics{
+                        .k-pics{
+                            .k-contents{
+                                bottom: -145px;
+
+                                h6, h1, p{
+                                    width: 95%;
+                                    // font-weight: 200;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            .growCon{
+                .grow{
+                    .grow-bot{
+                        .k-pics{
+                            .k-contents{
+                                bottom: -145px;
+
+                                h6, h1, p{
+                                    width: 95%;
+                                    // font-weight: 200;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            .selectCon{
+                .select{
+                    .select-bot{
+                        .k-pics{
+                            .k-contents{
+
+                                h6, h1, p{
+                                    width: 95%;
+                                    // font-weight: 200;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+@media (width <= 860px) {
+    .startCon{
+        .main-start{
+        top: 19%;
+            .godCon{
+                .for-god{
+                    .god-text{
+                        width: 85%;
+                        
+                        h1{
+                            font-size: 57px;
+                        }
+                    }
+                    .text-vid{
+                        width: 88%;
+                        gap: 3rem;
+                        height: 71vh;
+
+                    }
+
+                }
+            }
+            .jesusCon{
+                .jesus{
+                    h1{
+                        font-size: 42px;
+                        font-weight: 400;
+                    }
+                    .jesus-text{
+                        width: 58%;
+                        font-size: 13px;
+                    }
+                }
+            }
+            .welcomeCon{
+                .welcome{
+                //    height: 95vh;
+                    
+                   .welcome-left{
+                    flex: 1 1 46%;
+
+                    .wel-down{
+                        .location-drop{
+                            .dropdown{
+                                .drop-btn{
+                                    font-size: 14px;
+                                    // justify-content: unset;
+                                    // align-items: unset;
+                                }
+                            }
+                        }
+                    }
+
+                   
+
+                    h1{
+                        font-weight: 500;
+                        font-size: 37px;
+                    }
+                    
+                   }
+                    .welcome-right{
+                        height: 98%;
+                    flex: 2 1 45%;
+
+                    }
+                }
+            }
+            .holderCon{
+                .holder{
+                    .holder-left{
+                        .hol-top{
+                            width: 100%;
+                            right: 7%;
+
+                            h1{
+                                font-size: 45px;
+                            }
+                        }
+                    }
+                }
+            }
+            .start-text{
+                .text{
+                    width: 85%;
+                }
+            }
+        }
+    }
+}
+@media (width <= 780px) {
+    .startCon{
+        .main-start{
+        top: 15%;
+            .godCon{
+                .for-god{
+                    .god-text{
+                        width: 90%;
+                        
+                        h1{
+                            font-size: 57px;
+                        }
+                    }
+                    .text-vid{
+                        width: 88%;
+                        gap: 3rem;
+                        height: 70vh;
+
+                    }
+
+                }
+            }
+            .jesusCon{
+                .jesus{
+                    h1{
+                        font-size: 40px;
+                        font-weight: 400;
+                    }
+                    .jesus-text{
+                        width: 60%;
+                        font-size: 13px;
+                    }
+                }
+            }
+            .kingdomCon{
+                .kingdom{
+                    .kingdom-pics{
+                        .k-pics{
+                            .k-contents{
+                                bottom: -170px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            .us-picsCon{
+                .us-pics{
+                    .pics{
+                        .uspic1{
+                            width: 98%;
+                            height: 75%;
+                        }
+                        .uspic2{
+                            width: 98%;
+                            height: 75%;
+                            left: 3%;
+                            .overlaid{
+                            background: rgba(0, 0, 0, .5);
+    
+                            }
+                        }
+                    }
+                    
+                    .uspic-contents{
+                        bottom: 5%;
+                        width: 65%;
+
+
+                    }
+                }
+            }
+            .growCon{
+                .grow{
+                    .grow-bot{
+                        .k-pics{
+                            .k-contents{
+                                bottom: -170px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            .selectCon{
+                .select{
+                    .select-top{
+                        width: 85%;
+    
+                        h1{
+                            font-size: 45px;
+                        }
+                        h6{
+                            left: unset;
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (width <= 767px) {
+    .startCon{
+        .main-start{
+        top: 25%;
+            .godCon{
+                .for-god{
+                    gap: 2rem;
+                    .god-text{
+                        position: relative;
+                        width: 80%;
+                        // left: 5%;
+                        h1{
+                            font-size: 43px;
+                        }
+                    }
+                    .text-vid{
+                        flex-direction: column-reverse;
+                        width: 82%;
+                        gap: 2rem;
+                        height: unset;
+                        // border: 1px solid white;
+                        position: relative;
+                        // left: 2%;
+
+                        .text-side{
+                            width: 73%;
+                            height: 100%;
+                            align-items: center;
+                            justify-content: center;
+                            
+                            
+                             p{
+                                font-weight: 200;
+                            }
+                            h3{
+                                font-weight: 400;
+                                
+                            }
+                            }
+    
+                            .video-side{
+                                width: 95%;
+                                height: 47vh;                                // bottom: unset;
+
+                                .video{
+                                    position: relative;
+
+                                    video{
+                                        position: relative;
+                                    }
+                                }
+                            }
+
+                    }
+
+                }
+            }
+            .kingdomCon{
+                .kingdom{
+                    justify-content: center;
+                    align-items: center;
+    
+                    .kingdom-pics{
+                        justify-content: center;
+                        width: 85%;
+                        flex-wrap: wrap;
+                        .k-pics{
+                            flex: unset;
+                            max-width:unset;
+                            width: 90%;
+                            height: 55vh ;
+    
+                            .k-contents{
+                                bottom: 0;
+    
+                                h6, h1, p{
+                                    width: 100%;
+                                    font-weight: 200;
+                                }
+                                p{
+                                    display: none;
+                                }
+                                h1{
+                                    font-size: 32px;
+                                }
+                            }
+    
+                        }
+                        .kp3{
+                        }
+                    }
+                }
+            }
+            .us-picsCon{
+                .us-pics{
+                    flex-direction: column;
+                    justify-content: unset;
+                    align-items: unset;
+                    gap: 1rem;
+                    .pics{
+                        height: 60vh;
+                        width: 100%;
+                        .uspic1{
+                            width: 95%;
+                            height: 90%;
+                        }
+                        .uspic2{
+                            width: 95%;
+                            height: 90%;
+                            left: 3%;
+                            .overlaid{
+                            background: rgba(0, 0, 0, .5);
+    
+                            }
+                        }
+                    }
+               
+                    .uspic-contents{
+                        position: relative;
+                        bottom: 5%;
+                        width: 60%;
+                        left: 1%;
+                        color: black;
+                        padding: unset;
+
+                        h1, p{
+                            color: black;
+
+                        }
+                        h1{
+                            font-size: 36px;
+                            font-weight: 400;
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                        .location-drop{
+                            display: none;
+                        }
+                        .arr{
+                            visibility: visible;
+                            color: black;
+                            font-size: 25px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+            .welcomeCon{
+                .welcome{
+                   height: unset;
+                   flex-direction: column-reverse;
+                   justify-content: unset;
+                   align-items: unset;
+                //    margin-top: 1rem;
+                   margin-bottom: 5rem;
+                   
+                   .welcome-left{
+                    flex: unset;
+                    // height: 45%;
+                    align-items: unset;
+                    padding-left: 2rem;
+                    .wel-top{
+                        left: 0;
+
+                        h1{
+                            font-size: 35px;
+                        }
+                    }
+
+                    .wel-down{
+                        width: 76%;
+                        left: 8%;
+
+                        p{
+                            font-size: 17px;
+                        }
+                    }
+
+                    h1{
+                        font-weight: 500;
+                        // font-size: 37px;
+                    }
+                    
+                   }
+                    .welcome-right{
+                        height: 59vh;
+                        flex: unset;
+
+                    }
+                }
+            }
+            .growCon{
+                .grow{
+                    justify-content: center;
+                    align-items: center;
+    
+                    .grow-bot{
+                        justify-content: center;
+                        width: 85%;
+                        flex-wrap: wrap;
+                        .k-pics{
+                            flex: unset;
+                            max-width:unset;
+                            width: 90%;
+                            height: 55vh ;
+    
+                            .k-contents{
+                                bottom: 0;
+    
+                                h6, h1, p{
+                                    width: 100%;
+                                    font-weight: 200;
+                                }
+                                p{
+                                    display: none;
+                                }
+                                h1{
+                                    font-size: 32px;
+                                }
+                            }
+    
+                        }
+                        .kp3{
+                        }
+                    }
+                }
+            } 
+            .holderCon{
+                .holder{
+                    height: unset;
+                   flex-direction: column-reverse;
+                    justify-content: unset;
+                    align-items: unset;
+                 //    margin-top: 1rem;
+                    margin-bottom: 5rem;
+
+                    .holder-left{
+                    flex: unset;
+                    // height: 45%;
+                    align-items: unset;
+                    padding-left: 2rem;
+
+                        .hol-top{
+                            left: 0;
+
+                             h1{
+                                font-size: 35px;
+                            }
+                        }
+                        .hol-down{
+                            width: 76%;
+                            left: 8%;
+    
+                            p{
+                                font-size: 17px;
+                            }
+                        }
+                        h1{
+                            font-weight: 500;
+                            font-size: 37px;
+                        }
+                       
+                    }
+                    .holder-right{
+                        height: 59vh;
+                        flex: unset;
+
+                    }
+                }
+            }
+            .communityCon{
+                .community{
+                    flex-direction: column;
+                    justify-content: unset;
+                    align-items: unset;
+                    gap: 2rem;
+                    height: unset;
+                    .pics{
+                        height: 35vh;
+                        width: 100%;
+                        position: relative;
+                        .img{
+                            width: 95%;
+                            height: 90%;
+                            position: relative;
+                        }
+                    }
+                    .comm-contents{
+                        position: relative;
+                        bottom: 0%;
+                        width: 60%;
+                        left: 1%;
+                        color: black;
+                        padding: unset;
+
+                        h1, p{
+                            // color: black;
+
+                        }
+                        h1{
+                            font-size: 36px;
+                            font-weight: 400;
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                       
+                    }
+                }
+            }
+            .selectCon{
+                .select{
+                    justify-content: center;
+                    align-items: center;
+    
+                    .select-bot{
+                        justify-content: center;
+                        width: 85%;
+                        flex-wrap: wrap;
+                        .k-pics{
+                            flex: unset;
+                            max-width:unset;
+                            width: 90%;
+                            height: 55vh ;
+    
+                            .k-contents{
+    
+                                h6, h1, p{
+                                    width: 100%;
+                                    font-weight: 200;
+                                }
+                                p{
+                                    display: none;
+                                }
+                                h1{
+                                    font-size: 32px;
+                                }
+                            }
+    
+                        }
+                        .kp3{
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
+@media (width <= 700px) {
+    .startCon{
+        .main-start{
+            .kingdomCon{
+                .kingdom{
+                    .kingdom-pics{
+                        .k-pics{
+                            width: 100%;
+                            height: 75vh ;
+                            .k-contents{
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            .us-picsCon{
+                width: 100%;
+                .us-pics{
+                    flex-direction: column;
+                    justify-content: unset;
+                    align-items: unset;
+                    gap: 1rem;
+                    .pics{
+                        height: 50vh;
+                        width: 100%;
+                        .uspic1{
+                            width: 95%;
+                            height: 90%;
+                        }
+                        .uspic2{
+                            width: 95%;
+                            height: 90%;
+                            left: 3%;
+                            .overlaid{
+                            background: rgba(0, 0, 0, .5);
+    
+                            }
+                        }
+                    }
+               
+                    .uspic-contents{
+                        position: relative;
+                        bottom: 5%;
+                        width: 60%;
+                        left: 1%;
+                        color: black;
+                        padding: unset;
+
+                        h1, p{
+                            color: black;
+
+                        }
+                        h1{
+                            font-size: 36px;
+                            font-weight: 400;
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                        .location-drop{
+                            display: none;
+                        }
+                        .arr{
+                            visibility: visible;
+                            color: black;
+                            font-size: 25px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+            .growCon{
+                .grow{
+                    .grow-bot{
+                        .k-pics{
+                            width: 100%;
+                            height: 75vh ;
+                            
+                        }
+                        
+                    }
+                }
+            }
+            .selectCon{
+                .select{
+                    .select-bot{
+                        .k-pics{
+                            width: 100%;
+                            height: 75vh ;
+                          
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+   
+}
+@media (width <= 600px) {
+    .startCon{
+        .main-start{
+        top: 18%;
+            .godCon{
+                .for-god{
+                    gap: 1.5rem;
+                    overflow-x: hidden;
+                    .god-text{
+                        position: relative;
+                        width: 90%;
+                        left: unset;
+                        h1{
+                            font-size: 49px;
+                        }
+                    }
+                    .text-vid{
+                        flex-direction: column-reverse;
+                        width: 90%;
+                        gap: 2rem;
+                        height: unset;
+                        position: relative;
+                        // align-items: center;
+                        // justify-content: center;
+                        left: 1%;
+                        overflow: hidden;
+
+                        .text-side{
+                            width: 81%;
+                            height: 100%;
+                            align-items: center;
+                            justify-content: center;
+                            
+                            
+                             p{
+                                font-weight: 200;
+                            }
+                            h3{
+                                font-weight: 500;
+                                
+                            }
+                            }
+    
+                            .video-side{
+                                width: 100%;
+                                height: 38vh;                                // bottom: unset;
+
+                                .video{
+                                    position: relative;
+
+                                    video{
+                                        position: relative;
+                                    }
+                                }
+                            }
+
+                    }
+
+                }
+            }
+
+            .jesusCon{
+                width: 100%;
+                // border: 1px solid white;
+
+                .jesus{
+                    text-align: left;
+                    width: 100%;
+                    position: relative;
+                    left: 2%;
+                    h1{
+                        font-size: 37px;
+                        font-weight: 300;
+                        width: 93%;
+
+                    }
+                    .jesus-text{
+                        width: 90%;
+                        font-size: 15px;
+                        word-spacing: 3px;
+                    }
+                }
+            }
+            .kingdomCon{
+                // justify-content: center;
+                // align-items: center;
+                .kingdom{
+                    width: 100%;
+
+                    .kingdom-pics{
+                        width: 85%;
+                        overflow-x: hidden;
+                        .k-pics{
+                            width: 100%;
+                            height: 40vh ;
+                            .k-contents{
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            .us-picsCon{
+                width: 100%;
+                .us-pics{
+                    flex-direction: column;
+                    justify-content: unset;
+                    align-items: unset;
+                    gap: 1rem;
+                    .pics{
+                        height: 40vh;
+                        width: 100%;
+                        .uspic1{
+                            width: 95%;
+                            height: 90%;
+                        }
+                        .uspic2{
+                            width: 95%;
+                            height: 90%;
+                            left: 3%;
+                            top: 9%;
+                            .overlaid{
+                            background: rgba(0, 0, 0, .5);
+    
+                            }
+                        }
+                    }
+               
+                    .uspic-contents{
+                        position: relative;
+                        bottom: 5%;
+                        width: 79%;
+                        left: 5%;
+                        color: black;
+                        padding: unset;
+                        
+                        h1, p{
+                            color: black;
+
+                        }
+                        h1{
+                            font-size: 30px;
+                            font-weight: 400;
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                        .location-drop{
+                            display: none;
+                        }
+                        .arr{
+                            visibility: visible;
+                            color: black;
+                            font-size: 25px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+            .welcomeCon{
+                .welcome{
+                    .welcome-right{
+                        height: 45vh;
+                    }
+                }
+            }
+            .growCon{
+                .grow{
+                    width: 100%;
+
+                    .grow-bot{
+                        width: 85%;
+                        overflow-x: hidden;
+                        .k-pics{
+                            width: 100%;
+                            height: 40vh ;
+                            .k-contents{
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            .holderCon{
+                .holder{
+                    .holder-right{
+                        height: 45vh;
+                    }
+                }
+            }
+            .communityCon{
+                .community{
+                    .comm-contents{
+                        width: 79%;
+
+                        h1{
+                            font-size: 30px;
+                            font-weight: 400;
+                        }
+                        p{
+                            font-size: 14px;
+                        }
+                        a{
+                            font-size: 15px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+            .selectCon{
+                .select{
+                    width: 100%;
+
+                    .select-top{
+                        width: 86%;
+    
+                        h1{
+                            font-size: 33px;
+                        }
+                        h6{
+                            left: unset;
+    
+                        }
+                    }
+
+                    .select-bot{
+                        width: 85%;
+                        overflow-x: hidden;
+                        .k-pics{
+                            width: 100%;
+                            height: 40vh ;
+                         
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (width <= 400px) {
+    .startCon{
+        .main-start{
+        top: 18%;
+            .godCon{
+                .for-god{
+                    gap: 1.5rem;
+                    .god-text{
+                        position: relative;
+                        width: 100%;
+                        left: 4%;
+                        h1{
+                            font-size: 47px;
+                        }
+                    }
+                    .text-vid{
+                        flex-direction: column-reverse;
+                        width: 100%;
+                        gap: 2rem;
+                        height: unset;
+                        position: relative;
+                        left: 5%;
+
+                        .text-side{
+                            width: 81%;
+                            height: 100%;
+                            align-items: center;
+                            justify-content: center;
+                            
+                            
+                             p{
+                                font-weight: 200;
+                            }
+                            h3{
+                                font-weight: 500;
+                                
+                            }
+                            }
+    
+                            .video-side{
+                                width: 100%;
+                                height: 38vh;                                // bottom: unset;
+
+                                .video{
+                                    position: relative;
+
+                                    video{
+                                        position: relative;
+                                    }
+                                }
+                            }
+
+                    }
+
+                }
+            }
+            .jesusCon{
+                width: 100%;
+                // border: 1px solid white;
+
+                .jesus{
+                    text-align: left;
+                    width: 100%;
+                    position: relative;
+                    left: 2%;
+                    h1{
+                        font-size: 37px;
+                        font-weight: 300;
+                        width: 99%;
+
+                    }
+                    .jesus-text{
+                        width: 96%;
+                        font-size: 15px;
+                        word-spacing: 3px;
+                    }
+                }
+               }
+               .welcomeCon{
+                .welcome{
+                    .welcome-right{
+                        height: 35vh;
+                    }
+                }
+            }
+               .signupCon{
+                .signUp{
+                    width: 90%;
+                    gap: 2rem;
+
+                    h2{
+                        font-size: 21px;
+                    }
+                }
+            }
+            .holderCon{
+                .holder{
+                    .holder-right{
+                        height: 35vh;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (width <= 300px) {
+    .startCon{
+        .main-start{
+        top: 18%;
+            .godCon{
+                .for-god{
+                    overflow-x: hidden;
+                    gap: 1.5rem;
+                    .god-text{
+                        position: relative;
+                        width: 100%;
+                        left: 4%;
+                        h1{
+                            font-size: 48px;
+                        }
+                    }
+                    .text-vid{
+                        flex-direction: column-reverse;
+                        width: 90%;
+                        gap: 2rem;
+                        height: unset;
+                        position: relative;
+                        left: unset;
+
+                        .text-side{
+                            width: 81%;
+                            height: 100%;
+                            align-items: center;
+                            justify-content: center;
+                            
+                            
+                             p{
+                                font-weight: 200;
+                            }
+                            h3{
+                                font-weight: 500;
+                                
+                            }
+                            }
+    
+                            .video-side{
+                                width: 100%;
+                                height: 38vh;                                // bottom: unset;
+
+                                .video{
+                                    position: relative;
+
+                                    video{
+                                        position: relative;
+                                    }
+                                }
+                            }
+
+                    }
+
+                }
+            }
+            .signupCon{
+                .signUp{
+                    width: 90%;
+                    gap: 2rem;
+
+                    h2{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (width <= 2560px) and (width >= 1750px) {
+    .startCon{
+        .main-start{
+        top: 10%;
+            .godCon{
+                .for-god{
+                    .god-text{
+                        width: 58%;
+                        
+                        h1{
+                            font-size: 79px;
+                        }
+                    }
+                    .text-vid{
+                        width: 45%;
+                        gap: 4rem;
+                        height: 71vh;
+                        left: 3%;
+                        position: relative;
+
+                        .text-side{
+                        width: 32%;
+                        height: 100%;
+                        align-items: center;
+                        justify-content: center;
+
+                        h3, p{
+                            font-weight: 200;
+                        }
+                        }
+
+                        .video-side{
+                            width: 60%;
+                            height: 100%;
+                            bottom: 5%;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
 }
