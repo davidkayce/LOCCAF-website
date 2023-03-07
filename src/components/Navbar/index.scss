@@ -19,8 +19,13 @@ body.active-modal{
         gap: 1.5rem;
         a{
             color: white;
-            font-weight: 600;
-    
+            
+            h3{
+                font-size: 29px;
+            }
+            p{
+                font-size: 12px;
+            }
            
         }
     
@@ -141,10 +146,34 @@ body.active-modal{
             text-decoration: none;
             color: white;
             font-size: 12px;
+
+            &:hover{
+                color: wheat;
+            }
         }
-        // .menu{
-        //     border-bottom: 1px solid white;
-        // }
+        .menu{
+            position: relative;
+            transition: all 0.3s ease-out;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 60%;
+                height: 0.175rem;
+                left: 21%;
+                // right: 5;
+                bottom: -20px;
+                background: #fff;
+                transition: all 0.3s ease-out;
+
+            }
+
+            &:hover{
+                color: #fff;
+            }
+
+        }
+       
+       
     }
 }
 @media (width <= 912px) {

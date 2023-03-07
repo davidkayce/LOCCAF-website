@@ -16,12 +16,14 @@ const Navbar = () => {
 
   return (
     <>
-      {openMenu && <Menu setOpenMenu={setOpenMenu} 
-      openMenu={openMenu} />}
+      {openMenu && <Menu setOpenMenu={setOpenMenu} openMenu={openMenu} />}
       <div className="nav-bar">
         <div className="logo1-con">
           <Link className="logo1" to="/">
-            PASSION CITY CHURCH
+            <h3>Amsterdam City Church</h3>
+            <p>
+              <i> The more you know Jesus. The more you know you!</i>
+            </p>
           </Link>
           <div className="dropdown">
             <button className="drop-btn">
@@ -30,16 +32,10 @@ const Navbar = () => {
             <div className="menu">
               <ul>
                 <li>
-                  <a href="#">515</a>
+                  <a href="#">Amsterdam</a>
                 </li>
                 <li>
-                  <a href="#">CUMBERLAND</a>
-                </li>
-                <li>
-                  <a href="#">D.C.</a>
-                </li>
-                <li>
-                  <a href="#">TRILITH</a>
+                  <a href="#">Harbour</a>
                 </li>
               </ul>
             </div>
@@ -73,17 +69,37 @@ const Navbar = () => {
         </div>
 
         <nav>
-          <NavLink exact="true" activeclassname="active" to="/start" className='hide'>
+          <NavLink
+            exact="true"
+            activeclassname="active"
+            to="/start"
+            className="hide"
+          >
             START HERE
           </NavLink>
-          <NavLink exact="true" activeclassname="active" to="/trilith/sundays" className='hide'>
+          <NavLink
+            exact="true"
+            activeclassname="active"
+            to="/trilith/sundays"
+            className="hide"
+          >
             SUNDAYS
           </NavLink>
-          <NavLink exact="true" activeclassname="active" to="/give" className='hide'>
+          <a
+            rel="noreferrer"
+            target='_blank'
+            href="https://useplink.com/payment/mK4x0NBv4nqc1tnDJEPT/"
+            className="hide"
+          >
             GIVE
-          </NavLink>
-          <NavLink exact="true" activeclassname="active" to="/messages" className='hide'>
-            MESSAGES
+          </a>
+          <NavLink
+            exact="true"
+            activeclassname="active"
+            to="/messages"
+            className="hide"
+          >
+            WATCH
           </NavLink>
           <NavLink
             exact="true"

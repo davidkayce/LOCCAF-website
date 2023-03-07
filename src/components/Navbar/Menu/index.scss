@@ -10,9 +10,9 @@
     overflow-y: auto;
     display: flex;
     justify-content: center;
-    transform-style: preserve-3d;
-    animation: fadeIn 1s forwards;
-    animation-delay: 1s;
+    // transform-style: preserve-3d;
+    // animation: fadeIn 1s forwards;
+    // animation-delay: 1s;
 
 
     
@@ -88,7 +88,8 @@
                     border: none;
                     outline: 0;
                     font-size: 15px;
-                    font-weight: 700;
+                    font-weight: 600;
+                    cursor: pointer;
 
                     &::after{
                         content: '';
@@ -149,7 +150,7 @@
                 flex: 2 1 auto;
                 // margin: 1rem;
                 flex-wrap: wrap;
-
+                // border:1px solid white;
                 .logo1-con{
                     text-decoration: none;
                     display: flex;
@@ -216,31 +217,38 @@
                 
                 }
 
-
-                .right-bod{
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 3rem;
-                    margin-top: 1rem;
-                    // justify-content: space-between;
-                    .rights{
+                .main-right{
+                    .right-bod{
                         display: flex;
-                        flex-direction: column;
-                        padding: 5px;
+                        flex-wrap: wrap;
+                        gap: 3rem;
+                        margin-top: 1rem;
+                        // justify-content: space-between;
+                        .rights{
+                            display: flex;
+                            flex-direction: column;
+                            padding: 5px;
+    
+                            a{
+                                font-size: 17px;
+                                padding-bottom: 5px;
+                                font-weight: 400;
 
-                        a{
-                            font-size: 17px;
-                            padding-bottom: 5px;
+                                &:hover{
+                                    color: aqua;
+                                }
+                            }
+    
+                            p{
+                                opacity: 0.4;
+                                font-size: 15px;
+                                padding-bottom:  1rem;
+                            }
+    
                         }
-
-                        p{
-                            opacity: 0.4;
-                            font-size: 15px;
-                            padding-bottom:  1rem;
-                        }
-
                     }
                 }
+            
                 .handles{
                     padding: 5px;
                     opacity: 0.6;
@@ -319,9 +327,10 @@
 @media (width <= 920px) {
     .menu-modalCon{
         background-color: black;
+        // height: unset;
         .overlay{
             top: 0;
-            height: 100vh;
+            height: 100%;
             transform: skewY(0);
 
         }
@@ -334,14 +343,15 @@
        
         .menu-body{
             flex-direction: column-reverse;
-            gap: 2rem;
-            justify-content: space-evenly;
+            gap: 1rem;
+            justify-content: unset;
             border-bottom: 1px solid white;
             .body-left{
-                margin-top: -2rem;
+                margin-top: unset;
                 margin-bottom: 3rem;
                 width: 50%;
                 // height: fit-content;
+                // border: 1px solid white;
                 flex: 1 1 auto;
             img{
                 width: 100%;
@@ -351,7 +361,7 @@
            .body-right{
             flex: 1 1 auto;
             width: 100%;
-
+            // border: 1px solid white;
             // gap: 1rem;
 
             .logo1-con{
@@ -359,14 +369,23 @@
                     font-size: 37px;
                 }
             }
+            .main-right{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            // border: 1px solid white;
 
-            .right-bod{
-                gap: 0rem;
-                .rights{
-                    width: 31%;
-                    height: fit-content;
-                    a, p{
-                        padding: 2px;
+                // height: 300px;
+        
+                
+                .right-bod{
+                    gap: 0rem;
+                    .rights{
+                        width: 31%;
+                        height: fit-content;
+                        a, p{
+                            padding: 2px;
+                        }
                     }
                 }
             }
@@ -375,57 +394,70 @@
                padding: 3px;
                padding-bottom: 1rem;
                border-bottom:1px solid white ;
-               
+               width: 100%;
                h6{
                 padding-bottom: 9px;
                 font-size: 12px;
+               font-weight: 400;
+
                }
             }
            }
         }
        }
     }
-    .main-right{
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        // height: 300px;
-
-        .sm-handles{
-            
-        }
-        
-    }
+ 
 }
-@media (width <= 540px) {
+@media (width <= 570px) {
     .menu-modalCon{
+        // border: 1px solid white;
+        // height: unset;
         .overlay{
-            height: 240vh;
+            height: 100%;
         }
         .modal{
+            height: unset;
             gap: 1rem;
             .menu-body{
-                gap: 1.2rem;
+                gap: 0rem;
+                // height: 90%;
+                margin-bottom: 5rem;
+                border-bottom: unset;
 
                 .body-left{
-                    margin-top: -2rem;
-                    margin-bottom: 3rem;
-                    width: 99%;
-                    // height: fit-content;
-                    flex: 1 1 auto;
+                    // margin-top: -2rem;
+                    width: 100%;
+                    border-bottom: 1px solid white;
+                    flex: unset;
                 img{
                     width: 100%;
                     height: 93%;
                 }
+                .left-bot{
+                    flex-direction: column;
+                    gap: 5px;
+                    margin-bottom: 3rem;
+
+
+                }
             }
                 .body-right{
-                    // height: 50vh;
+                    height: 110vh;
+                    // width: 100%;
+                    flex-direction: column;
                     // border: 1px solid white;
+                    // flex: unset;
                     .main-right{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.7rem;
+                        height: 70%;
+                        // border: 1px solid white;
                         
                         .right-bod{
                             flex-direction: column;
                             // height: 90%;
+                        // border: 1px solid white;
 
                             .rights{
                                 width: 40%;
@@ -435,6 +467,7 @@
                                 }
                             }
                         }
+                       
                     }
                     .logo1-con{
                         flex-direction: column;
@@ -445,39 +478,28 @@
                         }
                     }
                 }
-                .body-left{
-                    .left-bot{
-                        flex-direction: column;
-                        gap: 5px;
-
-
-                    }
-                }
+                
             }
         }
     }
-    .main-right{
-        display: flex;
-        flex-direction: column;
-        gap: 0.7rem;
-        height: 130vh;
-
-        .sm-handles{
-
-        }
-        
-    }
+  
 }
 @media (width <= 420px) {
     .menu-modalCon{
+        // height: unset;
         .overlay{
-            height: 190vh;
+            // height: 190vh;
         }
         .modal{
            
         .menu-body{
             .body-right{
+                height: 86vh;
+                // border: 1px solid white;
                 .main-right{
+                    display: flex;
+                flex-direction: column;
+                gap: 0.7rem;
                     .right-bod{
                         width: 100%;
 
@@ -492,61 +514,89 @@
                 }
             }
         }
-            .main-right{
-                display: flex;
-                flex-direction: column;
-                gap: 0.7rem;
-                height: 107vh;
-
-                .sm-handles{
-
-                }
-                
-            }
+           
         }
     }
 }
 @media (width <= 399px) {
     .menu-modalCon{
+        border: 1px solid white;
         .overlay{
-            height: 200vh;
+            // height: unset;
 
         }
         .modal{
-            
-            .main-right{
-                display: flex;
-                flex-direction: column;
-                gap: 0.7rem;
-                height: 114vh;
-
-                .sm-handles{
-
+            height: 100%;
+            .menu-body{
+                .body-right{
+                    height: 90vh;
+                    // display: none;
+                    .main-right{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.7rem;
+                        // height: 90%;
+                        // height: vw;
+        
+                       
+                        
+                    }
                 }
-                
             }
+     
+         
         }
     }
 }
 @media (width <= 375px) {
     .menu-modalCon{
         .overlay{
-            height: 250vh;
+            // height: 250vh;
 
         }
         .modal{
-            
-            .main-right{
-                display: flex;
-                flex-direction: column;
-                gap: 0.7rem;
-                height: 144vh;
-
-                .sm-handles{
-
+            .menu-body{
+                .body-right{
+                    height: 115vh;
+                    .main-right{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.7rem;
+                        // height: 144vh;
+        
+                        
+                        
+                    }
                 }
-                
+             
             }
+            
+        }
+    }
+}
+@media (width <= 300px) {
+    .menu-modalCon{
+        .overlay{
+            // height: 250vh;
+
+        }
+        .modal{
+            .menu-body{
+                .body-right{
+                    height: 130vh;
+                    .main-right{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.7rem;
+                        // height: 144vh;
+        
+                        
+                        
+                    }
+                }
+             
+            }
+            
         }
     }
 }

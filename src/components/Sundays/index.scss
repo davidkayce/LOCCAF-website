@@ -331,45 +331,65 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        width: 95%;
-        height: 46rem;
+        width: 100%;
 
-        .uspic1{
-            width: 95%;
-            height: 95%;
-            right: 3%;
-            bottom: 5%;
+        .pics{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: relative;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover; 
-
-
-            }
-        }
-
-        .uspic2{
-            position: absolute;
             width: 95%;
-            height: 95%;
-            // display: none;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+            height: 46rem;
 
-
+            .uspic1{
+                width: 95%;
+                height: 92%;
+                right: 2%;
+                bottom: 3%;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover; 
+    
+    
+                }
+            }
+    
+            .uspic2{
+                position: absolute;
+                width: 96%;
+                height: 92%;
+                // display: none;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+    
+    
+                }
+                .overlaid{
+                    opacity: 1;
+                    position: absolute;
+                    // mix-blend-mode:difference;
+                    background: rgba(0, 0, 0, .3);
+                    z-index: 3;
+                    // left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
+
+       
         .uspic-contents{
             opacity: 1;
             position: absolute;
             // mix-blend-mode:difference;
             // background: rgba(0, 0, 0, .1);
             z-index: 6;
-            width: 40%;
-            left: 2.5%;
+            width: 37%;
+            left: 10%;
             padding: 60px;
             display: flex;
             flex-direction: column;
@@ -380,24 +400,13 @@
 
             h1{
                 font-size: 50px;
+                font-weight: 500;
             }
             p{
-                font-size: 17px;
-            }
-            .overlaid{
-                opacity: 0.1;
-                position: absolute;
-                mix-blend-mode:difference;
-                background: rgba(0, 0, 0, .2);
-                // z-index: 1;
-                left: 0;
-                width: 100%;
-                height: 100%;
+                font-size: 15px;
+                font-weight: 400;
             }
 
-           
-
-          
          
         }
     }
@@ -433,6 +442,32 @@
                     .body-bot{
                         width: 67%;
                     }
+                }
+            }
+        }
+        .us-picsCon{
+            .us-pics{
+                .pics{
+                    .uspic1{
+                        width: 92%;
+                        height: 85%;
+                    }
+                    .uspic2{
+                        width: 92%;
+                        height: 85%;
+                        left: 6%;
+                        .overlaid{
+                        background: rgba(0, 0, 0, .5);
+    
+                        }
+                    }
+                }
+                
+                .uspic-contents{
+                    // bottom: 5%;
+                    width: 49%;
+
+
                 }
             }
         }
@@ -544,6 +579,33 @@
             }
 
         }
+        .us-picsCon{
+            margin-bottom: 4rem;
+            .us-pics{
+                .pics{
+                    .uspic1{
+                        width: 92%;
+                        height: 85%;
+                    }
+                    .uspic2{
+                        width: 92%;
+                        height: 85%;
+                        left: 6%;
+                        .overlaid{
+                        background: rgba(0, 0, 0, .5);
+
+                        }
+                    }
+                }
+               
+                .uspic-contents{
+                    bottom: 5%;
+                    width: 63%;
+                    left: 5%;
+
+                }
+            }
+        }
     }
 }
 
@@ -552,6 +614,39 @@
         .fiveCon{
             .five-left{
                 width: 92%;
+            }
+        }
+    }
+}
+@media (width <= 780px) {
+    .sun-main{
+        .us-picsCon{
+            .us-pics{
+                .pics{
+                    .uspic1{
+                        width: 98%;
+                        height: 75%;
+                    }
+                    .uspic2{
+                        width: 98%;
+                        height: 75%;
+                        left: 3%;
+                        .overlaid{
+                        background: rgba(0, 0, 0, .5);
+
+                        }
+                    }
+                }
+                
+                .uspic-contents{
+                    bottom: 7%;
+                    width: 68%;
+
+                    h1{
+                        font-weight: 400;
+                        font-size: 45px;
+                    }
+                }
             }
         }
     }
@@ -690,6 +785,48 @@
                 width: 91%;
             }
         }
+        .us-picsCon{
+            .us-pics{
+                flex-direction: column;
+                justify-content: unset;
+                align-items: unset;
+                gap: 1rem;
+                .pics{
+                    height: 60vh;
+                    width: 100%;
+                    .uspic1{
+                        width: 95%;
+                        height: 90%;
+                    }
+                    .uspic2{
+                        width: 95%;
+                        height: 90%;
+                        left: 3%;
+                        .overlaid{
+                        background: rgba(0, 0, 0, .5);
+
+                        }
+                    }
+                }
+           
+                .uspic-contents{
+                    position: relative;
+                    // bottom: 5%;
+                    width: 53%;
+                    left: 6%;
+                    padding: unset;
+
+                    h1{
+                        font-size: 32px;
+                        font-weight: 400;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                   
+                }
+            }
+        }
     }
 }
 @media (width <= 700px) {
@@ -702,6 +839,30 @@
                     p{
                         font-size: 28px;
 
+                    }
+                }
+            }
+        }
+        .us-picsCon{
+            width: 100%;
+            .us-pics{
+                .pics{
+                    height: 50vh;
+                }
+           
+                .uspic-contents{
+                    position: relative;
+                    bottom: 5%;
+                    width: 59%;
+                    left: 6%;
+                    padding: unset;
+
+                    h1{
+                        font-size: 32px;
+                        font-weight: 400;
+                    }
+                    p{
+                        font-size: 14px;
                     }
                 }
             }
@@ -766,6 +927,41 @@
                             width: 91%;
                             left: 11%;
                        
+                    }
+                }
+            }
+        }
+        .us-picsCon{
+            .us-pics{
+                .pics{
+                    height: 40vh;
+                    width: 100%;
+                    .uspic1{
+                        width: 95%;
+                        height: 90%;
+                    }
+                    .uspic2{
+                        width: 95%;
+                        height: 90%;
+                        left: 3%;
+                        top: 9%;
+                    }
+                }
+           
+                .uspic-contents{
+                    position: relative;
+                    bottom: 5%;
+                    width: 73%;
+                    left: 5%;
+                    color: black;
+                    padding: unset;
+                    
+                    h1{
+                        font-size: 32px;
+                        font-weight: 400;
+                    }
+                    p{
+                        font-size: 14px;
                     }
                 }
             }

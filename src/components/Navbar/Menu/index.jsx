@@ -20,10 +20,10 @@ const Menu = ({setOpenMenu, openMenu}) => {
             <div className="menu-top">
                 <div className="top-left">
                     <Link to='/' ><h1>P</h1></Link>
-                    <div className="left-search">
+                    {/* <div className="left-search">
                         <FontAwesomeIcon icon={faSearch} id='search'/>
                         <input type="text" placeholder='SEARCH PASSION'/>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="top-mid">
                     <h5>GATHERING TIMES: ATL 9:30A + 11:45A EST // D.C. 9:30A + 11:30A EST</h5>
@@ -67,37 +67,26 @@ const Menu = ({setOpenMenu, openMenu}) => {
                     <div className='main-right'>
                     <div className="right-bod">
                         <div className="right1 rights">
-                            <p>OUR HOUSE</p>
-                            <a href="#">WHAT WE BELIEVE</a> 
-                            <a href="#">OUR LEADERSHIP</a> 
-                            <a href="#">DOOR HOLDERS</a>
-                            <a href="#">LAUNCH</a>    
-                            <a href="#">WELCOME TO CHURCH</a>    
-                            <a href="#">BAPTISM</a>    
-                            <a href="#">COMMUNITY GROUPS</a>    
-                            <a href="#">ABOVE + BEYOND</a>    
+                            <p>ABOUT US</p>
+                            <a href='/us'  onClick={() => setOpenMenu(false)}>WHO WE ARE</a> 
+                            <a href="/us#vision"onClick={() => setOpenMenu(false)}>THE VISION</a>
+                            <a href='/us'  onClick={() => setOpenMenu(false)}>ABOUT OUR MISSION</a>  
+                            <a href='/us'  onClick={() => setOpenMenu(false)}>OUR LEADERSHIP</a> 
+     
                         </div>
                         <div className="right2 rights">
-                            <p>OUR HOUSE</p>
-                            <a href="#">WHAT WE BELIEVE</a> 
-                            <a href="#">OUR LEADERSHIP</a> 
-                            <a href="#">DOOR HOLDERS</a>
-                            <a href="#">LAUNCH</a>    
-                            <a href="#">WELCOME TO CHURCH</a>    
-                            <a href="#">BAPTISM</a>    
-                            <a href="#">COMMUNITY GROUPS</a>    
-                            <a href="#">ABOVE + BEYOND</a>    
+                            <p>NEXT STEPS </p>
+                            <a href="/serve" onClick={() => setOpenMenu(false)}>SERVE </a> 
+                            <a href="#">PARTNERSHIP</a> 
+                            <a href="/baptism" onClick={() => setOpenMenu(false)}>BAPTISM </a>
+                            <a href='/prayer-request' onClick={() => setOpenMenu(false)}>PRAYER REQUEST</a>    
+                            <a href="#">MEMBERSHIP</a>             
                         </div>
                         <div className="right3 rights">
-                            <p>OUR HOUSE</p>
-                            <a href="#">WHAT WE BELIEVE</a> 
-                            <a href="#">OUR LEADERSHIP</a> 
-                            <a href="#">DOOR HOLDERS</a>
-                            <a href="#">LAUNCH</a>    
-                            <a href="#">WELCOME TO CHURCH</a>    
-                            <a href="#">BAPTISM</a>    
-                            <a href="#">COMMUNITY GROUPS</a>    
-                            <a href="#">ABOVE + BEYOND</a>    
+                            <p>JOIN US </p>
+                            <a href="#">FIND YOUR PLACE</a> 
+                            <a href="#">BIBLE ACADEMY</a> 
+                            <a href="#">NEW CONVERTS CLASS</a>  
                         </div>
                     </div>
                     <div className="sm-handles">
