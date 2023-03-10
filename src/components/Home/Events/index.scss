@@ -183,9 +183,9 @@
             flex-direction: column;
             margin-top: 1rem;
 
-            .event1{
+            // .event1{
                 
-            }
+            // }
         }
         
     }  
@@ -196,6 +196,7 @@
         .events-top{
             text-align: left;
             padding-left: 2.5rem;
+            // justify-content: unset;
             h1{
                 font-size: 32px;
                  
@@ -220,9 +221,9 @@
             flex-direction: column;
             margin-top: 1rem;
 
-            .event1{
+            // .event1{
                 
-            }
+            // }
         }
         
     }  
@@ -450,10 +451,7 @@
             align-items: center;
             text-align: center;
             margin-left: 1.5rem;
-            h3{
-            
-
-            }
+          
         }
     }
     .collection{
@@ -511,7 +509,7 @@
     max-width: 26rem ;
     margin: 0;
     cursor: grab;
-    height: 20rem;
+    height: 18rem;
     // border: 1px solid white;
     margin-left: 1rem;
     overflow: hidden;
@@ -523,9 +521,8 @@
         left: 0;
         width: 100%;
         height: 95%;
-        background-color: rgba(0, 0, 0, .4);
+        background-color: white;
         // transform: rotateX(45deg);
-        border: 1px solid white;
         opacity: 0;
         animation: fadeInUp 2s 2s;
          animation-fill-mode: forwards;
@@ -557,7 +554,7 @@
    
     &:hover{
         .passion-overlay{
-            opacity: 1;
+            opacity: 0.1;
             transform-origin: right bottom;
             transform: skewY(-2deg) ;
             // bottom: 0;
@@ -568,7 +565,7 @@
         }
         a{
            h4{
-            color: blue;
+            color: aqua;
            }
            
         }
@@ -583,9 +580,9 @@
 @media (width <= 768px) {
     .passion-slides{
         width: 21rem;
-        .passion-overlay{
-            // width: ;
-        }
+        // .passion-overlay{
+        //     // width: ;
+        // }
     }
 }
 @media (width <= 420px) {

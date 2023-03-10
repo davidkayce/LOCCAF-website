@@ -41,32 +41,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className="logo2-con">
-          <Link className="logo2" to="/">
-            PASSION
-          </Link>
-          <div className="dropdown">
-            <button className="drop-btn">
-              GLOBAL <FiChevronDown />
-            </button>
-            <div className="menu">
-              <ul>
-                <li>
-                  <a href="#">515</a>
-                </li>
-                <li>
-                  <a href="#">CUMBERLAND</a>
-                </li>
-                <li>
-                  <a href="#">D.C.</a>
-                </li>
-                <li>
-                  <a href="#">TRILITH</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+       
 
         <nav>
           <NavLink
@@ -93,14 +68,24 @@ const Navbar = () => {
           >
             GIVE
           </a>
-          <NavLink
-            exact="true"
-            activeclassname="active"
-            to="/messages"
-            className="hide"
-          >
-            WATCH
-          </NavLink>
+             <div className="dropdown ">
+            <button className="drop-btn hide">
+              WATCH 
+            </button>
+            <div className="menu">
+              <ul>
+                <li>
+                  <a href="https://us02web.zoom.us/j/8812443296?pwd=OWtFazlVUE4xZFlFVlBpVmhvZ2dFdz09" target='_blank'>ZOOM</a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/channel/UCvx240pRUOBgxMo4ZRNscxA?sub_confirmation=1" target='_blank'>YOUTUBE</a>
+                </li>
+                <li>
+                  <a href="https://open.spotify.com/show/6iOGsfojd34b5SBPlPOShJ?si=71jdz_htT3CMu6jeTEgdXQ" target='_blank'>SPOTIFY</a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <NavLink
             exact="true"
             activeclassname="active"

@@ -1,8 +1,13 @@
 import React from "react";
+import Footer from "../Footer";
 import Prayed from "../../assets/Prayer.jpg";
+import { useEffect } from 'react'
 import "./index.scss";
 
 const Prayer = () => {
+  useEffect(() => {
+    document.title = "Prayer Request"
+ }, []);
   return (
     <section>
       <div className="prayerCon">
@@ -24,11 +29,11 @@ const Prayer = () => {
                 </li>
                 <li>
                   <label htmlFor="last">Last Name</label>
-                  <input type="text" id="first" required />
+                  <input type="text" id="last" required />
                 </li>
                 <li>
                   <label htmlFor="email">Email </label>
-                  <input type="email" id="first" required />
+                  <input type="email" id="email" required />
                 </li>
                 <li>
                   <label htmlFor="message">Message</label>
@@ -48,6 +53,8 @@ const Prayer = () => {
             </form>
           </div>
         </div>
+        <Footer />
+
       </div>
     </section>
   );

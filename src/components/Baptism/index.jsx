@@ -5,6 +5,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FaPhoneSquare } from "react-icons/fa";
 import { BsFillCalendarFill } from "react-icons/bs";
 import Footer from "../Footer";
+import { useEffect } from 'react'
 import "./index.scss";
 
 const Baptism = () => {
@@ -13,6 +14,9 @@ const Baptism = () => {
   //   birth.type = 'date'
   // }
 
+  useEffect(() => {
+    document.title = "Baptism"
+ }, []);
   return (
     <section>
       <div className="baptismCon">

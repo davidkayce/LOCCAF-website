@@ -5,9 +5,13 @@ import './index.scss'
 import Messages from './Messages'
 import Events from './Events'
 import Footer from '../Footer'
+import { useEffect } from 'react'
+
 
 const Home = () => {
-
+  useEffect(() => {
+    document.title = "Amsterdam City Church"
+ }, []);
   return (
     <>
     

@@ -7,8 +7,15 @@ import { Link } from "react-router-dom";
 import History from "../../assets/history.jpg";
 import Footer from '../Footer'
 import { useState } from "react";
+import { useEffect } from 'react'
+
 
 const About = () => {
+  useEffect(() => {
+    document.title = "Us"
+ }, []);
+
+
   const [checked, setchecked] = useState("");
 
   return (

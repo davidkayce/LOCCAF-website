@@ -35,10 +35,8 @@
         left: 0;
         width: 100%;
         height: 95%;
-        background-color: rgba(0, 0, 0, .4);
-        // transform: rotateX(45deg);
-        border: 1px solid white;
-        opacity: 0;
+        background:white;
+        opacity: 0;        // transform: rotateX(45deg);
         animation: fadeInUp 2s 2s;
          animation-fill-mode: forwards;
         // transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -69,7 +67,7 @@
    
     &:hover{
         .overlay2{
-            opacity: 1;
+            opacity: 0.1;
             transform-origin: right bottom;
             transform: skewY(-2deg) ;
             // bottom: 0;
@@ -80,7 +78,7 @@
         }
         a{
            h4{
-            color: blue;
+            color: aqua;
            }
            
         }

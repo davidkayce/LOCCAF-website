@@ -2,9 +2,13 @@ import React from "react";
 import ServePic from "../../assets/serve.jpg";
 import { Link } from "react-router-dom";
 import Footer from "../Footer";
+import { useEffect } from 'react'
 import "./index.scss";
 
 const Serve = () => {
+  useEffect(() => {
+    document.title = "Serve"
+ }, []);
   return (
     <section>
       <div className="serveCon">

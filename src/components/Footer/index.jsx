@@ -52,8 +52,8 @@ const Footer = () => {
                 <span id='ft-el'><a href='#' >Privacy</a><a href="#">Policy</a></span>
                 <span id='ft-el'><a href='#' >Terms +</a><a href="#">Conditions</a></span>
                 <span id='ft-el'><a href='#' >SMS Terms + </a><a href="#">Conditions</a></span>
-                <span id='ft-el'><a href='#' >Georgia </a><a href="#">Film</a></span>
-                <span id='ft-el'><a href="#">Impact </a><a href="#">Report</a></span>
+                {/* <span id='ft-el'><a href='#' >Georgia </a><a href="#">Film</a></span> */}
+                {/* <span id='ft-el'><a href="#">Impact </a><a href="#">Report</a></span> */}
                 <div className="sm-handles">
                     <Link className='youtube handles' to='#' target='_blank'>
                         <FontAwesomeIcon icon={faYoutube} color='#fff'/>

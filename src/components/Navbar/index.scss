@@ -6,7 +6,7 @@ body.active-modal{
     height: 10%;
     position: fixed;
     display: flex;
-    z-index: 4;
+    z-index: 7;
     justify-content: space-between;
     mix-blend-mode: difference;
   
@@ -47,27 +47,28 @@ body.active-modal{
             
             .menu{
                 opacity: 0;
-                transform: scale(0);
-                height: 0px;
-               position: absolute;
-               z-index: 101;
-               transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
-
-                a{
-                    font-size: 14px;
-                    
-                }
-               
-            }
-            &:hover{
-                .drop-btn{
-                    opacity: 0.6;
-                }
-              .menu{
+             //    top: 15px;
+             //    bottom: 0;
+                 height: 1%;
+                position: absolute;
+                z-index: 101;
+                transition: 1.2s ease-in-out;
+             //    bottom: 15px;
+                overflow: hidden;
+                
+ 
+                 a{
+                     font-size: 14px;
+                     
+                 }
+                
+             }
+             &:hover{
+               .menu{
                 opacity: 1;
-                transform: scale(1);
-              }
-            }
+                height: 100%;
+               }
+             }
            
         }
        
@@ -142,6 +143,7 @@ body.active-modal{
         background: transparent;
         font-weight: 700;
 
+
         a{
             text-decoration: none;
             color: white;
@@ -150,6 +152,75 @@ body.active-modal{
             &:hover{
                 color: wheat;
             }
+        } 
+        .dropdown{
+            display: flex;
+            flex-direction: column;
+            // gap: 4rem;
+            // width: 7rem;
+            height: 6rem;
+            // z-index: 100;
+            position: relative;
+
+
+
+            
+            .drop-btn{
+                background: none;
+                border: none;
+                color: white;
+                font-weight: 600;
+                font-size: 12px;
+                position: relative;
+                // bottom: 1%;
+                
+
+            }
+            
+            .menu{
+                
+                opacity: 0;
+                top: 20%;
+                right: -49%;
+                // left: 0;
+             //    bottom: 0;
+                 height: 1%;
+                position: absolute;
+                z-index: 101;
+                transition: 1.2s ease-in-out;
+             //    bottom: 15px;
+                overflow: hidden;
+                background-color: #fff;
+                // border: 1px solid white;
+                width: 6rem;
+                
+ 
+                 a{
+                     font-size: 12px;
+                color: #000;
+
+                &:hover{
+                    color: aqua;
+                }
+                     
+                 }
+                 ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    padding: 5px;
+
+                 }
+                
+             }
+             &:hover{
+               .menu{
+                opacity: 1;
+                height: 80%;
+               }
+               
+             }
+           
         }
         .menu{
             position: relative;
@@ -176,7 +247,7 @@ body.active-modal{
        
     }
 }
-@media (width <= 912px) {
+@media (width <= 920px) {
     nav{
         .hide{
             display: none;

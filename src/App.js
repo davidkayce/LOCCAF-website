@@ -8,6 +8,8 @@ import About from './components/About';
 import Serve from './components/Serve';
 import Baptism from './components/Baptism';
 import Prayer from './components/Prayer';
+import Outreach from './components/Outreach';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
         <Route path='/serve' element={<Serve/>}/>
         <Route path='/baptism' element={<Baptism/>}/>
         <Route path='/prayer-request' element={<Prayer/>}/>
+        <Route path='/outreach' element={<Outreach/>}/>
+        <Route path='/contact' element={<Contact/>}/>
         </Route>
       </Routes>
     </>

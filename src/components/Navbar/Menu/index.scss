@@ -3,6 +3,7 @@
 .menu-modalCon{
     position: fixed;
     z-index: 10;
+    // top: -90%;
     // background-color: black;
     width: 100%;
     height: 100vh;
@@ -10,9 +11,9 @@
     overflow-y: auto;
     display: flex;
     justify-content: center;
-    // transform-style: preserve-3d;
-    // animation: fadeIn 1s forwards;
-    // animation-delay: 1s;
+    opacity: 1;
+    transition: 1.2s ease-in-out;
+    // transition-delay: 5s;
 
 
     
@@ -31,6 +32,8 @@
     .modal{
         display: flex;
         flex-direction: column;
+        position: relative;
+        // top: -85%;
         gap: 6rem;
         width: 95%;
         height: 85%;
@@ -39,6 +42,8 @@
         font-weight: 600;
         // overflow: hidden;
         z-index: 12;
+        transition: 5s ease-in-out;
+
 
 
         .menu-top{
@@ -256,8 +261,14 @@
                 }
             }
         }
+       
+    }
+    .new-modal{
+        top: 0 ;
+        // transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
     }
 }
+
 @media (width <= 1300px) {
     .menu-modalCon{
         .overlay{

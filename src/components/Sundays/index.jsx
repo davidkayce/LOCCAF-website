@@ -7,10 +7,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import "./index.scss";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { useEffect } from 'react'
 import Footer from "../Footer";
 import Trilith from "./Trilith";
 
 const Sundays = () => {
+  useEffect(() => {
+    document.title = "Sundays"
+ }, []);
   return (
     <div className="sun-main">
       <div className="sun-pic">

@@ -15,10 +15,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Footer from '../Footer'
 import { FiChevronDown } from "react-icons/fi";
-
+import { useEffect } from 'react'
 import "./index.scss";
 
 const Start = () => {
+  useEffect(() => {
+    document.title = "Start Here"
+ }, []);
   return (
     <>
       <div className="startCon">
