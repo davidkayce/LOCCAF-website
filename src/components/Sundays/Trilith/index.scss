@@ -23,8 +23,6 @@
             right: 19%;
             // top: 10%;
             width: 100%;
-            // height: 100%;
-            // z-index: ;
             font-weight: 200;
         }
     }
@@ -161,11 +159,11 @@
                         opacity: 1;
                         transition: 1s ease-in;
                     }
-                    .place{
+                    .city{
                         position: relative;
-                        left: 15%;
+                        left: 13%;
                         mix-blend-mode: difference;
-                        font-weight: 300;
+                        font-weight: 400;
                         word-spacing: 3px;
                     }
                 }

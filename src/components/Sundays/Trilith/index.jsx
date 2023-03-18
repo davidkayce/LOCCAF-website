@@ -13,7 +13,7 @@ const Trilith = () => {
   return (
     <div className="trilith">
       <div className="title">
-        <h1>TRILITH</h1>
+        <h1>LOCATIONS</h1>
       </div>
       <div className="tril">
         <div className="overlay"></div>
@@ -29,7 +29,7 @@ const Trilith = () => {
           </div>
         <div className="tril-text">
             <div className="main-text">
-            <div className="place">A PLACE IN OUR HOUSE FOR ALL AGES</div>
+            <div className="city">A PLACE IN OUR HOUSE FOR ALL AGES</div>
           <div
             // className="bloom"
             onMouseEnter={() => setHoverVid1(true)}
@@ -42,7 +42,7 @@ const Trilith = () => {
         //   className="passion-kids" 
             onMouseEnter={() => setHoverVid2(true)}
             onMouseLeave={() => setHoverVid2(false)}>
-            <h1>PASSION KIDS</h1>
+            <h1> KIDS</h1>
             <h2 className={`passion-kids ${hoverVid2 ? "shows" :''}`}>K - 5TH GRADE</h2>
           </div>
           <div
@@ -50,7 +50,7 @@ const Trilith = () => {
           onMouseEnter={() => setHoverVid3(true)}
           onMouseLeave={() => setHoverVid3(false)}
           >
-            <h1>PASSION STUDENTS</h1>
+            <h1> STUDENTS</h1>
             <h2 className={`passion-stud ${hoverVid3 ? "shows" :''}`}>6TH - 12TH GRADE</h2>
           </div>
           <div 

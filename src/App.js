@@ -10,6 +10,8 @@ import Baptism from './components/Baptism';
 import Prayer from './components/Prayer';
 import Outreach from './components/Outreach';
 import Contact from './components/Contact';
+import RothHome from './components/Rotherdam/RothHome';
+import RothSundays from './components/Rotherdam/RothSundays';
 
 
 function App() {
@@ -19,13 +21,17 @@ function App() {
         <Route path='/' element={<Layout/>}>
         <Route index element={<Home/>}/>
         <Route path='start' element={<Start/>}/>
-        <Route path='/trilith/sundays' element={<Sundays/>}/>
+        <Route path='/amsterdam/sundays' element={<Sundays/>}/>
         <Route path='/us' element={<About/>}/>
         <Route path='/serve' element={<Serve/>}/>
         <Route path='/baptism' element={<Baptism/>}/>
         <Route path='/prayer-request' element={<Prayer/>}/>
         <Route path='/outreach' element={<Outreach/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        {/* Rotherdam */}
+        <Route path='/rotherdam' element={<RothHome/>}/>
+        <Route path='/rotherdam/sundays' element={<RothSundays/>}/>
+
         </Route>
       </Routes>
     </>

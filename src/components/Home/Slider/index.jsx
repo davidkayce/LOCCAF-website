@@ -46,19 +46,22 @@ const Slider = () => {
           className={`caro-btn ${currentSlide === 0 ? "disable" : ""}`}
           onClick={() => previous()}
         >
-          <FontAwesomeIcon icon={faArrowLeft} color="#fff" />
+          &larr;
         </button>
         <button
           onClick={() => next()}
-          className={`caro-btn ${currentSlide === 4 ? "disable" : ""}`}
+          className={`caro-btn ${currentSlide === 3 ? "disable" : ""}`}
         >
-          <FontAwesomeIcon icon={faArrowRight} color="#fff" />
+          &rarr;
         </button>
       </div>
     );
   };
   return (
     <>
+     <div className='place'>
+        <h3>FIND YOUR PLACE AT AMSTERDAM CITY CHURCH</h3>       
+       </div>
       <Carousel
         responsive={responsive}
         swipeable={true}
@@ -70,105 +73,86 @@ const Slider = () => {
         customButtonGroup={<ButtonGroup />}
       >
         <div className="slides">
-          <Link className="start-box" to="/starhere">
+          <Link className="start-box" to="/start">
             <div className="overlay2"></div>
             <h5>NEW TO PASSION CITY CHURCH?</h5>
             <h2>START HERE</h2>
             <p>
-              Our desire is that everybody at Passion City Church feels seen and
-              can find lasting community
+              Our desire is that everybody at Amsterdam City Church feels seen
+              and can find lasting community
             </p>
-            <h4>
-              START HERE <FontAwesomeIcon icon={faArrowRight} />
-            </h4>
+            <h4>START HERE &rarr;</h4>
           </Link>
         </div>
         <div className="slides">
-          <Link className="start-box" to="/signup">
+          <Link className="start-box" to="/contact">
             <div className="overlay2"></div>
-            <h5>NEW TO PASSION CITY CHURCH?</h5>
-            <h2>START HERE</h2>
-            <p>
-              Our desire is that everybody at Passion City Church feels seen and
-              can find lasting community
-            </p>
-            <h4>
-              SIGN UP <FontAwesomeIcon icon={faArrowRight} />
-            </h4>
+            <h5>BE IN THE KNOW</h5>
+            <h2>CONNECT WITH US</h2>
+            <p>Join our email list to get updates from Amsterdam City Church</p>
+            <h4>SIGN UP &rarr;</h4>
           </Link>
         </div>
 
         <div className="slides">
           <Link className="start-box" to="/us">
             <div className="overlay2"></div>
-            <h5>NEW TO PASSION CITY CHURCH?</h5>
-            <h2>START HERE</h2>
+            <h5> WHO WE ARE AT AMSTERDAM CITY CHURCH</h5>
+            <h2>US</h2>
             <p>
-              Our desire is that everybody at Passion City Church feels seen and
-              can find lasting community
+              Get to know more about who we are and what we believe here at
+              Amsterdam city church
             </p>
-            <h4>
-              {" "}
-              LEARN MORE <FontAwesomeIcon icon={faArrowRight} />
-            </h4>
+            <h4> LEARN MORE &rarr;</h4>
           </Link>
         </div>
         <div className="slides">
-          <Link className="start-box" to="/give">
+          <a
+            className="start-box"
+            href="https://useplink.com/payment/mK4x0NBv4nqc1tnDJEPT/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <div className="overlay2"></div>
-            <h5>NEW TO PASSION CITY CHURCH?</h5>
-            <h2>START HERE</h2>
+            <h5>THAT WE MAY</h5>
+            <h2>GIVE</h2>
+            <p>Your Generosity is Making a Difference</p>
+            <h4>GIVE &rarr;</h4>
+          </a>
+        </div>
+        <div className="slides">
+          <Link className="start-box" to="/serve">
+            <div className="overlay2"></div>
+            <h5>SERVE</h5>
+            <h2>SERVICE</h2>
             <p>
-              Our desire is that everybody at Passion City Church feels seen and
-              can find lasting community
+              One of the best ways to meet people, develop relationships, and
+              grow as a follower of Christ is to serve the church
             </p>
-            <h4>
-              GIVE <FontAwesomeIcon icon={faArrowRight} />
-            </h4>
+            <h4>SERVE &rarr;</h4>
           </Link>
         </div>
         <div className="slides">
-          <Link className="start-box" to="/holder">
+          <Link className="start-box" to="/outreach">
             <div className="overlay2"></div>
-            <h5>NEW TO PASSION CITY CHURCH?</h5>
-            <h2>START HERE</h2>
+            <h5>SHOWING LOVE</h5>
+            <h2>OUTREACH</h2>
             <p>
-              Our desire is that everybody at Passion City Church feels seen and
-              can find lasting community
+              It is love that connects people all over the world. God is love.
+              It is God’s plan to bring love and hope to a hurting world.
             </p>
-            <h4>
-              DOOR HOLDERS <FontAwesomeIcon icon={faArrowRight} />
-            </h4>
+            <h4>REACH OUT &rarr;</h4>
           </Link>
         </div>
         <div className="slides">
-          <Link className="start-box" to="/core">
+          <Link className="start-box" to="/prayer-request">
             <div className="overlay2"></div>
-            <h5>NEW TO PASSION CITY CHURCH?</h5>
-            <h2>START HERE</h2>
+            <h5>LET US PRAY FOR YOU</h5>
+            <h2>PRAYER REQUEST</h2>
             <p>
-              Our desire is that everybody at Passion City Church feels seen and
-              can find lasting community
+             We would love to pray for you.
             </p>
-            <h4>
-              {" "}
-              LEARN MORE <FontAwesomeIcon icon={faArrowRight} />
-            </h4>
-          </Link>
-        </div>
-        <div className="slides">
-          <Link className="start-box" to="/online">
-            <div className="overlay2"></div>
-            <h5>NEW TO PASSION CITY CHURCH?</h5>
-            <h2>START HERE</h2>
-            <p>
-              Our desire is that everybody at Passion City Church feels seen and
-              can find lasting community
-            </p>
-            <h4>
-              {" "}
-              JOIN US ONLINE <FontAwesomeIcon icon={faArrowRight} />
-            </h4>
+            <h4> PRAYER REQUEST &rarr;</h4>
           </Link>
         </div>
       </Carousel>

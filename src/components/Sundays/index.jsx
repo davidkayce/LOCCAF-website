@@ -24,7 +24,7 @@ const Sundays = () => {
         </div>
         <div className="pic-contents">
           <div>SUNDAYS AT</div>
-          <div>TRILITH</div>
+          <div>AMSTERDAM</div>
         </div>
       </div>
       <div className="rhythmCon">
@@ -50,7 +50,7 @@ const Sundays = () => {
             <p>
               We gather each Sunday and there is a spot for everyone of all ages
               to join us for church. Read below to learn more about what to
-              expect at Passion City Church @ Trilith.
+              expect at City Church District @ AMSTERDAM.
             </p>
           </div>
           <div className="right2">
@@ -58,7 +58,7 @@ const Sundays = () => {
             <ul>
               <li>
                 We gather on Sundays at 9:30 am! We are located at
-                <a href="#">210 Trilith Parkway.</a>
+                <a href="#">Parkhof 67, 1106SZ Amsterdam.</a>
               </li>
             </ul>
           </div>
@@ -66,16 +66,14 @@ const Sundays = () => {
             <h3>Is There A Place For My Kids?</h3>
             <ul>
               <li>
-                bloom + Passion Kids are the rooms of our House designed for
-                your kids! bloom (6 Weeks – Pre-K) and Passion Kids (K-5th) both
-                meet in the <b> Roam building on the second floor</b> (210
-                Trilith Pkwy Suite 100, Fayetteville, GA 30214). We have the
+                bloom + Kids are the rooms of our House designed for
+                your kids! bloom (6 Weeks – Pre-K) and  Kids (K-5th) both
+                meet in the <b> Roam building on the second floor</b>. We have the
                 best Door Holders that will help your family check-in and take
                 great care of your kids while you attend the gathering. Check-in
                 opens as early as 8:45 am, and you can plan to pick up your
-                child after the gathering ends. Passion Students (6th-8th) will
-                meet in the Shipyard (125 Shepperton Way, Fayetteville, GA
-                30214).
+                child after the gathering ends.  Students (6th-8th) will
+                meet in the Shipyard (Parkhof 67, 1106SZ Amsterdam).
               </li>
             </ul>
           </div>
@@ -88,7 +86,7 @@ const Sundays = () => {
                 shuttle can take you over to the main gathering after you drop
                 off your child. If you do not have any children to drop off, you
                 can park in the lot located right outside the Town Stage and the
-                Shipyard (125 Shepperton Way, Fayetteville, GA 30214). The Town
+                Shipyard . The Town
                 Stage is where we will have our main gatherings. We will have
                 Door Holders scattered throughout to help direct you where you
                 need to go!
@@ -107,24 +105,24 @@ const Sundays = () => {
         <div className="five-right">
           <div className="body">
             <div className="top">
-              <h1>THE FIVE</h1>
+              <h1>THE ENCOUNTER</h1>
             </div>
             <div className="body-bot">
               <div className="first">
                 <h4>JOIN US</h4>
                 <p>
-                  We are gathering five times for The Five through the spring at
-                  Passion City Church. Make plans to join us at the next
+                  We are gathering five times for The ENCOUNTER through the spring at
+                   City Church District. Make plans to join us at the next
                   gathering on March 19 at our Cumberland location!
                 </p>
               </div>
               <div className="second">
                 <h4>Upcoming Gathering Dates</h4>
                 <div className="dates">
-                  <p>February 19 // 515</p>
-                  <p>March 19 // Cumberland</p>
-                  <p>April 23 // 515</p>
-                  <p>May 7 // 515</p>
+                  <p>February 19 // Amsterdam</p>
+                  <p>March 19 // Habour</p>
+                  <p>April 23 // Amsterdam</p>
+                  <p>May 7 // Habour</p>
                 </div>
               </div>
             </div>
@@ -145,13 +143,13 @@ const Sundays = () => {
           </div>
           <div className="uspic-contents">
             <div className="overlaid"></div>
-            <h1>GET WEEKLY UPDATES FROM PASSION CITY CHURCH</h1>
+            <h1>GET WEEKLY UPDATES FROM AMSTERDAM CITY CHURCH</h1>
             <p>
               Join our House News email list to stay up-to-date on all things
-              Passion City.
+               ACC.
             </p>
             <Link>
-              SIGN UP <FontAwesomeIcon icon={faArrowRight} />
+              SIGN UP &rarr;
             </Link>
           </div>
         </div>

@@ -76,6 +76,13 @@
                     }
 
                 }
+                a{
+                    width: fit-content;
+                    img{
+                        height: 2rem;
+                    }
+                }
+             
             }
             .top-mid{
                 width: 400px;
@@ -125,8 +132,9 @@
                 flex: 1 1 auto;
                 margin-top: 1rem;
 
-                h4{
-                    font-size: 15px;
+                h2{
+                    font-size: 20px;
+                    font-weight: 500;
                 }
 
                 // 
@@ -144,8 +152,11 @@
                     // font-weight: 700;
 
                     #blue{
-                            color: rgb(84, 84, 225);
+                            color: aqua;
                         }
+                    h5{
+                        word-spacing: 3px;
+                    }
                 }
             }
             .body-right{
@@ -160,7 +171,6 @@
                     text-decoration: none;
                     display: flex;
                     align-items: center;
-                    border-bottom: 1px solid white;
                     padding: 5px;
                     padding-bottom: 10px;
                     // flex-direction: column;
@@ -174,6 +184,7 @@
                     .logo1{
                         font-size: 27px;
                         padding-top: 10px;
+                        font-weight: 500;
                     }
                 
                     // ul li{
@@ -182,38 +193,46 @@
                 
                     .dropdown{
                         width: max-content;
-                        display: relative;
+                        position: relative;
                         z-index: 100;
                         
                         .drop-btn{
                             background: none;
                             border: none;
                             color: white;
+                            opacity: 0.8;
                             font-weight: 600;
                         }
                         
                         .menu{
                             opacity: 0;
-                            transform: scale(0);
-                            height: 0px;
+                            display: none;
+                            // transform: scale(0);
+                            height: 0;
                            position: absolute;
                            z-index: 101;
-                           transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+                           transition: 1.2s ease-in-out;
             
                             a{
                                 font-size: 14px;
-                                
+                                opacity: .6;
+
+                                &:hover{
+                                opacity: 1;
+
+                                }
                             }
                            
                         }
                         &:hover{
                             .drop-btn{
-                                opacity: 0.6;
+                                opacity: 1;
                             }
                           .menu{
                             opacity: 1;
-                            transform: scale(1);
-                          }
+                            display: block;
+                            height: 3rem;
+                        }
                         }
                        
                     }
@@ -223,6 +242,8 @@
                 }
 
                 .main-right{
+                    border-top: 1px solid white;
+
                     .right-bod{
                         display: flex;
                         flex-wrap: wrap;
@@ -253,6 +274,7 @@
                         }
                     }
                 }
+                
             
                 .handles{
                     padding: 5px;
@@ -335,10 +357,12 @@
        }
     }
 }
+
 @media (width <= 920px) {
     .menu-modalCon{
         background-color: black;
         // height: unset;
+
         .overlay{
             top: 0;
             height: 100%;
@@ -379,11 +403,13 @@
                 .logo1{
                     font-size: 37px;
                 }
+              
             }
             .main-right{
                 display: flex;
                 flex-direction: column;
                 gap: 0.5rem;
+
             // border: 1px solid white;
 
                 // height: 300px;
@@ -400,14 +426,17 @@
                     }
                 }
             }
+            .disappear{
+                opacity: 1;
+            }
 
             .hidden-menu{
+                display: flex;
+                flex-direction: column;
                padding: 3px;
-               padding-bottom: 1rem;
-               border-bottom:1px solid white ;
                width: 100%;
-               h6{
-                padding-bottom: 9px;
+               a{
+                line-height: 150%;
                 font-size: 12px;
                font-weight: 400;
 
@@ -430,7 +459,7 @@
             height: unset;
             gap: 1rem;
             .menu-body{
-                gap: 0rem;
+                gap: 1.2rem;
                 // height: 90%;
                 margin-bottom: 5rem;
                 border-bottom: unset;
@@ -462,7 +491,7 @@
                         display: flex;
                         flex-direction: column;
                         gap: 0.7rem;
-                        height: 70%;
+                        height: 60%;
                         // border: 1px solid white;
                         
                         .right-bod{
@@ -487,6 +516,11 @@
                         .logo1{
                             font-size: 21px;
                         }
+                        .dropdown{
+                            .menu{
+                                position: relative;
+                            }
+                        }
                     }
                 }
                 
@@ -498,12 +532,12 @@
 @media (width <= 420px) {
     .menu-modalCon{
         // height: unset;
-        .overlay{
-            // height: 190vh;
-        }
+        
         .modal{
            
         .menu-body{
+            gap: 1.2rem;
+
             .body-right{
                 height: 86vh;
                 // border: 1px solid white;
@@ -531,14 +565,11 @@
 }
 @media (width <= 399px) {
     .menu-modalCon{
-        border: 1px solid white;
-        .overlay{
-            // height: unset;
-
-        }
+      
         .modal{
             height: 100%;
             .menu-body{
+                gap: 1.2rem;
                 .body-right{
                     height: 90vh;
                     // display: none;
@@ -561,12 +592,10 @@
 }
 @media (width <= 375px) {
     .menu-modalCon{
-        .overlay{
-            // height: 250vh;
-
-        }
+      
         .modal{
             .menu-body{
+                gap: 1.2rem;
                 .body-right{
                     height: 115vh;
                     .main-right{
@@ -587,10 +616,7 @@
 }
 @media (width <= 300px) {
     .menu-modalCon{
-        .overlay{
-            // height: 250vh;
-
-        }
+        
         .modal{
             .menu-body{
                 .body-right{
@@ -618,6 +644,13 @@
                 display: none;
                
             }
+            .main-right{
+                transition: .3s ease-in;
+
+            }
+            .disappear{
+                opacity: 0;
+            } 
         }
     }
 }

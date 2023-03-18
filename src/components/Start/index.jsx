@@ -2,8 +2,10 @@ import React from "react";
 import Worship from "../../assets/Worship.mp4";
 import Us from "../../assets/us.jpg";
 import House from "../../assets/House.jpg";
-import Leader from "../../assets/leadership.jpg";
+// import Leader from "../../assets/leadership.jpg";
 import WorshipPic from "../../assets/start-worship.jpg";
+import Leader from "../../assets/leader.jpg";
+import Baptistm from "../../assets/Batist.jpg";
 import Welcome from "../../assets/welcome.jpg";
 import Holder from "../../assets/holder.jpg";
 import Pic5 from "../../assets/515.jpg";
@@ -13,15 +15,15 @@ import Community from "../../assets/community.jpg";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import Footer from '../Footer'
+import Footer from "../Footer";
 import { FiChevronDown } from "react-icons/fi";
-import { useEffect } from 'react'
+import { useEffect } from "react";
 import "./index.scss";
 
 const Start = () => {
   useEffect(() => {
-    document.title = "Start Here"
- }, []);
+    document.title = "Start Here";
+  }, []);
   return (
     <>
       <div className="startCon">
@@ -29,13 +31,13 @@ const Start = () => {
           <div className="godCon">
             <div className="for-god">
               <div className="god-text">
-                <h1>FOR GOD. FOR PEOPLE. FOR THE CITY. FOR THE WORLD.</h1>
+                <h1>THE MORE YOU KNOW JESUS, THE MORE YOU KNOW YOU.</h1>
               </div>
               <div className="text-vid">
                 <div className="text-side">
                   <h3>EVERYBODY CAN KNOW THEY MATTER TO GOD</h3>
                   <p>
-                    Our desire is that everybody at Passion City Church feels
+                    Our desire is that everybody at City Church District feels
                     seen and can find lasting community. This gospel is for
                     everybody and everyone has a place here. Read below to learn
                     more about where to start.
@@ -72,7 +74,7 @@ const Start = () => {
                 <h1>WHO WE ARE</h1>
               </div>
               <div className="kingdom-pics">
-                <Link className="k-pics kp1">
+                <Link className="k-pics kp1" to="/us">
                   <img src={Us} alt="" />
                   <div className="k-contents">
                     <h6 className="color">WHO WE ARE AND WHAT WE BELIEVE</h6>
@@ -89,28 +91,29 @@ const Start = () => {
                 <Link className="k-pics kp2">
                   <img src={House} alt="" />
                   <div className="k-contents">
-                    <h6 className="color">WHO WE ARE AND WHAT WE BELIEVE</h6>
+                    <h6 className="color">STAY CONNECTED</h6>
                     <h1>LEARN ABOUT US</h1>
-                    <h6>LEARN MORE</h6>
+                    <h6>SIGN UP HERE</h6>
                     <p>
-                      We are a Jesus Church. A small tribe of His followers
-                      coonected by our common faith and a deep desire to see our
-                      city [and the world] come to know His power and beauty.
-                      Learn more about who we are and what we believe.
+                      We share all of the important information happening
+                      throughout our house. Join our email list today to receive
+                      latest news and all of the other important communication
+                      we send out.
                     </p>
                   </div>
                 </Link>
                 <Link className="k-pics kp3">
                   <img src={Leader} alt="" />
                   <div className="k-contents">
-                    <h6 className="color">WHO WE ARE AND WHAT WE BELIEVE</h6>
-                    <h1>LEARN ABOUT US</h1>
+                    <h6 className="color">Amsterdam</h6>
+                    <h1>OUR LEADERSHIP</h1>
                     <h6>LEARN MORE</h6>
                     <p>
-                      We are a Jesus Church. A small tribe of His followers
-                      coonected by our common faith and a deep desire to see our
-                      city [and the world] come to know His power and beauty.
-                      Learn more about who we are and what we believe.
+                      We may be biased, but we think we have the very best team
+                      of people around leading our House week in and week out.
+                      City church district is led by an incredible team of some
+                      of the most gifted, creative, winsome and hard-working
+                      people.
                     </p>
                   </div>
                 </Link>
@@ -128,11 +131,11 @@ const Start = () => {
                   <img src={WorshipPic} alt="" />
                 </div>
               </div>
-              
+
               <div className="uspic-contents">
                 <h1>JOIN US ON A SUNDAY</h1>
                 <p>
-                  Our rhythm at Passion City Church is to gather together to
+                  Our rhythm at City Church District is to gather together to
                   worship and scatter to serve. We have something for everyone
                   on Sundays so we hope you join us for an upcoming Gathering.
                   Learn more about Sundays at each of our locations below.
@@ -146,13 +149,10 @@ const Start = () => {
                     <div className="menu">
                       <ul>
                         <li>
-                          <a href="#">CUMBERLAND</a>
+                          <a href="#">Amsterdam</a>
                         </li>
                         <li>
-                          <a href="#">D.C.</a>
-                        </li>
-                        <li>
-                          <a href="#">TRILITH</a>
+                          <a href="#">Harbour</a>
                         </li>
                       </ul>
                     </div>
@@ -166,9 +166,9 @@ const Start = () => {
             <div className="signUp">
               <h2>Sign Up for Email Updates</h2>
               <p>
-                Sign up for email updates from Passion City Church to stay up to
-                date on our gathering times, locations, and upcoming moments at
-                Passion City Church.
+                Sign up for email updates from City Church District to stay up
+                to date on our gathering times, locations, and upcoming moments
+                at City Church District.
               </p>
               <form action="">
                 <label htmlFor="firstname">First name</label>
@@ -188,10 +188,10 @@ const Start = () => {
                   <h1>WELCOME TO CHURCH</h1>
                 </div>
                 <div className="wel-down">
-                  <h3>DISCOVER THE HEARTBEAT OF PASSION CITY CHURCH</h3>
+                  <h4>DISCOVER THE HEARTBEAT OF CITY CHURCH DISTRICT</h4>
                   <p>
                     Welcome to Church is a 2-part opportunity to discover the
-                    heartbeat of Passion City Church. Join us to learn more
+                    heartbeat of City Church District. Join us to learn more
                     about the beliefs, culture, family and get the chance to
                     meet the leadership of our house. Sign up for an upcoming
                     session today!
@@ -199,18 +199,16 @@ const Start = () => {
                   <div className="location-drop">
                     <div className="dropdown">
                       <button className="drop-btn">
-                        CHOOSE YOUR LOCATION <FiChevronDown  fill="#000" size={20}/>
+                        CHOOSE YOUR LOCATION
+                        <FiChevronDown fill="#000" size={20} />
                       </button>
                       <div className="menu">
                         <ul>
                           <li>
-                            <a href="#">CUMBERLAND</a>
+                            <a href="#">Amsterdam</a>
                           </li>
                           <li>
-                            <a href="#">D.C.</a>
-                          </li>
-                          <li>
-                            <a href="#">TRILITH</a>
+                            <a href="#">Rotherdam</a>
                           </li>
                         </ul>
                       </div>
@@ -224,74 +222,75 @@ const Start = () => {
             </div>
           </div>
           <div className="growCon">
-          <div className="grow">
-            <div className="grow-top">
-              <h1>GROW CLOSER TO JESUS</h1>
+            <div className="grow">
+              <div className="grow-top">
+                <h1>GROW CLOSER TO JESUS</h1>
+              </div>
+              <div className="grow-bot">
+                <Link className="k-pics kp1">
+                  <img src={Baptistm} alt="" />
+                  <div className="k-contents">
+                    <h6 className="color">MOVING FROM DEATH TO LIFE</h6>
+                    <h1>BAPTISM</h1>
+                    <h6>LEARN MORE</h6>
+                    <p>
+                      We are a Jesus Church. A small tribe of His followers
+                      coonected by our common faith and a deep desire to see our
+                      city [and the world] come to know His power and beauty.
+                      Learn more about who we are and what we believe.
+                    </p>
+                  </div>
+                </Link>
+                <Link className="k-pics kp1">
+                  <img src={House} alt="" />
+                  <div className="k-contents">
+                    <h6 className="color">
+                      PRACTICAL, THEOLOGICAL, DISCIPLESHIP
+                    </h6>
+                    <h1>BIBLE ACADEMY</h1>
+                    <h6>LEARN MORE</h6>
+                    <p>
+                      We are a Jesus Church. A small tribe of His followers
+                      coonected by our common faith and a deep desire to see our
+                      city [and the world] come to know His power and beauty.
+                      Learn more about who we are and what we believe.
+                    </p>
+                  </div>
+                </Link>
+                <Link className="k-pics kp1">
+                  <img src={Leader} alt="" />
+                  <div className="k-contents">
+                    <h6 className="color">WHO WE ARE AND WHAT WE BELIEVE</h6>
+                    <h1>LEARN ABOUT US</h1>
+                    <h6>LEARN MORE</h6>
+                    <p>
+                      We are a Jesus Church. A small tribe of His followers
+                      coonected by our common faith and a deep desire to see our
+                      city [and the world] come to know His power and beauty.
+                      Learn more about who we are and what we believe.
+                    </p>
+                  </div>
+                </Link>
+              </div>
             </div>
-            <div className="grow-bot">
-              <Link className="k-pics kp1">
-                <img src={Us} alt="" />
-                <div className="k-contents">
-                  <h6  className="color">WHO WE ARE AND WHAT WE BELIEVE</h6>
-                  <h1>LEARN ABOUT US</h1>
-                  <h6>LEARN MORE</h6>
-                  <p>
-                    We are a Jesus Church. A small tribe of His followers
-                    coonected by our common faith and a deep desire to see our
-                    city [and the world] come to know His power and beauty.
-                    Learn more about who we are and what we believe.
-                  </p>
-                </div>
-              </Link>
-              <Link className="k-pics kp1">
-                <img src={House} alt="" />
-                <div className="k-contents">
-                  <h6 className="color">WHO WE ARE AND WHAT WE BELIEVE</h6>
-                  <h1>LEARN ABOUT US</h1>
-                  <h6>LEARN MORE</h6>
-                  <p>
-                    We are a Jesus Church. A small tribe of His followers
-                    coonected by our common faith and a deep desire to see our
-                    city [and the world] come to know His power and beauty.
-                    Learn more about who we are and what we believe.
-                  </p>
-                </div>
-              </Link>
-              <Link className="k-pics kp1">
-                <img src={Leader} alt="" />
-                <div className="k-contents">
-                  <h6 className="color">WHO WE ARE AND WHAT WE BELIEVE</h6>
-                  <h1>LEARN ABOUT US</h1>
-                  <h6>LEARN MORE</h6>
-                  <p>
-                    We are a Jesus Church. A small tribe of His followers
-                    coonected by our common faith and a deep desire to see our
-                    city [and the world] come to know His power and beauty.
-                    Learn more about who we are and what we believe.
-                  </p>
-                </div>
-              </Link>
-            </div>
-          </div>
           </div>
           <div className="holderCon">
             <div className="holder">
               <div className="holder-left">
                 <div className="hol-top">
-                  <h1>BECOME A DOOR HOLDER</h1>
+                  <h1>SERVICE</h1>
                 </div>
                 <div className="hol-down">
                   <h3>THAT WE MAY</h3>
                   <p>
-                    Our Door Holders are crucial to our House. Door Holders are
-                    those who've been on the inside and experienced Jesus and
-                    are willing to open the door for others to be welcomed in.
-                    Learn more about what it means to be a Door Holder at
-                    Passion City Church!
+                    One of the best ways to meet people, develop relationships,
+                    and grow as a follower of Christ is to serve the church. And
+                    it’s not just on the weekends! Serving opportunities are
+                    available seven days a week.
                   </p>
-                  <a href="#">
-                    <b> BECOME A DOOR HOLDER </b>
-                    <FontAwesomeIcon icon={faArrowRight} />
+                  <a href="/serve">
+                    <b> SERVE</b>
+                    &rarr;
                   </a>
                 </div>
               </div>
@@ -319,54 +318,44 @@ const Start = () => {
                 <h5>BIG CHURCH MADE SMALL</h5>
                 <h1>COMMUNITY</h1>
                 <p>
-                  Our desire is for everyone who attends Passion City Church to
+                  Our desire is for everyone who attends  City Church District to
                   find lasting community here. Through Community Groups and
                   Connect Groups, you can find smaller groups of people to live
                   life with here. Click below to learn more and find your group!
                 </p>
-                <a href="#"><b>FIND COMMUNITY</b> <FontAwesomeIcon icon={faArrowRight} /> </a>
+                <a href="#">
+                  <b>FIND COMMUNITY</b> &rarr;{" "}
+                </a>
               </div>
             </div>
           </div>
           <div className="selectCon">
             <div className="select">
-                <div className="select-top">
-                    <h6>SELECT A LOCATION</h6>
-                    <h1>LEARN MORE ABOUT OUR ATLANTA LOCATIONS</h1>
-                </div>
-                <div className="select-bot">
-                <Link className="k-pics kp1">
-                <img src={Pic5} alt="" />
-                <div className="k-contents">
-                  <h6 className="color">515 GARSON DRIVE</h6>
-                  <h1>515</h1>
-                  <h6>LEARN MORE</h6>
-                 
-                </div>
-              </Link>
-              <Link className="k-pics kp1">
-                <img src={Cumber} alt="" />
-                <div className="k-contents">
-                  <h6 className="color">2625 CUMBERLAND PKWY</h6>
-                  <h1>CUMBERLAND </h1>
-                  <h6>LEARN MORE</h6>
-                 
-                </div>
-              </Link>
-              <Link className="k-pics kp1">
-                <img src={Trilith} alt="" />
-                <div className="k-contents">
-                  <h6 className="color">250 TRILITH PARKWAY</h6>
-                  <h1>TRILITH</h1>
-                  <h6>LEARN MORE</h6>
-                 
-                </div>
-              </Link>
-                </div>
+              <div className="select-top">
+                <h6>SELECT A LOCATION</h6>
+                <h1>LEARN MORE ABOUT OUR LOCATIONS</h1>
+              </div>
+              <div className="select-bot">
+                <Link className="k-pics kp1" to='#'>
+                  <img src={Pic5} alt="" />
+                  <div className="k-contents">
+                    <h6 className="color">AMSTERDAM DRIVE</h6>
+                    <h1>AMSTERDAM</h1>
+                    <h6>LEARN MORE</h6>
+                  </div>
+                </Link>
+                <Link className="k-pics kp1" to='#'>
+                  <img src={Cumber} alt="" />
+                  <div className="k-contents">
+                    <h6 className="color">HABOUR</h6>
+                    <h1>HABOUR </h1>
+                    <h6>LEARN MORE</h6>
+                  </div>
+                </Link>
+              </div>
             </div>
-
           </div>
-          <Footer/>
+          <Footer />
         </div>
       </div>
     </>

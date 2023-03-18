@@ -1,11 +1,14 @@
 import React from "react";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FiChevronDown } from "react-icons/fi";
+import Logo from "../../assets/logo.png";
 import "./index.scss";
 import Menu from "../Navbar/Menu";
 
 const Navbar = () => {
+  const [roth, setroth] = useState(JSON.parse(localStorage.getItem('roth')) || "");
+
   const [openMenu, setOpenMenu] = useState(false);
 
   if (openMenu) {
@@ -14,28 +17,140 @@ const Navbar = () => {
     document.body.classList.remove("active-modal");
   }
 
-  return (
-    <>
-      {openMenu && <Menu setOpenMenu={setOpenMenu} openMenu={openMenu} />}
+  const handleOpenRoth = () =>{
+    setroth("roth")
+    setOpenMenu(false)
+ }
+ const handleCloseRoth = () =>{
+  setroth("")
+  setOpenMenu(false)
+
+}
+
+  useEffect(() =>{
+    if (roth !== ""){
+      handleOpenRoth()
+    }
+   },[roth])
+   useEffect(() => {
+
+    window.localStorage.setItem('roth', JSON.stringify(roth));
+
+  }, [roth]);
+
+  if (roth === ""){
+    return (
+      <>
+        {openMenu && <Menu setOpenMenu={setOpenMenu} openMenu={openMenu} handleOpenRoth={handleOpenRoth} handleCloseRoth={handleCloseRoth}/>}
+        <div className="nav-bar">
+          <div className="logo1-con">
+            <Link className="logo1" to="/">
+              <h3>City Church District</h3>
+              <p>
+                <i> The more you know Jesus. The more you know you!</i>
+              </p>
+            </Link>
+            <Link to="/" >
+              <img src={Logo} alt=""/>
+            </Link>
+            <div className="dropdown">
+              <button className="drop-btn">
+              Amsterdam <FiChevronDown />
+              </button>
+              <div className="menu">
+                <ul>
+                  <li>
+                    <Link
+                      to="/rotherdam" 
+                      onClick={handleOpenRoth}>Rotherdam</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+         
+  
+          <nav>
+            <NavLink
+              exact="true"
+              activeclassname="active"
+              to="/start"
+              className="hide"
+            >
+              START HERE
+            </NavLink>
+            <NavLink
+              exact="true"
+              activeclassname="active"
+              to="/amsterdam/sundays"
+              className="hide"
+            >
+              SUNDAYS
+            </NavLink>
+            <a
+              rel="noreferrer"
+              target='_blank'
+              href="https://useplink.com/payment/mK4x0NBv4nqc1tnDJEPT/"
+              className="hide"
+            >
+              GIVE
+            </a>
+               <div className="dropdown">
+              <button className="drop-btn hide ">
+                WATCH 
+              </button>
+              <div className="menu hide">
+                <ul>
+                  <li>
+                    <a href="https://us02web.zoom.us/j/8812443296?pwd=OWtFazlVUE4xZFlFVlBpVmhvZ2dFdz09" target='_blank' rel="noreferrer">ZOOM</a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/channel/UCvx240pRUOBgxMo4ZRNscxA?sub_confirmation=1" target='_blank' rel="noreferrer">YOUTUBE</a>
+                  </li>
+                  <li>
+                    <a href="https://open.spotify.com/show/6iOGsfojd34b5SBPlPOShJ?si=71jdz_htT3CMu6jeTEgdXQ" target='_blank' rel="noreferrer">SPOTIFY</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button
+              exact="true"
+              activeclassname="active"
+              className="menu"
+              onClick={() => setOpenMenu(true)}
+            >
+              MENU
+            </button>
+          </nav>
+        </div>
+      </>
+    );
+  }
+  if (roth === "roth" ){
+    return(
+      <>
+      {openMenu && <Menu setOpenMenu={setOpenMenu} openMenu={openMenu} handleOpenRoth={handleOpenRoth} handleCloseRoth={handleCloseRoth}/>}
       <div className="nav-bar">
         <div className="logo1-con">
-          <Link className="logo1" to="/">
-            <h3>Amsterdam City Church</h3>
+          <Link className="logo1" to="/rotherdam">
+            <h3>City Church District</h3>
             <p>
               <i> The more you know Jesus. The more you know you!</i>
             </p>
           </Link>
+          <Link to="/" >
+              <img src={Logo} alt=""/>
+            </Link>
           <div className="dropdown">
             <button className="drop-btn">
-              GLOBAL <FiChevronDown />
+            Rotherdam <FiChevronDown />
             </button>
             <div className="menu">
               <ul>
                 <li>
-                  <a href="#">Amsterdam</a>
-                </li>
-                <li>
-                  <a href="#">Harbour</a>
+                  <Link
+                   to="/" 
+                   onClick={handleCloseRoth}>Amsterdam</Link>
                 </li>
               </ul>
             </div>
@@ -44,18 +159,18 @@ const Navbar = () => {
        
 
         <nav>
-          <NavLink
+          {/* <NavLink
             exact="true"
             activeclassname="active"
             to="/start"
             className="hide"
           >
             START HERE
-          </NavLink>
+          </NavLink> */}
           <NavLink
             exact="true"
             activeclassname="active"
-            to="/trilith/sundays"
+            to="/rotherdam/sundays"
             className="hide"
           >
             SUNDAYS
@@ -75,29 +190,31 @@ const Navbar = () => {
             <div className="menu">
               <ul>
                 <li>
-                  <a href="https://us02web.zoom.us/j/8812443296?pwd=OWtFazlVUE4xZFlFVlBpVmhvZ2dFdz09" target='_blank'>ZOOM</a>
+                  <a href="https://us02web.zoom.us/j/8812443296?pwd=OWtFazlVUE4xZFlFVlBpVmhvZ2dFdz09" target='_blank' rel="noreferrer">ZOOM</a>
                 </li>
                 <li>
-                  <a href="https://www.youtube.com/channel/UCvx240pRUOBgxMo4ZRNscxA?sub_confirmation=1" target='_blank'>YOUTUBE</a>
+                  <a href="https://www.youtube.com/channel/UCvx240pRUOBgxMo4ZRNscxA?sub_confirmation=1" target='_blank' rel="noreferrer">YOUTUBE</a>
                 </li>
                 <li>
-                  <a href="https://open.spotify.com/show/6iOGsfojd34b5SBPlPOShJ?si=71jdz_htT3CMu6jeTEgdXQ" target='_blank'>SPOTIFY</a>
+                  <a href="https://open.spotify.com/show/6iOGsfojd34b5SBPlPOShJ?si=71jdz_htT3CMu6jeTEgdXQ" target='_blank' rel="noreferrer">SPOTIFY</a>
                 </li>
               </ul>
             </div>
           </div>
-          <NavLink
+          <button
             exact="true"
             activeclassname="active"
             className="menu"
             onClick={() => setOpenMenu(true)}
           >
             MENU
-          </NavLink>
+          </button>
         </nav>
       </div>
     </>
-  );
+    )
+  }
+  
 };
 
 export default Navbar;

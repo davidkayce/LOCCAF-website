@@ -35,7 +35,7 @@ const Locations = () => {
           </div>
         <div className="tril-text">
             <div className="main-text">
-            <div className="place">CITY CHURCH DISTRICT</div>
+            <div className="city">CITY CHURCH DISTRICT</div>
           <div
             // className="bloom"
             onMouseEnter={() => setHoverVid1(true)}

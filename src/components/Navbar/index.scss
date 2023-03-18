@@ -28,6 +28,13 @@ body.active-modal{
             }
            
         }
+        a{
+            width: fit-content;
+
+            img{
+                height: 3rem;
+            }
+        }
     
         // ul li{
         //     color: white;
@@ -43,6 +50,8 @@ body.active-modal{
                 border: none;
                 color: white;
                 font-weight: 600;
+                align-items: center;
+                display: flex;
             }
             
             .menu{
@@ -59,7 +68,12 @@ body.active-modal{
  
                  a{
                      font-size: 14px;
-                     
+                     transition: .2s ease-in-out;
+                     opacity: .7;
+                     &:hover{
+                     opacity: 1;
+
+                     }
                  }
                 
              }
@@ -156,7 +170,7 @@ body.active-modal{
         .dropdown{
             display: flex;
             flex-direction: column;
-            // gap: 4rem;
+            gap: 10px;
             // width: 7rem;
             height: 6rem;
             // z-index: 100;
@@ -169,9 +183,10 @@ body.active-modal{
                 background: none;
                 border: none;
                 color: white;
-                font-weight: 600;
+                font-weight: 500;
                 font-size: 12px;
                 position: relative;
+                cursor: pointer;
                 // bottom: 1%;
                 
 
@@ -180,37 +195,30 @@ body.active-modal{
             .menu{
                 
                 opacity: 0;
-                top: 20%;
-                right: -49%;
                 // left: 0;
              //    bottom: 0;
                  height: 1%;
-                position: absolute;
+                position: relative;
                 z-index: 101;
                 transition: 1.2s ease-in-out;
              //    bottom: 15px;
                 overflow: hidden;
-                background-color: #fff;
-                // border: 1px solid white;
-                width: 6rem;
+                // width: 6rem;
                 
  
                  a{
                      font-size: 12px;
-                color: #000;
 
-                &:hover{
-                    color: aqua;
-                }
+               
                      
                  }
-                 ul{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 5px;
-                    padding: 5px;
+                //  ul{
+                //     display: flex;
+                //     flex-direction: column;
+                //     gap: 5px;
+                //     padding: 5px;
 
-                 }
+                //  }
                 
              }
              &:hover{
@@ -225,19 +233,27 @@ body.active-modal{
         .menu{
             position: relative;
             transition: all 0.3s ease-out;
+            border: none;
+            outline: 0;
+            cursor: pointer;
+            background: none;
+            font-size: 12px;
+            font-weight: 500;
+            height: fit-content;
+
             &::after{
                 content: '';
                 position: absolute;
-                width: 60%;
+                width: 61%;
                 height: 0.175rem;
-                left: 21%;
+                left: 17%;
                 // right: 5;
-                bottom: -20px;
+                bottom: -5px;
                 background: #fff;
                 transition: all 0.3s ease-out;
 
             }
-
+        
             &:hover{
                 color: #fff;
             }
@@ -247,11 +263,47 @@ body.active-modal{
        
     }
 }
-@media (width <= 920px) {
+@media (width <= 950px) {
     nav{
         .hide{
             display: none;
         }
+        
     }
 }
+@media (width >= 800px) {
+    .nav-bar{
+        .logo1-con{
+            a{
+                width: fit-content;
+                img{
+                    height: 2rem;
+                    display: none;
+                }
+            }
+        }
+    
+    }
+   
+}
+@media (width <= 800px) {
+    .nav-bar{
+        align-items: center;
+        .logo1-con{
+            margin: unset;
+        flex-direction: row;
+        align-items: center;
+
+           .logo1{
+            display: none;
+           }
+        }
+    }
+    nav{
+        align-items: center;
+
+    }
+}
+
+// 
 

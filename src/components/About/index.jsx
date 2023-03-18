@@ -5,34 +5,46 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 import Prayer from "../../assets/Prayer.jpg";
 import { Link } from "react-router-dom";
 import History from "../../assets/history.jpg";
-import Footer from '../Footer'
-import { useState } from "react";
-import { useEffect } from 'react'
-
+import Footer from "../Footer";
+import { useState, useRef } from "react";
+import { useEffect } from "react";
 
 const About = () => {
   useEffect(() => {
-    document.title = "Us"
- }, []);
-
+    document.title = "Us";
+  }, []);
 
   const [checked, setchecked] = useState("");
+  const val = useRef("");
+  
+
+  const handleCheck = (e) => {
+    val.current = e.currentTarget.id;
+    if (checked === val.current) {
+      setchecked("");
+    } else {
+      setchecked(val.current);
+    }
+
+    console.log(val.current);
+  };
+
 
   return (
     <section>
       <div className="aboutCon">
-        <div className="abouts">
+        <div className="aboutz">
           <div className="about">
             <div className="usCon">
-              <div className="us">
-                <div className="us-left">
-                  <div className="top">
+              <div className="top">
                     <h1>US</h1>
                   </div>
+              <div className="us">
+                <div className="us-left">
                   <div className="left-body">
                     <div className="bod-top">
-                      <h3>GLORY TO GOD</h3>
-                      <h3>EXTRAVAGANT WORSHIP</h3>
+                      <h4>GLORY TO GOD</h4>
+                      <h4>EXTRAVAGANT WORSHIP</h4>
                     </div>
                     <div className="body-bot">
                       <p>
@@ -66,46 +78,54 @@ const About = () => {
           <div className="truth">
             <h5>THEOLOGICAL TRUTHS</h5>
             <div className="close-divs">
-              <div className="container" onClick={() => setchecked("one")}>
+              <div className="container" id="one" onClick={handleCheck}>
                 <h1>01</h1>
                 <div className="contain">
                   <div className="tops">
-                    <h3>KNOWABLE TRUTH</h3>
+                    <h4 id="one"> THE BIBLE</h4>
                     <IoIosCloseCircleOutline
                       className={`number1 ${checked === "one" ? "rotate" : ""}`}
                     />
                   </div>
                   <div className={`close ${checked === "one" ? "show" : ""}`}>
                     <p>
-                      We believe in the accuracy, truth, authority and power of
-                      the Holy Scriptures as the Word of God.
+                      We believe in the divine inspiration and authority of the
+                      Holy Scriptures. That the Bible is infallible in its
+                      declaration, final in its authority, comprehensive and
+                      all-sufficient in its provisions. (2 Timothy 3:16, 17; 2
+                      Peter 1:20-21).
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="container" onClick={() => setchecked("two")}>
+              <div className="container" id="two" onClick={handleCheck}>
                 <h1>02</h1>
                 <div className="contain">
                   <div className="tops">
-                    <h3>ONE GOD </h3>
+                    <h4> THE ONE TRUE GOD </h4>
                     <IoIosCloseCircleOutline
                       className={`number1 ${checked === "two" ? "rotate" : ""}`}
                     />
                   </div>
                   <div className={`close ${checked === "two" ? "show" : ""}`}>
                     <p>
-                      We believe in a personal God who has revealed Himself as
-                      One. God exists in three persons–Father, Son and Holy
-                      Spirit–each distinct, yet all of One essence.
+                      We believe in the existence of the One True God, Elohim,
+                      maker of the whole universe; indefinable but revealed as
+                      Triune God – the Father, the Son and the Holy Spirit
+                      (Genesis 1:1; Genesis 1:26; Matthew 3:16, 17; 28:19; 2
+                      Corinthians 13:14); one in nature, essence and attributes
+                      – Omnipotent (Deuteronomy 6:4; Job 42:2; Isaiah 46:9, 10;
+                      Revelation 19:6); Omnipresent (Psalm 139:7-12; 147:5);
+                      Omniscient (Job 42:2; Isaiah 46:9, 10; Acts 5:4-5);
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="container" onClick={() => setchecked("three")}>
+              <div className="container" id="three" onClick={handleCheck}>
                 <h1>03</h1>
                 <div className="contain">
                   <div className="tops">
-                    <h3>UNIQUENESS OF CHRIST</h3>
+                    <h4>THE DEPRAVED NATURE OF HUMANITY</h4>
                     <IoIosCloseCircleOutline
                       className={`number1 ${
                         checked === "three" ? "rotate" : ""
@@ -114,19 +134,25 @@ const About = () => {
                   </div>
                   <div className={`close ${checked === "three" ? "show" : ""}`}>
                     <p>
-                      We believe Jesus Christ to be the virgin born Son of God
-                      who lived in flesh, died for the sins of the world, was
-                      buried, rose again, and ascended to the Father according
-                      to the Scriptures.
+                      We believe that “all have sinned and come short of the
+                      glory of God” (Genesis 3:1-19; Isaiah 53:6; Romans 3:23),
+                      and are subject to eternal punishment (Matthew 13:41, 42;
+                      Romans 6:23), and need Repentance (Acts 2:38; Matthew
+                      4:17; Acts 20:21) and Regeneration (John 3:3, 5; Titus
+                      3:5).
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="container" onClick={() => setchecked("four")}>
+              <div
+                className="container"
+                id="four"
+                onClick={handleCheck}
+              >
                 <h1>04</h1>
                 <div className="contain">
                   <div className="tops">
-                    <h3>GRACE LIFE</h3>
+                    <h4>THE SAVIOUR</h4>
                     <IoIosCloseCircleOutline
                       className={`number1 ${
                         checked === "four" ? "rotate" : ""
@@ -135,21 +161,28 @@ const About = () => {
                   </div>
                   <div className={`close ${checked === "four" ? "show" : ""}`}>
                     <p>
-                      We believe that the death of Jesus Christ was the final
-                      and complete sacrifice for the sins of humanity. Salvation
-                      is obtained by grace through faith in Jesus Christ. All
-                      who repent of their sins and receive Jesus Christ as
-                      Savior and Lord are born again into eternal life as
-                      children of God.
+                      We believe humanity’s need of a Saviour has been met in
+                      the person of Jesus Christ (Matthew 1:21; John 4:42; Acts
+                      2:36; Ephesians 5:23; Philippians 2:6-11), because of His
+                      Deity (Isaiah 9:6, John 1:1; John 20:28; Romans 9:5; Titus
+                      2:13-14), Virgin Birth (Isaiah 7:14; Matthew 1:18; Luke
+                      1:25-26), Atoning death (Romans 3:25; Hebrews 9:22; 1 John
+                      2:2), Resurrection (Matthew 28:5-7; Acts 2:24; Acts 2:36;
+                      Acts 10:39-40; 1 Corinthians 15:3-4) and Ascension (Acts
+                      1:9-11; Acts 2:33-36), His Abiding Intercession (Romans
+                      8:34; Hebrews 7:25) and His second coming to judge the
+                      living and the dead (Acts 1:11; Acts 10:42; 1
+                      Thessalonians 4:16-18, 2 Timothy 4:1; Revelation 22:12,
+                      20)
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="container" onClick={() => setchecked("five")}>
+              <div className="container"  id="five" onClick={handleCheck}>
                 <h1>05</h1>
                 <div className="contain">
                   <div className="tops">
-                    <h3>INDWELLING POWER</h3>
+                    <h4>DIVINE HEALING</h4>
                     <IoIosCloseCircleOutline
                       className={`number1 ${
                         checked === "five" ? "rotate" : ""
@@ -158,40 +191,41 @@ const About = () => {
                   </div>
                   <div className={`close ${checked === "five" ? "show" : ""}`}>
                     <p>
-                      We believe that life on earth is to be lived in the power
-                      of the Holy Spirit, who indwells believers, enabling them
-                      to live distinctive lives in the life and power of Christ,
-                      making famous the Father in heaven.
+                      We believe that the healing of sicknesses and diseases is
+                      provided for God’s people in the atonement (Isaiah 53:4,5;
+                      Matthew 8:7-13; 16,17; Mark 16:17,18; Luke 13:10-16; Acts
+                      10:38; James 5:14-16). However, the Church is not opposed
+                      to medication by qualified medical practitioners.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="container" onClick={() => setchecked("six")}>
+              <div className="container"   id="six" onClick={handleCheck}>
                 <h1>06</h1>
                 <div className="contain">
                   <div className="tops">
-                    <h3>GOD'S PEOPLE</h3>
+                    <h4>BAPTISM, GIFTS AND FRUIT OF THE HOLY SPIRIT</h4>
                     <IoIosCloseCircleOutline
                       className={`number1 ${checked === "six" ? "rotate" : ""}`}
                     />
                   </div>
                   <div className={`close ${checked === "six" ? "show" : ""}`}>
                     <p>
-                      We believe that those who have placed their faith in
-                      Christ are knit together in one Body, the Church, a
-                      distinctive community of faith expressed in local
-                      clusters, engaging culture on every front with God’s hope
-                      and love … a Church for which Christ will personally
-                      return.
+                      We believe in the Baptism of the Holy Spirit for all
+                      believers with the initial evidence of speaking in tongues
+                      (Joel 2:28, 29; Acts 2:3,4,38,39; Acts 10:44-46; Acts
+                      19:16), and in the operation of the gifts and fruit of the
+                      Holy Spirit (Romans 12:6-8; Galatians 5:22,23 and 1
+                      Corinthians 12:8-11; 28-30)
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="container" onClick={() => setchecked("seven")}>
+              <div className="container"  id="seven" onClick={handleCheck}>
                 <h1>07</h1>
                 <div className="contain">
                   <div className="tops">
-                    <h3>THE KNOWLEDGE OF THE HOLY</h3>
+                    <h4> TITHES AND OFFERINGS</h4>
                     <IoIosCloseCircleOutline
                       className={`number1 ${
                         checked === "seven" ? "rotate" : ""
@@ -200,19 +234,21 @@ const About = () => {
                   </div>
                   <div className={`close ${checked === "seven" ? "show" : ""}`}>
                     <p>
-                      Created by and for God, we seek to passionately pursue an
-                      intimate relationship with God in response to His great
-                      love for us. To know God is the ultimate treasure of the
-                      soul.
+                      We believe in tithing and in the giving of freewill
+                      offerings towards the furtherance of the cause of the
+                      Kingdom of God. We believe that God blesses a cheerful
+                      giver (Genesis 14:18-20; Malachi 3:6-10; Matthew 23:23;
+                      Acts 20:35; Hebrews 7:1-4; I Corinthians 16:1, 2; 2
+                      Corinthians 9:1-9).
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="container" onClick={() => setchecked("eight")}>
+              <div className="container"  id="eight" onClick={handleCheck}>
                 <h1>08</h1>
                 <div className="contain">
                   <div className="tops">
-                    <h3>WHOLE LIFE WORSHIP</h3>
+                    <h4>THE SECOND COMING AND THE NEXT LIFE</h4>
                     <IoIosCloseCircleOutline
                       className={`number1 ${
                         checked === "eight" ? "rotate" : ""
@@ -221,18 +257,21 @@ const About = () => {
                   </div>
                   <div className={`close ${checked === "eight" ? "show" : ""}`}>
                     <p>
-                      More than outward forms, theologically informed worship
-                      must encompass our entire existence, whereby in all
-                      circumstances our words and actions bring glory to God.
+                      We believe in the second coming of Christ and the
+                      resurrection of the dead, both the saved and the unsaved.
+                      They that are saved to the resurrection of life and the
+                      unsaved to the resurrection of damnation (Daniel 12:2;
+                      Mark 13:26; John 5:28, 29; Acts 1:11; Acts 10:42; Romans
+                      2:7-11; Romans 6:23).
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="container" onClick={() => setchecked("nine")}>
+              <div className="container"  id="nine" onClick={handleCheck}>
                 <h1>09</h1>
                 <div className="contain">
                   <div className="tops">
-                    <h3>HIS RENOWN</h3>
+                    <h4>MARRIAGE AND FAMILY LIFE</h4>
                     <IoIosCloseCircleOutline
                       className={`number1 ${
                         checked === "nine" ? "rotate" : ""
@@ -241,29 +280,40 @@ const About = () => {
                   </div>
                   <div className={`close ${checked === "nine" ? "show" : ""}`}>
                     <p>
-                      We echo and affirm the Westminster confession: “the chief
-                      end of man is to glorify God and enjoy Him forever.” All
-                      things exist for the glory of God.
+                      We believe in the institution of marriage as a union
+                      established and ordained by God for the lifelong, intimate
+                      relationship between a man as husband and a woman as wife
+                      as biologically defined at birth. We believe that God
+                      instituted marriage primarily for mutual help, fellowship
+                      and comfort that one ought to have for the other and for
+                      the honourable procreation of children, and their training
+                      in love, obedience to the Lord and responsible
+                      citizenship. (Genesis 2:18, Genesis 21-25; Matthew 19:4-6;
+                      1 Corinthians 7:1-2).
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="container last" onClick={() => setchecked("ten")}>
+              <div className="container last"  id="ten" onClick={handleCheck}>
                 <h1>10</h1>
                 <div className="contain">
                   <div className="tops">
-                    <h3>COMMUNITY OF FAITH</h3>
+                    <h4>REPENTANCE, JUSTIFICATION AND SANCTIFICATION</h4>
                     <IoIosCloseCircleOutline
                       className={`number1 ${checked === "ten" ? "rotate" : ""}`}
                     />
                   </div>
                   <div className={`close ${checked === "ten" ? "show" : ""}`}>
                     <p>
-                      The worldwide Body of Christ function best in localized
-                      communities of believers. Thus we seek to plant churches
-                      that amplify His fame, strengthen the lives of people and
-                      repair communities so that all people can know the healing
-                      power and grace of the Savior.
+                      We believe all humans have to repent and confess their
+                      sins before God (Luke 15:7; Acts 2:38; Acts 3:19; Acts
+                      17:30), and believe in the vicarious death of Jesus Christ
+                      before they can be justified before God (Romans 4:25;
+                      5:1). We believe in the sanctification of the believer
+                      through the working of the Holy Spirit (1 Corinthians
+                      1:30; 6:11) and God’s gift of eternal life to the believer
+                      (John 17:2, 3; John 10:27, 28; Romans 6:23b; 1John
+                      5:11-13)
                     </p>
                   </div>
                 </div>
@@ -373,7 +423,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <Footer/>
+        <Footer />
       </div>
     </section>
   );

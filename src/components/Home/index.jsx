@@ -1,4 +1,4 @@
-import Passion from '../../assets/passion.mp4'
+import Amsterdam from '../../assets/amsterdam.mp4'
 import Slider from './Slider'
 import Locations from './Locations'
 import './index.scss'
@@ -10,15 +10,15 @@ import { useEffect } from 'react'
 
 const Home = () => {
   useEffect(() => {
-    document.title = "Amsterdam City Church"
+    document.title = "City Church District"
  }, []);
   return (
     <>
-    
     <div className='main'>
+      <div className="video">
       <div className="overlay">
       </div>
-      <video src={Passion} autoPlay loop muted className='vid'/>
+      <video src={Amsterdam} autoPlay loop muted className='vid'/>
       <div className="contents">
         <div className="in-contents">
           <div className="watch">
@@ -34,12 +34,12 @@ const Home = () => {
           </div>
       </div>
        </div>
+      </div>
+      
 
        {/* Place in the church */}
 
-       <div className='place'>
-        <h3>FIND YOUR PLACE AT AMSTERDAM CITY CHURCH</h3>       
-       </div>
+       
        <div className="contain">
         <div className='carousel'><Slider/></div>
         <Locations/>

@@ -2,7 +2,7 @@
 
 section{
     background-color: white;
-    color: black;
+    color: #1B1212;
    
 
 }
@@ -11,7 +11,7 @@ section{
     flex-direction: column;
     gap: 5rem;
     overflow: hidden;
-    .abouts{
+    .aboutz{
         height: 120vh;
 
         .about{
@@ -20,27 +20,34 @@ section{
     
             .usCon{
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                
+
+                .top{
+                    position: absolute;
+                    left: 17%;
+                    top: 0;
+                    h1{
+                     font-size: 74px;
+                     font-weight: 600;
+                    }
+                 }
                 .us{
                    display: flex;
                    flex-wrap: wrap;
-                    width: 67%;
+                    width: 69%;
                     gap: 3rem;
-                    height: 33rem;
-    
+                    height: 29rem;
+                    
                     .us-left{
                         display: flex;
                         flex-direction: column;
                         flex: 1 1 20%;
+                        position: relative;
+                        top: 20%;
 
-                        .top{
-                           h1{
-                            font-size: 74px;
-                            font-weight: 500;
-                           }
-                        }
+                     
                         .left-body{
                             width: 69%;
                             position: relative;
@@ -51,14 +58,20 @@ section{
                             
                             .bod-top{
                                 line-height: 150%;
+                                h4{
+                                    font-family: 'GTAmerica';
+                                    font-weight: 100;
+                                }
+                                
                             }
                             .body-bot{
                                 
                                 p{
-                                    font-size: 21px;
+                                    font-size: 18px;
                                     line-height: 150%;
-                                    font-weight: 400;
-                                    word-spacing: 3px;
+                                    font-family: 'GTAmerica1';
+                                    font-weight: 100;
+                                    word-spacing: 4px;
                                 }
                             }
                         }
@@ -101,16 +114,18 @@ section{
 
             // border: 1px solid black;
             h1{
-                font-size: 55px;
-                font-weight: 400;
+                font-size: 60px;
+                font-weight: 500;
             }
             p{
-                font-size: 15px;
-
+                font-size: 14.1px;
+                font-family: 'GTAmerica1';
+                font-weight: 200;
             }
             h3{
                 font-size: 17px;
-                font-weight: 400;
+                font-family: 'GTAmerica1';
+                font-weight: 100;
             }
         }
     }
@@ -119,6 +134,8 @@ section{
         justify-content: center;
         align-items: center;
         margin-top: 4rem;
+      
+
         .truth{
             display: flex;
             flex-direction: column;
@@ -135,6 +152,8 @@ section{
                 position: relative;
                 left: 5%;
                 opacity: 0.6;
+                font-family: 'GTAmerica2';
+                font-weight: 200;
             }
             .close-divs{
                 position: relative;
@@ -168,6 +187,11 @@ section{
                             padding: 1rem 0 2rem 0;
                             width: 100%;
 
+                            h4{
+                                font-family: 'GTAmerica2';
+                                font-weight: 200;
+                            }
+
                            .number1{
                             font-size: 30px;
                             -webkit-text-stroke: 0.7px white;
@@ -190,6 +214,9 @@ section{
                             p{
                                 position: relative;
                                 font-size: 14px;
+                                font-family: 'GTAmerica1';
+                                font-weight: 100;
+                                line-height: 160%;
                             }
                         }
                         .show{
@@ -433,3 +460,145 @@ section{
         }
     }
 }
+// @media (width <=1100px) {
+//     .aboutCon{
+//         .aboutz{
+//             .about{
+//                 .usCon{
+//                     .top{
+//                         left: 6%;
+//                     }
+//                     .us{
+//                         width: 88%;
+//                     // height: 33rem;
+//                         .us-left{
+//                             .left-body{
+//                                 width: 85%;
+//                                 left: 10%;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media (width <= 767px) {
+//     .aboutCon{
+//         .abouts{
+//             // height: 70vh;
+//             // border: 1px solid black;
+//             .about{
+//                 top: 10%;
+//                 .usCon{
+//                     gap: 1rem;
+//                     // align-items: unset;
+//                     .top{
+//                         left: unset;
+//                         position: relative;
+//                         width: 80%;
+
+//                         h1{
+//                             font-size: 47px;
+//                              font-family: 'Saol3';
+//                                 font-weight: 100;
+//                         }
+//                     }
+//                     .us{
+//                         flex-direction: column-reverse ;
+//                         width: 80%;
+//                         gap: 2.3rem;
+//                         height: 33rem;
+//                     // border: 1px solid black;
+
+
+//                     // height: 33rem;
+//                         .us-left{
+//                         flex: unset;
+//                         top: unset;
+//                         height: 41%;
+
+//                             .left-body{
+//                                 width: 80%;
+//                                 left: unset;
+//                             }
+//                         }
+//                         .us-right{
+//                         flex: unset;
+//                         width: 100%;
+//                         height: 52%;
+//                         top: unset;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media (width <=767px) {
+    .aboutCon{
+        .abouts{
+            height: 170vh;
+            .about{
+                top: 10%;
+                .usCon{
+                    gap: 1rem;
+                    // align-items: unset;
+                    .top{
+                        left: unset;
+                        position: relative;
+                        width: 80%;
+
+                        h1{
+                            font-size: 47px;
+                             font-family: 'Saol3';
+                                font-weight: 100;
+                        }
+                    }
+                    .us{
+                        flex-direction: column-reverse ;
+                        width: 80%;
+                        gap: 2.3rem;
+                        height: 33rem;
+
+                    // height: 33rem;
+                      
+                    }
+                }
+            }
+        }
+    }
+// }
+// @media (height >=1000px) {
+//     .aboutCon{
+//         .abouts{
+//             height: 100vh;
+//             .about{
+//                 top: 10%;
+//                 height: 90%;
+
+//                 .usCon{
+//                     height: 100%;
+//                     .top{
+//                         top: 2%;
+//                     }
+//                     .us{
+//                         align-items: center;
+//                         width: 85%;
+//                     height: 100% ;
+//                         .us-left{
+//                             top: unset;
+//                             .left-body{
+//                                 // width: 85%;
+//                                 // left: 10%;
+//                             }
+//                         }
+//                         .us-right{
+//                             top: unset;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

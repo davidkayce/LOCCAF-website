@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Thumb2 from "../../../assets/thumb2.jpg";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import Logo from "../../../assets/logo.jpeg";
 import Pastor from "../../../assets/mess5.jpg";
 import { FiChevronDown } from "react-icons/fi";
+import Logo from "../../../assets/logo.png";
+
 import {
   faFacebook,
   faInstagram,
@@ -13,15 +15,25 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
-const Menu = ({ setOpenMenu, openMenu }) => {
+const Menu = ({ setOpenMenu, openMenu, handleOpenRoth ,handleCloseRoth}) => {
+  const [hover, setHover] = useState(false);
+
+
+ 
+  //  useEffect(() =>{
+  //   if (roth !== ""){
+  //     handleRoth()
+  //   }
+  //  },[roth])
+
   return (
     <div className="menu-modalCon">
       <div className="overlay"></div>
       <div className="modal">
         <div className="menu-top">
           <div className="top-left">
-            <Link to="/">
-              <h1>P</h1>
+            <Link to="/"  onClick={() => setOpenMenu(false)}>
+              <img src={Logo} alt=""/>
             </Link>
             {/* <div className="left-search">
                         <FontAwesomeIcon icon={faSearch} id='search'/>
@@ -40,47 +52,55 @@ const Menu = ({ setOpenMenu, openMenu }) => {
         <div className="menu-body">
           <div className="body-left">
             <h2>FEATURED</h2>
-            <img src={Pastor} alt="" />
+            <img src={Thumb2} alt="" />
             <div className="left-bot">
-              <h5> THE BEST AND WORST NEWS YOU'VE EVER HEARD</h5>
-              <h5 id="blue">LOUIE GIGLIO</h5>
+              <h5> THE CROSS PART 1.1</h5>
+              <h5 id="blue"> ELDER DANIEL OWUSU</h5>
               <h5>02.13.23</h5>
             </div>
           </div>
           <div className="body-right">
             <div className="logo1-con">
               <Link className="logo1" to="/">
-                PASSION CITY CHURCH
+                CITY CHURCH DISTRICT
               </Link>
-              <div className="dropdown">
+              <div
+                className="dropdown"
+                onMouseEnter={() => setHover(true)}
+                onMouseLeave={() => setHover(false)}
+              >
                 <button className="drop-btn">
                   GLOBAL <FiChevronDown />
                 </button>
                 <div className="menu">
                   <ul>
                     <li>
-                      <a href="#">515</a>
+                      <Link 
+                      to="/"
+                      onClick={handleCloseRoth}>Amsterdam</Link>
                     </li>
                     <li>
-                      <a href="#">CUMBERLAND</a>
-                    </li>
-                    <li>
-                      <a href="#">D.C.</a>
-                    </li>
-                    <li>
-                      <a href="#">TRILITH</a>
+                      <Link 
+                      to="/rotherdam" 
+                      onClick={handleOpenRoth}>Rotherdam
+                      </Link>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
             <div className="hidden-menu">
-              <h6>START HERE</h6>
-              <h6>SUNDAYS</h6>
-              <h6>GIVE</h6>
-              <h6>MESSAGES</h6>
+              <a href="/start">START HERE</a>
+              <a href="/amsterdam/sundays" onClick={handleOpenRoth}>SUNDAYS</a>
+              <a
+                href="https://useplink.com/payment/mK4x0NBv4nqc1tnDJEPT/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GIVE
+              </a>
             </div>
-            <div className="main-right">
+            <div className={`main-right ${hover ? "disappear" : ""}`}>
               <div className="right-bod">
                 <div className="right1 rights">
                   <p>ABOUT US</p>
@@ -92,6 +112,9 @@ const Menu = ({ setOpenMenu, openMenu }) => {
                   </a>
                   <a href="/us" onClick={() => setOpenMenu(false)}>
                     ABOUT OUR MISSION
+                  </a>
+                  <a href="#" onClick={() => setOpenMenu(false)}>
+                    OUR LEADERSHIP
                   </a>
                   <a href="/contact" onClick={() => setOpenMenu(false)}>
                     CONTACT US
@@ -109,7 +132,11 @@ const Menu = ({ setOpenMenu, openMenu }) => {
                   <a href="/prayer-request" onClick={() => setOpenMenu(false)}>
                     PRAYER REQUEST
                   </a>
-                  <a href="https://members.amsterdamcitychurch.nl/session/begin" target='_blank'>
+                  <a
+                    href="https://members.amsterdamcitychurch.nl/session/begin"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     MEMBERSHIP
                   </a>
                 </div>

@@ -332,8 +332,9 @@
                 
                         .dropdown{
                             width: max-content;
-                            display: relative;
+                            position: relative;
                             z-index: 100;
+
                             
                             .drop-btn{
                                 background: none;
@@ -347,7 +348,7 @@
                                opacity: 0;
                             //    top: 15px;
                             //    bottom: 0;
-                                height: 1%;
+                                height: 0;
                                position: absolute;
                                z-index: 101;
                                transition: 1.2s ease-in-out;
@@ -364,8 +365,8 @@
                             &:hover{
                               .menu{
                                opacity: 1;
-                               height: 100%;
-                              }
+                               height: 3rem;
+                            }
                             }
                            
                         }
@@ -413,10 +414,12 @@
                     input{
                         font-size: 20px;
                         margin-bottom: 19px;
-                        color: black;
                         height: 2.5rem;
+                        color: #000;
+                        background: white;
                         padding: 5px;
                         outline: 0;
+                        border: none;
                     }
 
                     button{
@@ -477,6 +480,7 @@
 
                         h1{
                             font-size: 51px;
+                            font-weight: 700;
                         }
                     }
                     .wel-down{
@@ -488,6 +492,13 @@
                         position: relative;
                        p{
                         font-size: 19px;
+                        font-family: 'Saol2';
+                        font-weight: 100;
+                       }
+                       h4{
+                        font-family: 'GTAmerica';
+                        font-weight: 100;
+                        color: black;
                        }
 
                        
@@ -511,19 +522,18 @@
                                 background: none;
                                 border: none;
                                 color: #000;
-                                font-weight: 600;
+                                // font-weight: 600;
                                 font-size: 15px;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-                               
+                                font-family: 'GTAmerica';
+                                 font-weight: 100;
                             }
                             
                             .menu{
                                opacity: 0;
-                            //    top: 15px;
-                            //    bottom: 0;
-                            //    transform: scale(0);
+                          
                                 height: 1%;
                                position: absolute;
                                z-index: 7;
@@ -533,11 +543,13 @@
                                mix-blend-mode: difference;
                 
                                 a{
-                                    font-size: 14px;
+                                    font-size: 16px;
                                     color: #000;
                                     font-weight: 400;
-                               mix-blend-mode: difference;
-
+                                    line-height: 150%;
+                                    mix-blend-mode: difference;
+                                    font-family: 'GTAmerica';
+                                    font-weight: 100;
                                 }
                                
                             }
@@ -751,7 +763,7 @@
                 word-spacing: 3px;
                 
                 h4{
-                    font-weight: 500;
+                    font-weight: 600;
                 }
             }
         }
@@ -858,7 +870,7 @@
                         flex: 1 1 25%;
                         height: 470px;
                         overflow: hidden;
-                        max-width: calc(27% - 7px);
+                        max-width: calc(45% - 7px);
                         
 
                         img{
@@ -881,7 +893,7 @@
                             flex-direction: column;
                             gap: 1rem;
 
-                            h6,{
+                            h6{
                                 width: 90%;
                                 font-weight: 400;
                             }
@@ -2303,7 +2315,7 @@
                 .community{
                     .comm-contents{
                         width: 79%;
-
+                        color: white;
                         h1{
                             font-size: 30px;
                             font-weight: 400;
@@ -2367,12 +2379,11 @@
                     }
                     .text-vid{
                         flex-direction: column-reverse;
-                        width: 100%;
+                        width: 95%;
                         gap: 2rem;
                         height: unset;
                         position: relative;
-                        left: 5%;
-
+                        left: unset;
                         .text-side{
                             width: 81%;
                             height: 100%;

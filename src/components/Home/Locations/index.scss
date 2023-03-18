@@ -33,7 +33,6 @@
       position: relative;
         display: flex;
         width: 100%;
-
         .overlay{
             position: absolute;
             width: 89%;
@@ -161,9 +160,10 @@
                         opacity: 1;
                         transition: 1s ease-in;
                     }
-                    .place{
+                    .city{
                         position: relative;
                         left: 15%;
+                        margin-top: 3rem;
                         mix-blend-mode: difference;
                         font-weight: 300;
                         word-spacing: 3px;
@@ -268,9 +268,9 @@
            .tril-text{
             .main-text{
                 div{
-                    h2{
-                        // display: none;
-                    }
+                    // h2{
+                    //     // display: none;
+                    // }
                 }
             }
            }
@@ -364,7 +364,7 @@
                     }
 
                 }
-                .place{
+                .city{
                     left: 10%;
                     top: 8%;
                 }
@@ -421,7 +421,7 @@
                         left: 5%;
                     }
                 }
-                .place{
+                .city{
                     left: 5%;
                     top: unset;
                     
@@ -479,7 +479,7 @@
                         left: 5%;
                     }
                 }
-                .place{
+                .city{
                     left: 5%;
                 }
             }
