@@ -4,7 +4,7 @@ import React, {useContext, useEffect, useState,useRef} from 'react'
 
   const AppContext = React.createContext()
   const AppProvider = ({children}) =>{
-    const [roth, setroth] = useState("");
+    const [roth, setroth] = useState(JSON.parse(localStorage.getItem('roth')) || "");
     const church = useRef("");
 
     const [openMenu, setOpenMenu] = useState(false);
@@ -35,11 +35,11 @@ import React, {useContext, useEffect, useState,useRef} from 'react'
     }
    
      
-      //  useEffect(() => {
+       useEffect(() => {
     
-      //   window.localStorage.setItem('roth', JSON.stringify(roth));
+        window.localStorage.setItem('roth', JSON.stringify(roth));
     
-      // }, [roth]);
+      }, [roth]);
 
       return (
         <AppContext.Provider value={{roth, setroth, openMenu, setOpenMenu, handleOpenChurch, church , handleCloseChurch, }}>
