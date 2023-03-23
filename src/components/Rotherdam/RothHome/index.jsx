@@ -16,7 +16,7 @@ const RothHome = () => {
     document.title = "Rotherdam"
  }, []);
   return (
-    <> 
+    <section> 
     <div className='main'>
       <div className="video">
       <div className="overlay">
@@ -53,7 +53,7 @@ const RothHome = () => {
        
         
     </div>
-    </>
+    </section>
   )
 }
 
