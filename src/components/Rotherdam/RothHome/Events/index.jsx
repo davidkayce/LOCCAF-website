@@ -88,7 +88,7 @@ const Events = () => {
             </div>
             <div className="event-text">
               <h6>HARBOUR DRIVEWAY</h6>
-              <h1>NEW TO HARBOUR? START HERE</h1>
+              <h1>NEW TO HARBOUR?</h1>
               <h6>FIND YOUR PLACE</h6>
               <p className="note">
                 Our desire is that everybody at Habour City Church feels seen
@@ -104,7 +104,7 @@ const Events = () => {
             </div>
             <div className="event-text">
               <h6>HARBOUR DRIVEWAY</h6>
-              <h1>NEW TO HARBOUR? START HERE</h1>
+              <h1>NEW TO HARBOUR? </h1>
               <h6>FIND YOUR PLACE</h6>
               <p className="note">
                 Our desire is that everybody at Habour City Church feels seen
@@ -131,7 +131,7 @@ const Events = () => {
                 eternal impact on the lives of many people.
               </p>
               <a href="/serve">
-                <b> APPLY TO SERVE </b>
+                APPLY TO SERVE 
                 &rarr;
               </a>
             </div>
@@ -148,7 +148,7 @@ const Events = () => {
               <h1>WELCOME TO CHURCH</h1>
             </div>
             <div className="wel-down">
-              <h4>DISCOVER THE HEARTBEAT OF CITY CHURCH DISTRICT</h4>
+              <h5>DISCOVER THE HEARTBEAT OF CITY CHURCH DISTRICT</h5>
               <p>
                 Welcome to Church is a 2-part opportunity to discover the
                 heartbeat of City Church District. Join us to learn more about
@@ -361,7 +361,7 @@ const Events = () => {
               here. Click below to learn more and find your group!
             </p>
             <a href="#">
-              <b>FIND COMMUNITY</b> &rarr;
+              FIND COMMUNITY &rarr;
             </a>
           </div>
         </div>

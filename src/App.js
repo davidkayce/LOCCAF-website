@@ -12,9 +12,11 @@ import Outreach from './components/Outreach';
 import Contact from './components/Contact';
 import RothHome from './components/Rotherdam/RothHome';
 import RothSundays from './components/Rotherdam/RothSundays';
-
+import AmsHome from './components/Amsterdam/AmsHome';
+// import AmsSundays from './components/Amsterdam/AmsSundays';
 
 function App() {
+  
   return (
     <>
       <Routes>
@@ -31,7 +33,9 @@ function App() {
         {/* Rotherdam */}
         <Route path='/rotherdam' element={<RothHome/>}/>
         <Route path='/rotherdam/sundays' element={<RothSundays/>}/>
-
+        {/* Amsterdam */}
+        <Route path='/amsterdam' element={<AmsHome/>}/>
+        {/* <Route path='/amsterdam/sundays' element={<AmsSundays/>}/> */}
         </Route>
       </Routes>
     </>

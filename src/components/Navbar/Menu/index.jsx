@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 import Pastor from "../../../assets/mess5.jpg";
 import { FiChevronDown } from "react-icons/fi";
 import Logo from "../../../assets/logo.png";
+import { useGlobalContext } from '../../../context'
+
 
 import {
   faFacebook,
@@ -15,7 +17,9 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
-const Menu = ({ setOpenMenu, openMenu, handleOpenRoth ,handleCloseRoth}) => {
+const Menu = () => {
+  const {setOpenMenu,handleOpenChurch, handleCloseChurch} = useGlobalContext()
+
   const [hover, setHover] = useState(false);
 
 
@@ -76,13 +80,15 @@ const Menu = ({ setOpenMenu, openMenu, handleOpenRoth ,handleCloseRoth}) => {
                   <ul>
                     <li>
                       <Link 
-                      to="/"
-                      onClick={handleCloseRoth}>Amsterdam</Link>
+                      to="/amsterdam"
+                      id="ams"
+                      onClick={handleOpenChurch}>Amsterdam</Link>
                     </li>
                     <li>
                       <Link 
-                      to="/rotherdam" 
-                      onClick={handleOpenRoth}>Rotherdam
+                      to="/rotherdam"
+                      id="roth" 
+                      onClick={handleOpenChurch}>Rotherdam
                       </Link>
                     </li>
                   </ul>
@@ -91,7 +97,7 @@ const Menu = ({ setOpenMenu, openMenu, handleOpenRoth ,handleCloseRoth}) => {
             </div>
             <div className="hidden-menu">
               <a href="/start">START HERE</a>
-              <a href="/amsterdam/sundays" onClick={handleOpenRoth}>SUNDAYS</a>
+              <a href="/amsterdam/sundays" >SUNDAYS</a>
               <a
                 href="https://useplink.com/payment/mK4x0NBv4nqc1tnDJEPT/"
                 target="_blank"

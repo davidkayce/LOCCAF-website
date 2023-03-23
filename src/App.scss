@@ -58,18 +58,29 @@
     font-weight: normal;
 
     a{
-    color: white;
+    color: black;
 
     }
     button{
-     color: white;
+     color: black;
 
+    }
+
+    h6,a{
+        // font-size: 10px;
+        font-family: 'GTAmerica';
+        font-weight: 100;
+    }
+    p{
+        // font-size: 10px;
+        font-family: 'GTAmerica1';
+        font-weight: 100;
     }
   
 }
 
-body{
-    color: white;
+// body{
+//     color: white;
 
 
-}
+// }

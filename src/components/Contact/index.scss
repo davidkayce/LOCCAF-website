@@ -44,9 +44,11 @@
 
 
                             h3{
-                                font-size: 20px;
+                                font-size: 18px;
                                 line-height: 150%;
-                                word-spacing: 3px;   
+                                word-spacing: 3px; 
+                                font-family: "GTAmerica";
+
                             }
                             p{
                                 font-size: 21px;
@@ -87,6 +89,14 @@
                 gap: 2rem;
                 width: 78%;
 
+                label{
+                    font-size: 11px;
+                    font-weight: 300;
+                    padding-bottom: 4px;
+                    font-family: "GTAmerica";
+                     
+                  }
+
                 .name{
                     display: flex;
                     justify-content: space-between;
@@ -96,12 +106,7 @@
                         flex-direction: column;
                         width: 46%;
 
-                        label{
-                          font-size: 14px;
-                          font-weight: 300;
-                          padding-bottom: 4px;
-                           
-                        }
+                       
                         input{
                             // height: 2rem;
                             border: none;
@@ -129,12 +134,12 @@
                         flex-direction: column;
                         width: 46%;
 
-                        label{
-                          font-size: 14px;
-                          font-weight: 300;
-                          padding-bottom: 4px;
+                        // label{
+                        //   font-size: 14px;
+                        //   font-weight: 300;
+                        //   padding-bottom: 4px;
                            
-                        }
+                        // }
                         input{
                             // height: 2rem;
                             border: none;
@@ -158,12 +163,12 @@
                     display: flex;
                     flex-direction: column;
 
-                        label{
-                        font-size: 14px;
-                        font-weight: 300;
-                        padding-bottom: 4px;
+                        // label{
+                        // font-size: 14px;
+                        // font-weight: 300;
+                        // padding-bottom: 4px;
                          
-                        }
+                        // }
                       input{
                           // height: 2rem;
                           border: none;
@@ -185,12 +190,12 @@
                     display: flex;
                     flex-direction: column;
 
-                        label{
-                        font-size: 14px;
-                        font-weight: 300;
-                        padding-bottom: 4px;
+                        // label{
+                        // font-size: 14px;
+                        // font-weight: 300;
+                        // padding-bottom: 4px;
                          
-                        }
+                        // }
                         textarea{
                             height: 5rem;
                             // width: 80%;
@@ -213,7 +218,7 @@
                     width: 15%;
                     padding: 9px 7px;
                     font-size: 16px;
-                    font-weight: 500;
+                    font-weight: 700;
                     color: #fff;
                     border: none;
                     background: #000;

@@ -10,8 +10,13 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from 'react'
 import Footer from "../../Footer";
 import Trilith from "./Trilith";
+import { useGlobalContext } from '../../../context'
+
 
 const Sundays = () => {
+  const {setroth} = useGlobalContext()
+
+ 
   useEffect(() => {
     document.title = "Sundays"
  }, []);
@@ -40,17 +45,15 @@ const Sundays = () => {
         </div>
         <div className="rhythm-right">
           <div className="right1">
-            <p>
-              <b>
+            <p id="bold">
                 We are a Jesus church. A small tribe of His followers connected
                 by our common faith and a deep desire to see our city [and the
                 world] come to know His power and beauty.
-              </b>
             </p>
             <p>
               We gather each Sunday and there is a spot for everyone of all ages
               to join us for church. Read below to learn more about what to
-              expect at City Church District @ Trilith.
+              expect at City Church District @ Habour.
             </p>
           </div>
           <div className="right2">

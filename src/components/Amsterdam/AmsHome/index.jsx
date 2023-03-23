@@ -1,23 +1,22 @@
-import Habor from '../../../assets/habor-vid.mp4'
-import Slider from './Slider'
-// import Locations from './Locations'
-import './index.scss'
-import Events from './Events'
-import Footer from '../../Footer'
+import React from 'react'
 import { useEffect } from 'react'
 import { useGlobalContext } from '../../../context'
+import Footer from '../../Footer'
+import Events from '../../Rotherdam/RothHome/Events'
+import Habor from '../../../assets/habor-vid.mp4'
+import Slider from '../../Rotherdam/RothHome/Slider'
+import "./index.scss"
 
-const RothHome = () => {
-  const {setroth, roth, } = useGlobalContext()
+const AmsHome = () => {
+    const {setroth, roth} = useGlobalContext()
+
   
- 
-
-  useEffect(() => {
-    document.title = "Rotherdam"
- }, []);
+    useEffect(() => {
+      document.title = "Amsterdam"
+   }, []);
   return (
-    <> 
-    <div className='main'>
+   <section>
+   <div className='main'>
       <div className="video">
       <div className="overlay">
       </div>
@@ -53,8 +52,8 @@ const RothHome = () => {
        
         
     </div>
-    </>
+   </section>
   )
 }
 
-export default RothHome
+export default AmsHome

@@ -15,6 +15,11 @@
     transition: 1.2s ease-in-out;
     // transition-delay: 5s;
 
+    a{
+        color: #fff;
+
+    }
+
 
     
     .overlay{
@@ -43,7 +48,7 @@
         // overflow: hidden;
         z-index: 12;
         transition: 5s ease-in-out;
-
+        color: white;
 
 
         .menu-top{
@@ -99,10 +104,11 @@
                     background: none;
                     border: none;
                     outline: 0;
-                    font-size: 15px;
-                    font-weight: 600;
+                    font-size: 13px;
+                    font-family: 'GTAmerica';
+                    font-weight: 100;
                     cursor: pointer;
-
+                    color: #fff;
                     &::after{
                         content: '';
                         position: absolute;
@@ -178,7 +184,7 @@
                     a{
                         color: white;
                         font-weight: 600;
-                
+                        
                        
                     }
                     .logo1{
@@ -201,8 +207,9 @@
                             border: none;
                             color: white;
                             opacity: 0.8;
-                            font-weight: 600;
-                        }
+                            font-size: 10px;
+                            font-family: 'GTAmerica';
+                            font-weight: 100;                        }
                         
                         .menu{
                             opacity: 0;
@@ -214,7 +221,7 @@
                            transition: 1.2s ease-in-out;
             
                             a{
-                                font-size: 14px;
+                                font-size: 10px;
                                 opacity: .6;
 
                                 &:hover{
@@ -256,7 +263,7 @@
                             padding: 5px;
     
                             a{
-                                font-size: 17px;
+                                font-size: 13px;
                                 padding-bottom: 5px;
                                 font-weight: 400;
 
@@ -267,8 +274,10 @@
     
                             p{
                                 opacity: 0.4;
-                                font-size: 15px;
                                 padding-bottom:  1rem;
+                                font-size: 12px;
+                                font-family: 'GTAmerica';
+                                font-weight: 100;
                             }
     
                         }

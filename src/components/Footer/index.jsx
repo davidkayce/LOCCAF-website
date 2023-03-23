@@ -80,31 +80,30 @@ const Footer = () => {
             <p> District</p>
           </span>
           <span id="ft-el">
-            <a href="#">Privacy</a>
-            <a href="#">Policy</a>
+            <p href="#">Privacy</p>
+            <p href="#">Policy</p>
           </span>
           <span id="ft-el">
-            <a href="#">Terms +</a>
-            <a href="#">Conditions</a>
+            <p href="#">Terms +</p>
+            <p href="#">Conditions</p>
           </span>
           <span id="ft-el">
-            <a href="#">SMS Terms + </a>
-            <a href="#">Conditions</a>
+            <p href="#">SMS Terms + </p>
+            <p href="#">Conditions</p>
           </span>
-          {/* <span id='ft-el'><a href='#' >Georgia </a><a href="#">Film</a></span> */}
-          {/* <span id='ft-el'><a href="#">Impact </a><a href="#">Report</a></span> */}
+
           <div className="sm-handles">
             <Link className="youtube handles" to="#" target="_blank">
-              <FontAwesomeIcon icon={faYoutube} color="#fff" />
+              <FontAwesomeIcon icon={faYoutube} color="#000" />
             </Link>
             <Link className="insta handles" to="#" target="_blank">
-              <FontAwesomeIcon icon={faInstagram} color="#fff" />
+              <FontAwesomeIcon icon={faInstagram} color="#000" />
             </Link>
             <Link className="facebook handles" to="#" target="_blank">
-              <FontAwesomeIcon icon={faFacebook} color="#fff" />
+              <FontAwesomeIcon icon={faFacebook} color="#000" />
             </Link>
             <Link className="twitter handles" to="#" target="_blank">
-              <FontAwesomeIcon icon={faTwitter} color="#fff" />
+              <FontAwesomeIcon icon={faTwitter} color="#000" />
             </Link>
           </div>
         </div>

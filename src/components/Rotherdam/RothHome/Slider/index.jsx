@@ -60,7 +60,7 @@ const Slider = () => {
   return (
     <>
      <div className='place'>
-        <h3>FIND YOUR PLACE AT AMSTERDAM CITY CHURCH</h3>       
+        <h4>FIND YOUR PLACE AT AMSTERDAM CITY CHURCH</h4>       
        </div>
       <Carousel
         responsive={responsive}
@@ -75,35 +75,35 @@ const Slider = () => {
         <div className="slides">
           <Link className="start-box" to="/start">
             <div className="overlay2"></div>
-            <h5>NEW TO PASSION CITY CHURCH?</h5>
+            <h6>NEW TO PASSION CITY CHURCH?</h6>
             <h2>START HERE</h2>
             <p>
               Our desire is that everybody at Amsterdam City Church feels seen
               and can find lasting community
             </p>
-            <h4>START HERE &rarr;</h4>
+            <a>START HERE &rarr;</a>
           </Link>
         </div>
         <div className="slides">
           <Link className="start-box" to="/contact">
             <div className="overlay2"></div>
-            <h5>BE IN THE KNOW</h5>
+            <h6>BE IN THE KNOW</h6>
             <h2>CONNECT WITH US</h2>
             <p>Join our email list to get updates from Amsterdam City Church</p>
-            <h4>SIGN UP &rarr;</h4>
+            <a>SIGN UP &rarr;</a>
           </Link>
         </div>
 
         <div className="slides">
           <Link className="start-box" to="/us">
             <div className="overlay2"></div>
-            <h5> WHO WE ARE AT AMSTERDAM CITY CHURCH</h5>
+            <h6> WHO WE ARE AT AMSTERDAM CITY CHURCH</h6>
             <h2>US</h2>
             <p>
               Get to know more about who we are and what we believe here at
               Amsterdam city church
             </p>
-            <h4> LEARN MORE &rarr;</h4>
+            <a> LEARN MORE &rarr;</a>
           </Link>
         </div>
         <div className="slides">
@@ -114,45 +114,45 @@ const Slider = () => {
             rel="noreferrer"
           >
             <div className="overlay2"></div>
-            <h5>THAT WE MAY</h5>
+            <h6>THAT WE MAY</h6>
             <h2>GIVE</h2>
             <p>Your Generosity is Making a Difference</p>
-            <h4>GIVE &rarr;</h4>
+            <a>GIVE &rarr;</a>
           </a>
         </div>
         <div className="slides">
           <Link className="start-box" to="/serve">
             <div className="overlay2"></div>
-            <h5>SERVE</h5>
+            <h6>SERVE</h6>
             <h2>SERVICE</h2>
             <p>
               One of the best ways to meet people, develop relationships, and
               grow as a follower of Christ is to serve the church
             </p>
-            <h4>SERVE &rarr;</h4>
+            <a>SERVE &rarr;</a>
           </Link>
         </div>
         <div className="slides">
           <Link className="start-box" to="/outreach">
             <div className="overlay2"></div>
-            <h5>SHOWING LOVE</h5>
+            <h6>SHOWING LOVE</h6>
             <h2>OUTREACH</h2>
             <p>
               It is love that connects people all over the world. God is love.
               It is God’s plan to bring love and hope to a hurting world.
             </p>
-            <h4>REACH OUT &rarr;</h4>
+            <a>REACH OUT &rarr;</a>
           </Link>
         </div>
         <div className="slides">
           <Link className="start-box" to="/prayer-request">
             <div className="overlay2"></div>
-            <h5>LET US PRAY FOR YOU</h5>
+            <h6>LET US PRAY FOR YOU</h6>
             <h2>PRAYER REQUEST</h2>
             <p>
              We would love to pray for you.
             </p>
-            <h4> PRAYER REQUEST &rarr;</h4>
+            <a> PRAYER REQUEST &rarr;</a>
           </Link>
         </div>
       </Carousel>

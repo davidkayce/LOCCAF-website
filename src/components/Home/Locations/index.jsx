@@ -35,20 +35,20 @@ const Locations = () => {
           </div>
         <div className="tril-text">
             <div className="main-text">
-            <div className="city">CITY CHURCH DISTRICT</div>
+            <div className={` city ${hoverVid1 || hoverVid2 ? "coloured" :''}`}>CITY CHURCH DISTRICT</div>
           <div
             // className="bloom"
             onMouseEnter={() => setHoverVid1(true)}
             onMouseLeave={() => setHoverVid1(false)}
           >
-            <h1>AMSTERDAM CITY CHURCH</h1>
+            <h1 className={` ${hoverVid1 || hoverVid2 ? "colored" :''}`}>AMSTERDAM CITY CHURCH</h1>
             <h2 className={`bloom ${hoverVid1 ? "shows" :''}`}>Amsterdam, NL</h2>
           </div>
           <div 
         //   className="passion-kids" 
             onMouseEnter={() => setHoverVid2(true)}
             onMouseLeave={() => setHoverVid2(false)}>
-            <h1>HARBOUR CITY CHURCH</h1>
+            <h1 className={` ${hoverVid1 || hoverVid2 ? "colored" :''}`}>HARBOUR CITY CHURCH</h1>
             <h2 className={`passion-kids ${hoverVid2 ? "shows" :''}`}>Rotterdam, NL</h2>
           </div>
           

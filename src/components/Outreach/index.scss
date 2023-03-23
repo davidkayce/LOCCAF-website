@@ -33,7 +33,7 @@
 
                         .top{
                            h1{
-                            font-size: 74px;
+                            font-size: 70px;
                             font-weight: 500;
                            }
                         }
@@ -47,9 +47,9 @@
                             
                                 
                                 p{
-                                    font-size: 21px;
+                                    font-size: 19px;
                                     line-height: 150%;
-                                    font-weight: 400;
+                                    font-weight: 100;
                                     word-spacing: 3px;
                                 }
                         }
@@ -88,7 +88,7 @@
 
             // border: 1px solid black;
             h1{
-                font-size: 55px;
+                font-size: 60px;
                 font-weight: 400;
             }
             p{
@@ -142,6 +142,7 @@
                         height: 470px;
                         overflow: hidden;
                         max-width: calc(27% - 7px);
+                        color: #fff;
 
                         img{
                             position: absolute;

@@ -5,11 +5,12 @@ import { FiChevronDown } from "react-icons/fi";
 import Logo from "../../assets/logo.png";
 import "./index.scss";
 import Menu from "../Navbar/Menu";
+import { useGlobalContext } from '../../context'
+
 
 const Navbar = () => {
-  const [roth, setroth] = useState(JSON.parse(localStorage.getItem('roth')) || "");
+  const {handleOpenChurch, church, setOpenMenu, openMenu, roth,handleCloseChurch} = useGlobalContext()
 
-  const [openMenu, setOpenMenu] = useState(false);
 
   if (openMenu) {
     document.body.classList.add("active-modal");
@@ -17,35 +18,24 @@ const Navbar = () => {
     document.body.classList.remove("active-modal");
   }
 
-  const handleOpenRoth = () =>{
-    setroth("roth")
-    setOpenMenu(false)
- }
- const handleCloseRoth = () =>{
-  setroth("")
-  setOpenMenu(false)
+  // window.addEventListener("popstate", detectState)
 
-}
+  // function detectState () {
+  //   setroth("roth")
+  // }
 
-  useEffect(() =>{
-    if (roth !== ""){
-      handleOpenRoth()
-    }
-   },[roth])
-   useEffect(() => {
 
-    window.localStorage.setItem('roth', JSON.stringify(roth));
-
-  }, [roth]);
 
   if (roth === ""){
     return (
       <>
-        {openMenu && <Menu setOpenMenu={setOpenMenu} openMenu={openMenu} handleOpenRoth={handleOpenRoth} handleCloseRoth={handleCloseRoth}/>}
+        {openMenu && <Menu/>}
         <div className="nav-bar">
           <div className="logo1-con">
             <Link className="logo1" to="/">
-              <h3>City Church District</h3>
+              <h3>CITY</h3>
+              <h3>CHURCH</h3>
+              <h3>DISTRICT</h3>
               <p>
                 <i> The more you know Jesus. The more you know you!</i>
               </p>
@@ -55,14 +45,21 @@ const Navbar = () => {
             </Link>
             <div className="dropdown">
               <button className="drop-btn">
-              Amsterdam <FiChevronDown />
+              Global <FiChevronDown />
               </button>
               <div className="menu">
                 <ul>
+                <li>
+                    <Link
+                      to="/amsterdam" 
+                      id="ams"
+                      onClick={handleOpenChurch}>Amsterdam</Link>
+                  </li>
                   <li>
                     <Link
-                      to="/rotherdam" 
-                      onClick={handleOpenRoth}>Rotherdam</Link>
+                      to="/rotherdam"
+                      id="roth" 
+                      onClick={handleOpenChurch}>Rotherdam</Link>
                   </li>
                 </ul>
               </div>
@@ -129,16 +126,18 @@ const Navbar = () => {
   if (roth === "roth" ){
     return(
       <>
-      {openMenu && <Menu setOpenMenu={setOpenMenu} openMenu={openMenu} handleOpenRoth={handleOpenRoth} handleCloseRoth={handleCloseRoth}/>}
+      {openMenu && <Menu/>}
       <div className="nav-bar">
         <div className="logo1-con">
-          <Link className="logo1" to="/rotherdam">
-            <h3>City Church District</h3>
-            <p>
-              <i> The more you know Jesus. The more you know you!</i>
-            </p>
-          </Link>
-          <Link to="/" >
+          <Link className="logo1" to="rotherdam">
+              <h3>CITY</h3>
+              <h3>CHURCH</h3>
+              <h3>DISTRICT</h3>
+              <p>
+                <i> The more you know Jesus. The more you know you!</i>
+              </p>
+            </Link>
+          <Link to="/rotherdam" >
               <img src={Logo} alt=""/>
             </Link>
           <div className="dropdown">
@@ -149,9 +148,15 @@ const Navbar = () => {
               <ul>
                 <li>
                   <Link
-                   to="/" 
-                   onClick={handleCloseRoth}>Amsterdam</Link>
+                   to="/amsterdam" 
+                   id="ams"
+                   onClick={handleOpenChurch}>Amsterdam</Link>
                 </li>
+                <li>
+                    <Link
+                      to="/" 
+                      onClick={handleCloseChurch}>Global</Link>
+                  </li>
               </ul>
             </div>
           </div>
@@ -171,6 +176,102 @@ const Navbar = () => {
             exact="true"
             activeclassname="active"
             to="/rotherdam/sundays"
+            className="hide"
+          >
+            SUNDAYS
+          </NavLink>
+          <a
+            rel="noreferrer"
+            target='_blank'
+            href="https://useplink.com/payment/mK4x0NBv4nqc1tnDJEPT/"
+            className="hide"
+          >
+            GIVE
+          </a>
+             <div className="dropdown ">
+            <button className="drop-btn hide">
+              WATCH 
+            </button>
+            <div className="menu">
+              <ul>
+                <li>
+                  <a href="https://us02web.zoom.us/j/8812443296?pwd=OWtFazlVUE4xZFlFVlBpVmhvZ2dFdz09" target='_blank' rel="noreferrer">ZOOM</a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/channel/UCvx240pRUOBgxMo4ZRNscxA?sub_confirmation=1" target='_blank' rel="noreferrer">YOUTUBE</a>
+                </li>
+                <li>
+                  <a href="https://open.spotify.com/show/6iOGsfojd34b5SBPlPOShJ?si=71jdz_htT3CMu6jeTEgdXQ" target='_blank' rel="noreferrer">SPOTIFY</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button
+            exact="true"
+            activeclassname="active"
+            className="menu"
+            onClick={() => setOpenMenu(true)}
+          >
+            MENU
+          </button>
+        </nav>
+      </div>
+    </>
+    )
+  }
+  if (roth === "ams" ){
+    return(
+      <>
+      {openMenu && <Menu/>}
+      <div className="nav-bar">
+        <div className="logo1-con">
+          <Link className="logo1" to="/amsterdam">
+              <h3>CITY</h3>
+              <h3>CHURCH</h3>
+              <h3>DISTRICT</h3>
+              <p>
+                <i> The more you know Jesus. The more you know you!</i>
+              </p>
+            </Link>
+          <Link to="/" >
+              <img src={Logo} alt=""/>
+            </Link>
+          <div className="dropdown">
+            <button className="drop-btn">
+            Amsterdam <FiChevronDown />
+            </button>
+            <div className="menu">
+              <ul>
+                <li>
+                  <Link
+                   to="/rotherdam" 
+                    id="roth"
+                   onClick={handleOpenChurch}>Rotherdam</Link>
+                </li>
+                <li>
+                    <Link
+                      to="/" 
+                      onClick={handleCloseChurch}>Global</Link>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+       
+
+        <nav>
+          {/* <NavLink
+            exact="true"
+            activeclassname="active"
+            to="/start"
+            className="hide"
+          >
+            START HERE
+          </NavLink> */}
+          <NavLink
+            exact="true"
+            activeclassname="active"
+            to="/amsterdam/sundays"
             className="hide"
           >
             SUNDAYS

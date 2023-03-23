@@ -16,6 +16,7 @@ const Sundays = () => {
     document.title = "Sundays"
  }, []);
   return (
+    <section>
     <div className="sun-main">
       <div className="sun-pic">
         <div className="overlay"></div>
@@ -40,12 +41,10 @@ const Sundays = () => {
         </div>
         <div className="rhythm-right">
           <div className="right1">
-            <p>
-              <b>
+            <p id="bold">
                 We are a Jesus church. A small tribe of His followers connected
                 by our common faith and a deep desire to see our city [and the
                 world] come to know His power and beauty.
-              </b>
             </p>
             <p>
               We gather each Sunday and there is a spot for everyone of all ages
@@ -105,7 +104,7 @@ const Sundays = () => {
         <div className="five-right">
           <div className="body">
             <div className="top">
-              <h1>THE ENCOUNTER</h1>
+              <h1>ENCOUNTER</h1>
             </div>
             <div className="body-bot">
               <div className="first">
@@ -156,6 +155,7 @@ const Sundays = () => {
       </div>
       <Footer />
     </div>
+    </section>
   );
 };
 

@@ -21,6 +21,24 @@
     }
     
 }
+@media (width<=930px) {
+    .carousel-button-group{
+        float: unset;
+        text-align: center;
+        margin-right: unset;
+    }
+}
+.place{
+    margin-top: 3rem;
+    width: 100%;
+    h4{
+        padding: 2rem;
+        height: auto;
+        font-family: 'GTAmerica';
+        font-weight: 100;
+    }
+    
+}
 .slides{
     width: 23rem;
     max-width: 26rem ;
@@ -37,7 +55,7 @@
         left: 0;
         width: 100%;
         height: 95%;
-        background:white;
+        background:rgba(0, 0, 0, .7);
         opacity: 0;        // transform: rotateX(45deg);
         animation: fadeInUp 2s 2s;
          animation-fill-mode: forwards;
@@ -53,26 +71,33 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        color: white;
         width: 98%;
         padding: 40px 15px;
         height: 100%;
 
         h2{
             font-weight: 400;
+            font-family: 'Saol';
+            font-weight: 700;
         }
      
-        h5{
-            font-weight: 500;
-            color: aqua;
+        h6{
+            color: #2563eb;
+            font-family: 'GTAmerica';
+            font-weight: 100;
+            font-size: 10px;
         }
         
         p{
             line-height: 130%;
+            font-family: 'GTAmerica1';
+            font-weight: 100;
+            font-size: 13px;
         }
-        h4{
-            font-weight: 400;
-
+        a{
+            font-family: 'GTAmerica';
+            font-weight: 100;
+            font-size: 12px;
         }
 
     }
@@ -89,8 +114,8 @@
 
         }
         a{
-           h4{
-            color: aqua;
+           a{
+            color: #3b82f6;
            }
            
         }

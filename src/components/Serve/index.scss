@@ -6,7 +6,7 @@
     color: #1B1212;
 
     .serve{
-        height: 125vh;
+        height: 55rem;
 
 
         .serves{
@@ -31,17 +31,18 @@
                         gap: 1.5rem;
                         flex: 1 1 40%;
                         h1{
-                            font-size: 48px;
-                            font-weight: 500;
+                            font-size: 51px;
+                            font-weight: 700;
                         }
                         .serve-text{
                             position: relative;
                             left: 10%;
+                            width: 75%;
+
                             p{
-                                font-size: 19px;
+                                font-size: 17px;
                                 line-height: 150%;
                                 word-spacing: 3px;
-                                width: 75%;
                             }
                         }
                     }
@@ -69,34 +70,231 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            width: 60%;
+            width: 55%;
             text-align: center;
             gap: 2rem;
             color: #1B1212;
 
             // border: 1px solid black;
             h1{
-                font-size: 55px;
+                font-size: 60px;
                 font-weight: 400;
             }
             p{
-                font-size: 15px;
-
+                font-size: 14px;
+                font-family: 'GTAmerica1';
+                font-weight: 100;
             }
             a{
-                h3{
-                    font-size: 18px;
+                    font-size: 16px;
                     font-weight: 500;
                     color: aqua;
-                }
                 &:hover{
-                    h3{
                     color: #1B1212;
 
-                    }
                 }
                
 
+            }
+        }
+    }
+}
+@media (width <= 1100px) {
+    .serveCon{
+        .serve{
+            .serves{
+                .serviceCon{
+                    .service{
+                        width: 90%;
+                        .left{
+                            h1{
+                                font-size: 45px;
+                            }
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (width <= 940px) {
+    .serveCon{
+        .serve{
+            .serves{
+                .serviceCon{
+                    .service{
+                        width: 95%;
+                        .left{
+                            h1{
+                                font-size: 38px;
+                            }
+                           .serve-text{
+                            width: 95%;
+                            left: 5%;
+                           }
+                        }
+                    }
+                }
+            }
+        }
+        .apply-con{
+            .apply{
+                width: 60%;
+            }
+        }
+    }
+}
+@media (width <= 767px) {
+    .serveCon{
+        .serve{
+            height: 55rem;
+
+            .serves{
+                top: 10%;
+                .serviceCon{
+                    flex-direction: column;
+                    gap: 1rem;
+                    .top{
+                        font-size: 47px;
+                        font-family: 'Saol3';
+                           font-weight: 100;
+                    }
+                    .service{
+                        flex-direction: column-reverse ;
+                        gap: 2.3rem;
+                        height: unset;
+                        width: 89%;
+                        .left{
+                            flex: unset;
+                            top: unset;
+                            height:45%;
+                            h1{
+                                display: none;
+                            }
+                            .serve-text{
+                                left: unset; 
+                                width: 88%;
+
+                                
+                            }
+                        }
+                        .right{
+                        flex: unset;
+                        width: 100%;
+                        height: 45%;
+                        }
+                    }
+                }
+            }
+        }
+        .apply-con{
+            .apply{
+                width: 87%;
+                text-align: unset;
+                align-items: unset;
+
+                h1{
+                    font-size: 39px;
+                    // font-weight: 700;
+                }
+            }
+        }
+    }
+}
+@media (width <= 600px) {
+    .serveCon{
+        .serve{
+            height: 59rem;
+            .serves{
+                .serviceCon{
+                    .top{
+                        width: 90%;
+
+                    }
+
+                   .service{
+                    .left{
+                        .serve-text{
+                            width: 90%;
+                        }
+                    }
+
+                    .right{
+                        height: 47%;
+                        }
+                   }
+                   
+                }
+            }
+        }
+    }
+}
+@media (width <= 400px) {
+    .serveCon{
+        .serve{
+            height: 71rem;
+
+            .serves{
+                .serviceCon{
+
+                    .top{
+                        width: 90%;
+
+                    }
+
+                   .service{
+
+                    .left{
+                        .serve-text{
+                            width: 90%;
+                        }
+                    }
+
+                    .right{
+                        height: 47%;
+                        }
+                   }
+                   
+                }
+            }
+        }
+    }
+}
+@media (width >= 767px) {
+    .serveCon{
+        .serve{
+            .serves{
+                .serviceCon{
+                    .top{
+                        display: none;
+                    }
+                   
+                }
+            }
+        }
+    }
+}
+
+@media (height >= 1000px) {
+    .serveCon{
+        .serve{
+            height: 100vh;
+            .serves{
+                top: 10%;
+                height: 90%;
+                .serviceCon{
+                    height: 100%;
+                    .service{
+                        align-items: center;
+                        width: 85%;
+                        height: 100% ;
+                        .left{
+                            h1{
+                            }
+                        }
+                    }
+                }
             }
         }
     }

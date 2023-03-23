@@ -68,7 +68,7 @@ const About = () => {
             <h1>WHAT WE BELIEVE</h1>
             <p>
               We live in shifting times but are rooted in eternal truths, the
-              teachings of Holy Scripture. Here at Passion City Church we are
+              teachings of Holy Scripture. Here at City Church District we are
               guided by certain foundational beliefs and shaping values.
             </p>
             <h3>Read more about our Theological Truths below.</h3>
@@ -391,8 +391,8 @@ const About = () => {
                 <p>Sundays from 10:45u. till 12:30u.</p>
               </div>
             </div>
-            <Link to="/trilith/sundays">
-              <h4>JOIN US FOR A SUNDAY &rarr;</h4>
+           <Link to="/amsterdam/sundays">
+              JOIN US FOR A SUNDAY &rarr;
             </Link>
           </div>
           <div className="right">
@@ -400,7 +400,7 @@ const About = () => {
               <h1>WHO WE ARE</h1>
             </div>
             <div className="pic">
-              <img src={History} alt="" width={500} />
+              <img src={History} alt=""/>
             </div>
           </div>
         </div>

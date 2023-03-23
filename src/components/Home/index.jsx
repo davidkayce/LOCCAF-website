@@ -13,7 +13,7 @@ const Home = () => {
     document.title = "City Church District"
  }, []);
   return (
-    <>
+    <section>
     <div className='main'>
       <div className="video">
       <div className="overlay">
@@ -51,7 +51,7 @@ const Home = () => {
        
         
     </div>
-    </>
+    </section>
   )
 }
 

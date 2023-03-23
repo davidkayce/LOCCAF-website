@@ -25,7 +25,7 @@ const Start = () => {
     document.title = "Start Here";
   }, []);
   return (
-    <>
+    <section>
       <div className="startCon">
         <div className="main-start">
           <div className="godCon">
@@ -70,7 +70,7 @@ const Start = () => {
           <div className="kingdomCon">
             <div className="kingdom">
               <div className="kingdom-text">
-                <h5>WE ARE KINGDOM PEOPLE</h5>
+                <h6>WE ARE KINGDOM PEOPLE</h6>
                 <h1>WHO WE ARE</h1>
               </div>
               <div className="kingdom-pics">
@@ -98,7 +98,7 @@ const Start = () => {
                       We share all of the important information happening
                       throughout our house. Join our email list today to receive
                       latest news and all of the other important communication
-                      we send out.
+                      we send out.Sign up now to constantly get news.
                     </p>
                   </div>
                 </Link>
@@ -188,7 +188,7 @@ const Start = () => {
                   <h1>WELCOME TO CHURCH</h1>
                 </div>
                 <div className="wel-down">
-                  <h4>DISCOVER THE HEARTBEAT OF CITY CHURCH DISTRICT</h4>
+                  <h5>DISCOVER THE HEARTBEAT OF CITY CHURCH DISTRICT</h5>
                   <p>
                     Welcome to Church is a 2-part opportunity to discover the
                     heartbeat of City Church District. Join us to learn more
@@ -289,7 +289,7 @@ const Start = () => {
                     available seven days a week.
                   </p>
                   <a href="/serve">
-                    <b> SERVE</b>
+                    SERVE
                     &rarr;
                   </a>
                 </div>
@@ -315,7 +315,7 @@ const Start = () => {
                 <img src={Community} alt="" width={500} />
               </div>
               <div className="comm-contents">
-                <h5>BIG CHURCH MADE SMALL</h5>
+                <h6>BIG CHURCH MADE SMALL</h6>
                 <h1>COMMUNITY</h1>
                 <p>
                   Our desire is for everyone who attends  City Church District to
@@ -324,7 +324,7 @@ const Start = () => {
                   life with here. Click below to learn more and find your group!
                 </p>
                 <a href="#">
-                  <b>FIND COMMUNITY</b> &rarr;{" "}
+                  FIND COMMUNITY &rarr;
                 </a>
               </div>
             </div>
@@ -358,7 +358,7 @@ const Start = () => {
           <Footer />
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

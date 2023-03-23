@@ -181,7 +181,7 @@ const Events = () => {
                 className={`img ${hide === "one" ? "hide" : ""}`}
               />
               <YouTube
-                // containerClassName='y-vid'
+                containerClassName='tube-con'
                 className="y-vid"
                 videoId="bozhvs9kalA"
                 onReady={onReady1}
@@ -299,7 +299,7 @@ const Events = () => {
           </div>
         </div>
         <div className="text">
-          Would you love to watch more of our messages?{" "}
+          Would you love to watch more of our messages? 
           <a
             href="https://www.youtube.com/channel/UCvx240pRUOBgxMo4ZRNscxA?sub_confirmation=1"
             target="_blank"
@@ -404,7 +404,7 @@ const Events = () => {
         <div className="pastor">
           <img src={Leader} alt="" />
           <div className="pastor-contents">
-            <h4>OUR LEADERSHIP</h4>
+            <h5>OUR LEADERSHIP</h5>
             <h1>ELDER</h1>
             <h1>JOHN</h1>
             <h1>ANGOH</h1>
@@ -416,7 +416,7 @@ const Events = () => {
             </h3>
           </div>
           <div className="pastor-contents1">
-            <h4>OUR LEADERSHIP</h4>
+            <h5>OUR LEADERSHIP</h5>
             <h1>ELDER JOHN </h1>
             <h1>ANGOH</h1>
             <p>John is the Presiding Overseer of the Amsterdam City Church .</p>

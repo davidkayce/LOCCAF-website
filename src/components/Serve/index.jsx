@@ -15,6 +15,7 @@ const Serve = () => {
         <div className="serve">
           <div className="serves">
             <div className="serviceCon">
+            <h1 className="top">CONNECT THROUGH SERVING</h1>
               <div className="service">
                 <div className="left">
                   <h1>CONNECT THROUGH SERVING</h1>
@@ -56,7 +57,7 @@ const Serve = () => {
               href="https://docs.google.com/forms/d/e/1FAIpQLSdtXPd1CX6lOMDHHrOwqyBwK8pH5dqYTGCrbbguVIWgohNTiA/viewform"
               target="_blank"
             >
-              <h3>SERVE &rarr;</h3>
+              SERVE &rarr;
             </a>
           </div>
         </div>
