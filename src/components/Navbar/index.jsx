@@ -1,5 +1,5 @@
 import React from "react";
-import { useState,useEffect } from "react";
+// import { useState,useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FiChevronDown } from "react-icons/fi";
 import Logo from "../../assets/logo.png";
@@ -9,7 +9,7 @@ import { useGlobalContext } from '../../context'
 
 
 const Navbar = () => {
-  const {handleOpenChurch, church, setOpenMenu, openMenu, roth,handleCloseChurch} = useGlobalContext()
+  const { setOpenMenu, openMenu, roth, handleCurrentChurch, setroth,handleTest} = useGlobalContext()
 
 
   if (openMenu) {
@@ -18,15 +18,11 @@ const Navbar = () => {
     document.body.classList.remove("active-modal");
   }
 
-  // window.addEventListener("popstate", detectState)
-
-  // function detectState () {
-  //   setroth("roth")
-  // }
+  
 
 
 
-  if (roth === ""){
+  if (roth === "" ){
     return (
       <>
         {openMenu && <Menu/>}
@@ -53,13 +49,16 @@ const Navbar = () => {
                     <Link
                       to="/amsterdam" 
                       id="ams"
-                      onClick={handleOpenChurch}>Amsterdam</Link>
+                      onClick={handleTest}
+                      >
+                        Amsterdam</Link>
                   </li>
                   <li>
                     <Link
                       to="/rotherdam"
                       id="roth" 
-                      onClick={handleOpenChurch}>Rotherdam</Link>
+                      onClick={handleTest}
+                      >Rotherdam</Link>
                   </li>
                 </ul>
               </div>
@@ -150,12 +149,14 @@ const Navbar = () => {
                   <Link
                    to="/amsterdam" 
                    id="ams"
-                   onClick={handleOpenChurch}>Amsterdam</Link>
+                   onClick={handleTest}
+                   >Amsterdam</Link>
                 </li>
                 <li>
                     <Link
                       to="/" 
-                      onClick={handleCloseChurch}>Global</Link>
+                      onClick={handleTest}
+                      >Global</Link>
                   </li>
               </ul>
             </div>
@@ -246,12 +247,14 @@ const Navbar = () => {
                   <Link
                    to="/rotherdam" 
                     id="roth"
-                   onClick={handleOpenChurch}>Rotherdam</Link>
+                    onClick={handleTest}
+                    >Rotherdam</Link>
                 </li>
                 <li>
                     <Link
                       to="/" 
-                      onClick={handleCloseChurch}>Global</Link>
+                      onClick={handleTest}
+                      >Global</Link>
                   </li>
               </ul>
             </div>

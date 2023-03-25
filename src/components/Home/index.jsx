@@ -2,13 +2,27 @@ import Amsterdam from '../../assets/amsterdam.mp4'
 import Slider from './Slider'
 import Locations from './Locations'
 import './index.scss'
-import Messages from './Messages'
+// import Messages from './Messages'
 import Events from './Events'
 import Footer from '../Footer'
 import { useEffect } from 'react'
+import { useGlobalContext } from '../../context'
+
 
 
 const Home = () => {
+  const {roth, setroth,sethandleCurrentChurch } = useGlobalContext()
+
+  // useEffect(() => {
+  //   window.addEventListener('popstate', detectState)
+  //   // return () => window.removeEventListener('popstate', detectState)
+  // }, [detectState])
+  // function detectState () {
+  //   let oldChurchVal = roth.at(-2)
+  //   sethandleCurrentChurch(oldChurchVal)
+  //   // setroth([...roth, oldChurchVal])
+  // }
+
   useEffect(() => {
     document.title = "City Church District"
  }, []);

@@ -1,48 +1,78 @@
 import React, {useContext, useEffect, useState,useRef} from 'react'
-
+import { useLocation } from 'react-router-dom';
 
 
   const AppContext = React.createContext()
   const AppProvider = ({children}) =>{
-    const [roth, setroth] = useState(JSON.parse(localStorage.getItem('roth')) || "");
-    const church = useRef("");
+    const [roth, setroth] = useState("");
+    const church = useRef(window.location.pathname);
+    const location = useLocation();
+
 
     const [openMenu, setOpenMenu] = useState(false);
 
-  //  const GetPreviousRoth = (value) =>{
-  //   const ref = useRef();
-  //   useEffect(() => {
-  //     ref.current = value;
-  //   }, [value]);
-  //   return ref.current;
-  //  } 
+    // const usePathname = () => {
+    //   return ;
+    // }
+    // const [handleCurrentChurch, sethandleCurrentChurch] = useState('');
 
 
-    const handleOpenChurch = (e) =>{
-      church.current = e.currentTarget.id;
-      if (roth === church.current) {
-        setroth("");
-      } else {
-        setroth(church.current);
+ 
+
+    const handleTest =  () =>{
+      if (location.pathname === "/"){
+        setroth("")
       }
-        setOpenMenu(false)
-     }
-     
-     const handleCloseChurch = () =>{
-      setroth("")
-      setOpenMenu(false)
-    
+      if (location.pathname === "/amsterdam"){
+        setroth("ams")
+      }
+      if (location.pathname === "/rotherdam"){
+        setroth("roth")
+      }
+      
+
     }
+
+ 
    
+
+
+    // const handleOpenChurch = (e) =>{
+    //   church.current = e.currentTarget.id;
+    //   if (roth === church.current) {
+    //     setroth("");
+    //   } else {
+    //     setroth(church.current);
+    //   }
+    //     setOpenMenu(false)
+    //  }
      
-       useEffect(() => {
+    //  const handleCloseChurch = () =>{
+    //   setroth("")
+    //   setOpenMenu(false)
     
-        window.localStorage.setItem('roth', JSON.stringify(roth));
+    // }
+    // useEffect(() => {
+    //   if (roth){
+    //   }
+    //   console.log(roth)
+
+
+    // },[roth]);
+   
+    useEffect(() =>{
+      handleTest()
+      console.log(location.pathname)
+    },[location])
+     
+      //  useEffect(() => {
     
-      }, [roth]);
+      //   localStorage.setItem('roth', JSON.stringify(roth));
+    
+      // }, [roth]);
 
       return (
-        <AppContext.Provider value={{roth, setroth, openMenu, setOpenMenu, handleOpenChurch, church , handleCloseChurch, }}>
+        <AppContext.Provider value={{roth, setroth, openMenu, setOpenMenu, church ,handleTest }}>
             {children}
         </AppContext.Provider>
     )

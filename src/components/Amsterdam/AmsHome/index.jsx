@@ -8,8 +8,18 @@ import Slider from '../../Rotherdam/RothHome/Slider'
 import "./index.scss"
 
 const AmsHome = () => {
-    const {setroth, roth} = useGlobalContext()
+    const {setroth, roth, handleCurrentChurch, sethandleCurrentChurch} = useGlobalContext()
 
+    // useEffect(() => {
+    //   window.addEventListener('popstate', detectState)
+    //   // return () => window.removeEventListener('popstate', detectState)
+    // }, [detectState])
+
+    // function detectState () {
+    //   let oldChurchVal = roth.at(-2)
+    //   sethandleCurrentChurch(oldChurchVal)
+    //   // setroth([...roth, oldChurchVal])
+    // }
   
     useEffect(() => {
       document.title = "Amsterdam"
