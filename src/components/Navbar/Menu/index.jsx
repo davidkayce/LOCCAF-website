@@ -1,12 +1,12 @@
 import React, { useState,useEffect } from "react";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Thumb2 from "../../../assets/thumb2.jpg";
+import Thumb2 from "../../../assets/images/thumb2.jpg";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import Pastor from "../../../assets/mess5.jpg";
+import Pastor from "../../../assets/images/mess5.jpg";
 import { FiChevronDown } from "react-icons/fi";
-import Logo from "../../../assets/logo.png";
+import Logo from "../../../assets/images/logo.png";
 import { useGlobalContext } from '../../../context'
 
 
@@ -86,9 +86,9 @@ const Menu = () => {
                     </li>
                     <li>
                       <Link 
-                      to="/rotherdam"
+                      to="/rotterdam"
                       id="roth" 
-                      onClick={handleOpenChurch}>Rotherdam
+                      onClick={handleOpenChurch}>Rotterdam
                       </Link>
                     </li>
                   </ul>

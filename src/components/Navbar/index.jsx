@@ -2,7 +2,7 @@ import React from "react";
 // import { useState,useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FiChevronDown } from "react-icons/fi";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/images/logo.png";
 import "./index.scss";
 import Menu from "../Navbar/Menu";
 import { useGlobalContext } from '../../context'
@@ -55,10 +55,10 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link
-                      to="/rotherdam"
+                      to="/rotterdam"
                       id="roth" 
                       onClick={handleTest}
-                      >Rotherdam</Link>
+                      >Rotterdam</Link>
                   </li>
                 </ul>
               </div>
@@ -128,7 +128,7 @@ const Navbar = () => {
       {openMenu && <Menu/>}
       <div className="nav-bar">
         <div className="logo1-con">
-          <Link className="logo1" to="rotherdam">
+          <Link className="logo1" to="rotterdam">
               <h3>CITY</h3>
               <h3>CHURCH</h3>
               <h3>DISTRICT</h3>
@@ -136,12 +136,12 @@ const Navbar = () => {
                 <i> The more you know Jesus. The more you know you!</i>
               </p>
             </Link>
-          <Link to="/rotherdam" >
+          <Link to="/rotterdam" >
               <img src={Logo} alt=""/>
             </Link>
           <div className="dropdown">
             <button className="drop-btn">
-            Rotherdam <FiChevronDown />
+            Rotterdam <FiChevronDown />
             </button>
             <div className="menu">
               <ul>
@@ -176,7 +176,7 @@ const Navbar = () => {
           <NavLink
             exact="true"
             activeclassname="active"
-            to="/rotherdam/sundays"
+            to="/rotterdam/sundays"
             className="hide"
           >
             SUNDAYS
@@ -245,10 +245,10 @@ const Navbar = () => {
               <ul>
                 <li>
                   <Link
-                   to="/rotherdam" 
+                   to="/rotterdam" 
                     id="roth"
                     onClick={handleTest}
-                    >Rotherdam</Link>
+                    >Rotterdam</Link>
                 </li>
                 <li>
                     <Link

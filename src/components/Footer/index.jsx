@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.scss";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -32,7 +32,7 @@ const Footer = () => {
           <div className="locate-city right">
               <h5>LOCATIONS</h5>
               <a href="/">Amsterdam</a>
-              <a href="#">Rotherdam</a>
+              <a href="#">Rotterdam</a>
             </div>
             <div className="passion-city right">
               <h5>CITY CHURCH </h5>

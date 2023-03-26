@@ -1,18 +1,18 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.scss';
-import Home from './components/Home';
 import Layout from './components/Layout';
-import Start from './components/Start';
-import Sundays from './components/Sundays';
-import About from './components/About';
-import Serve from './components/Serve';
-import Baptism from './components/Baptism';
-import Prayer from './components/Prayer';
-import Outreach from './components/Outreach';
-import Contact from './components/Contact';
-import RothHome from './components/Rotherdam/RothHome';
-import RothSundays from './components/Rotherdam/RothSundays';
-import AmsHome from './components/Amsterdam/AmsHome';
+import Home from './pages/Home';
+import Start from './pages/Start';
+import Sundays from './pages/Sundays';
+import About from './pages/About';
+import Serve from './pages/Serve';
+import Baptism from './pages/Baptism';
+import Prayer from './pages/Prayer';
+import Outreach from './pages/Outreach';
+import Contact from './pages/Contact';
+import RottHome from './pages/Rotterdam/Home';
+import RottSundays from './pages/Rotterdam/Sundays';
+import AmsHome from './pages/Amsterdam/Home';
 // import AmsSundays from './components/Amsterdam/AmsSundays';
 
 function App() {
@@ -30,9 +30,9 @@ function App() {
         <Route path='/prayer-request' element={<Prayer/>}/>
         <Route path='/outreach' element={<Outreach/>}/>
         <Route path='/contact' element={<Contact/>}/>
-        {/* Rotherdam */}
-        <Route path='/rotherdam' element={<RothHome/>}/>
-        <Route path='/rotherdam/sundays' element={<RothSundays/>}/>
+        {/* Rotterdam */}
+        <Route path='/rotterdam' element={<RottHome/>}/>
+        <Route path='/rotterdam/sundays' element={<RottSundays/>}/>
         {/* Amsterdam */}
         <Route path='/amsterdam' element={<AmsHome/>}/>
         {/* <Route path='/amsterdam/sundays' element={<AmsSundays/>}/> */}

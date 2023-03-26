@@ -26,7 +26,7 @@ import { useLocation } from 'react-router-dom';
       if (location.pathname === "/amsterdam"){
         setroth("ams")
       }
-      if (location.pathname === "/rotherdam"){
+      if (location.pathname === "/rotterdam"){
         setroth("roth")
       }
       
