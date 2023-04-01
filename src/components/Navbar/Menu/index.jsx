@@ -1,21 +1,14 @@
 import React, { useState,useEffect } from "react";
 import "./index.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Thumb2 from "../../../assets/images/thumb2.jpg";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import Pastor from "../../../assets/images/mess5.jpg";
 import { FiChevronDown } from "react-icons/fi";
 import Logo from "../../../assets/images/logo.png";
 import { useGlobalContext } from '../../../context'
 
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
-import {
-  faFacebook,
-  faInstagram,
-  faTwitter,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
 
 const Menu = () => {
   const {setOpenMenu,handleOpenChurch, handleCloseChurch} = useGlobalContext()
@@ -155,16 +148,16 @@ const Menu = () => {
               </div>
               <div className="sm-handles">
                 <Link className="youtube handles" to="#" target="_blank">
-                  <FontAwesomeIcon icon={faYoutube} color="#fff" />
+                  <FaYoutube color="#fff" />
                 </Link>
                 <Link className="insta handles" to="#" target="_blank">
-                  <FontAwesomeIcon icon={faInstagram} color="#fff" />
+                  <FaInstagram color="#fff" />
                 </Link>
                 <Link className="facebook handles" to="#" target="_blank">
-                  <FontAwesomeIcon icon={faFacebook} color="#fff" />
+                  <FaFacebook color="#fff" />
                 </Link>
                 <Link className="twitter handles" to="#" target="_blank">
-                  <FontAwesomeIcon icon={faTwitter} color="#fff" />
+                  <FaTwitter color="#fff" />
                 </Link>
               </div>
             </div>

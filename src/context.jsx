@@ -11,10 +11,7 @@ import { useLocation } from 'react-router-dom';
 
     const [openMenu, setOpenMenu] = useState(false);
 
-    // const usePathname = () => {
-    //   return ;
-    // }
-    // const [handleCurrentChurch, sethandleCurrentChurch] = useState('');
+
 
 
  
@@ -37,39 +34,14 @@ import { useLocation } from 'react-router-dom';
    
 
 
-    // const handleOpenChurch = (e) =>{
-    //   church.current = e.currentTarget.id;
-    //   if (roth === church.current) {
-    //     setroth("");
-    //   } else {
-    //     setroth(church.current);
-    //   }
-    //     setOpenMenu(false)
-    //  }
-     
-    //  const handleCloseChurch = () =>{
-    //   setroth("")
-    //   setOpenMenu(false)
     
-    // }
-    // useEffect(() => {
-    //   if (roth){
-    //   }
-    //   console.log(roth)
-
-
-    // },[roth]);
    
     useEffect(() =>{
       handleTest()
       console.log(location.pathname)
     },[location])
      
-      //  useEffect(() => {
-    
-      //   localStorage.setItem('roth', JSON.stringify(roth));
-    
-      // }, [roth]);
+      
 
       return (
         <AppContext.Provider value={{roth, setroth, openMenu, setOpenMenu, church ,handleTest }}>

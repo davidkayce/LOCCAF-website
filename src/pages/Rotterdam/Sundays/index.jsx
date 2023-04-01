@@ -3,10 +3,8 @@ import Sunday from "../../../assets/images/sundays.jpg";
 import Rhythm from "../../../assets/images/rhythm.jpg";
 import Five from "../../../assets/images/five.webp";
 import House from "../../../assets/images/House.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import "./index.scss";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from 'react'
 import Footer from "../../../components/Footer";
 import Trilith from "./Trilith";

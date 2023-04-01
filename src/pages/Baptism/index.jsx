@@ -1,8 +1,6 @@
 import React from "react";
 import Baptist from "../../assets/images/baptism.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { FaPhoneSquare } from "react-icons/fa";
+import { FaPhoneSquareAlt, FaEnvelope } from "react-icons/fa";
 import { BsFillCalendarFill } from "react-icons/bs";
 import Footer from "../../components/Footer";
 import { useEffect } from 'react'
@@ -96,7 +94,7 @@ const Baptism = () => {
                   <div className="email">
                     <input type="email" id="email" required />
                     <div className="svg">
-                    <FontAwesomeIcon icon={faEnvelope} />
+                    <FaEnvelope/>
                     </div>
                   </div>
                 </div>
@@ -106,7 +104,7 @@ const Baptism = () => {
                     <div className="phone">
                       <input type="tel" id="number" required />
                       <div className="svg">
-                      <FaPhoneSquare />
+                      <FaPhoneSquareAlt />
                       </div>
                     </div>
                   </div>

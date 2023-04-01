@@ -1,7 +1,5 @@
 import { useEffect } from 'react'
 import { useGlobalContext } from '../../context'
-
-// import Messages from './Messages'
 import Slider from './Slider'
 import Locations from './Locations'
 import Events from './Events'

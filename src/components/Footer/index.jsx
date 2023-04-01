@@ -1,13 +1,9 @@
 import React from "react";
 import "./index.scss";
 import Logo from "../../assets/images/logo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faInstagram,
-  faTwitter,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
+
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -94,16 +90,16 @@ const Footer = () => {
 
           <div className="sm-handles">
             <Link className="youtube handles" to="#" target="_blank">
-              <FontAwesomeIcon icon={faYoutube} color="#000" />
+              <FaYoutube color="#000" />
             </Link>
             <Link className="insta handles" to="#" target="_blank">
-              <FontAwesomeIcon icon={faInstagram} color="#000" />
+              <FaInstagram color="#000" />
             </Link>
             <Link className="facebook handles" to="#" target="_blank">
-              <FontAwesomeIcon icon={faFacebook} color="#000" />
+              <FaFacebook color="#000" />
             </Link>
             <Link className="twitter handles" to="#" target="_blank">
-              <FontAwesomeIcon icon={faTwitter} color="#000" />
+              <FaTwitter color="#000" />
             </Link>
           </div>
         </div>

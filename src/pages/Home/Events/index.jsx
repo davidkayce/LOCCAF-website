@@ -12,9 +12,7 @@ import Thumb3 from "../../../assets/images/thumb3.jpg";
 import Thumb4 from "../../../assets/images/thumb4.jpg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-// import { FiArrowRight } from "react-icons/fi";
+
 import YouTube from "react-youtube";
 import { useState } from "react";
 

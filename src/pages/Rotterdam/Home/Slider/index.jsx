@@ -1,11 +1,9 @@
-import React, { useRef, useState } from "react";
+// import React, { useRef, useState } from "react";
 import "./index.scss";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Link, NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FiArrowRight } from "react-icons/fi";
+import { Link } from "react-router-dom";
+
 
 const Slider = () => {
   const responsive = {
