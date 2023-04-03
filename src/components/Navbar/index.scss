@@ -10,7 +10,8 @@ body.active-modal{
     z-index: 5;
     justify-content: space-between;
     mix-blend-mode: difference;
-    
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px); 
     .logo1-con{
         margin: 2rem;
         // display: none;
