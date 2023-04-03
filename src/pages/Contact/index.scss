@@ -252,13 +252,25 @@
 
 
                 h4{
-                    font-size: 21px;
-                    // font-weight: 500;
-                }
-                p{
-                    font-size: 17px;
+                    font-size: 15px;
+                    word-spacing: 3.5px;
+                    font-family: 'GTAmerica';
                     line-height: 150%;
                 }
+                p{
+                    font-size: 15px;
+                    word-spacing: 3.5px;
+                    font-family: 'GTAmerica1';
+                    line-height: 150%;
+
+                    b{
+                        font-size: 13px;
+                        word-spacing: 3.5px;
+                        font-family: 'GTAmerica';
+                        line-height: 150%;  
+                    }
+                }
+               
                }
                .number{
                 display: flex;
@@ -266,12 +278,16 @@
                 gap: 1rem;
 
                 h4{
-                    font-size: 21px;
-                    // font-weight: 500;
+                    font-size: 14px;
+                    word-spacing: 3.5px;
+                    font-family: 'GTAmerica';
+                    line-height: 150%;
                 }
                 a{
-                    font-size: 17px;
-                    color: aqua;
+                    color: #3b82f6;
+                    font-size: 15px;
+                    word-spacing: 3.5px;
+                    font-family: 'GTAmerica1';
                     line-height: 150%;
 
                 }
@@ -283,14 +299,17 @@
 
 
                 h4{
-                    font-size: 21px;
-                    // font-weight: 500;
+                    font-size: 14px;
+                    word-spacing: 3.5px;
+                    font-family: 'GTAmerica';
+                    line-height: 150%;
                 }
                 a{
-                    font-size: 17px;
-                    color: aqua;
+                    color: #3b82f6;
+                    font-size: 15px;
+                    word-spacing: 3.5px;
+                    font-family: 'GTAmerica1';
                     line-height: 150%;
-
                 }
                }
                .open{
@@ -298,11 +317,15 @@
                 flex-direction: column;
                 gap: 1rem;
                 h4{
-                    font-size: 21px;
-                    // font-weight: 500;
+                    font-size: 14px;
+                    word-spacing: 3.5px;
+                    font-family: 'GTAmerica';
+                    line-height: 150%;
                 }
                 p{
-                    font-size: 17px;
+                    font-size: 15px;
+                    word-spacing: 3.5px;
+                    font-family: 'GTAmerica1';
                     line-height: 150%;
 
                 }

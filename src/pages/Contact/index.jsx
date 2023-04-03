@@ -68,10 +68,10 @@ const Contact = () => {
               <div className="address">
                 <h4>Address:</h4>
                 <p>
-                  <b>Office: </b> Parkhof 67, 1106SZ Amsterdam
+                  <b>Amsterdam: </b> Atlantisplein 1, 1093 NE Amsterdam
                 </p>
                 <p>
-                  <b>Sundays: </b> Atlantisplein 1, 1093NE Amsterdam
+                  <b>Rotherdam: </b> Schiedamseweg 19B, 3026 AB Rotterdam
                 </p>
               </div>
               <div className="number">
@@ -86,8 +86,8 @@ const Contact = () => {
               </div>
               <div className="open">
                 <h4>We are open:</h4>
-                <p>Friday – 8PM</p>
-                <p>Sunday – 10:45AM </p>
+                <p>Amsterdam: 10:50am CET</p>
+                <p>Rotterdam: 2pm CET </p>
               </div>
             </div>
           </div>

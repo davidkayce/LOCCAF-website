@@ -58,7 +58,7 @@ const Slider = () => {
   return (
     <>
      <div className='place'>
-        <h4>FIND YOUR PLACE AT HABOUR CITY CHURCH</h4>       
+        <h4>FIND YOUR PLACE AT AMSTERDAM CITY CHURCH</h4>       
        </div>
       <Carousel
         responsive={responsive}

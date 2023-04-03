@@ -29,20 +29,20 @@ const Trilith = () => {
           </div>
         <div className="tril-text">
             <div className="main-text">
-            <div className="place">A PLACE IN OUR HOUSE FOR ALL AGES</div>
+            <div className={`city ${hoverVid1 || hoverVid2 || hoverVid3 || hoverVid4 ? "coloured" :''}`}>A PLACE IN OUR HOUSE FOR ALL AGES</div>
           <div
             // className="bloom"
             onMouseEnter={() => setHoverVid1(true)}
             onMouseLeave={() => setHoverVid1(false)}
           >
-            <h1>bloom</h1>
+            <h1 className={` ${hoverVid1 || hoverVid2 || hoverVid3 || hoverVid4 ? "colored" :''}`}>bloom</h1>
             <h2 className={`bloom ${hoverVid1 ? "shows" :''}`}>6 WEEKS - PRE-K</h2>
           </div>
           <div 
         //   className="passion-kids" 
             onMouseEnter={() => setHoverVid2(true)}
             onMouseLeave={() => setHoverVid2(false)}>
-            <h1> KIDS</h1>
+            <h1 className={` ${hoverVid1 || hoverVid2 || hoverVid3 || hoverVid4 ? "colored" :''}`}> KIDS</h1>
             <h2 className={`passion-kids ${hoverVid2 ? "shows" :''}`}>K - 5TH GRADE</h2>
           </div>
           <div
@@ -50,7 +50,7 @@ const Trilith = () => {
           onMouseEnter={() => setHoverVid3(true)}
           onMouseLeave={() => setHoverVid3(false)}
           >
-            <h1> STUDENTS</h1>
+            <h1 className={` ${hoverVid1 || hoverVid2 || hoverVid3 || hoverVid4 ? "colored" :''}`}> STUDENTS</h1>
             <h2 className={`passion-stud ${hoverVid3 ? "shows" :''}`}>6TH - 12TH GRADE</h2>
           </div>
           <div 
@@ -58,7 +58,7 @@ const Trilith = () => {
           onMouseEnter={() => setHoverVid4(true)}
           onMouseLeave={() => setHoverVid4(false)}
           >
-            <h1>DOOR HOLDERS</h1>
+            <h1 className={` ${hoverVid1 || hoverVid2 || hoverVid3 || hoverVid4 ? "colored" :''}`}>DOOR HOLDERS</h1>
             <h2 className={`holders ${hoverVid4 ? "shows" :''}`}>PSALM 84:10</h2>
           </div>
             </div>

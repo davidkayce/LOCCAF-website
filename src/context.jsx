@@ -22,9 +22,12 @@ import { useLocation } from 'react-router-dom';
       }
       if (location.pathname === "/amsterdam"){
         setroth("ams")
+        console.log(location)
+
       }
-      if (location.pathname === "/rotterdam"){
+      if (location.pathname === "/rotterdam" || location.pathname === "/rotterdam/sundays" ){
         setroth("roth")
+        console.log(location)
       }
       
 

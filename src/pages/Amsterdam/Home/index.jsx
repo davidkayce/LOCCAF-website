@@ -1,24 +1,15 @@
 import React, { useEffect } from 'react'
 import { useGlobalContext } from '../../../context'
 import Footer from '../../../components/Footer'
-import Events from '../../Rotterdam/Home/Events'
+import Events from '../../Amsterdam/Home/Events'
 import Habor from '../../../assets/videos/habor-vid.mp4'
-import Slider from '../../Rotterdam/Home/Slider'
+import Slider from '../../Amsterdam/Home/Slider'
 import "./index.scss"
 
 const AmsHome = () => {
     const {setroth, roth, handleCurrentChurch, sethandleCurrentChurch} = useGlobalContext()
 
-    // useEffect(() => {
-    //   window.addEventListener('popstate', detectState)
-    //   // return () => window.removeEventListener('popstate', detectState)
-    // }, [detectState])
-
-    // function detectState () {
-    //   let oldChurchVal = roth.at(-2)
-    //   sethandleCurrentChurch(oldChurchVal)
-    //   // setroth([...roth, oldChurchVal])
-    // }
+   
   
     useEffect(() => {
       document.title = "Amsterdam"
@@ -40,7 +31,7 @@ const AmsHome = () => {
         <div className='join'>
           <div className="text">
             <h5>JOIN US FOR AN ONLINE GATHERING</h5>
-            <p>We gather online each Sunday at 9:30a and 11:45a ET and would love for you to join us!</p>
+            <p>We gather online each Sunday 10:50am CET and would love for you to join us!</p>
             <h4><a >JOIN US &rarr;</a></h4>
           </div>
       </div>

@@ -19,6 +19,7 @@ const Sundays = () => {
     document.title = "Sundays"
  }, []);
   return (
+    <section>
     <div className="sun-main">
       <div className="sun-pic">
         <div className="overlay"></div>
@@ -26,8 +27,8 @@ const Sundays = () => {
           <img src={Sunday} alt="" />
         </div>
         <div className="pic-contents">
-          <div>JOIN US ON</div>
-          <div>SUNDAY</div>
+            <div>SUNDAYS AT</div>
+          <div>HABOUR</div>
         </div>
       </div>
       <div className="rhythmCon">
@@ -59,7 +60,7 @@ const Sundays = () => {
             <ul>
               <li>
                 We gather on Sundays at 9:30 am! We are located at
-                <a href="#">Atlantisplein 1, 1093NE Amsterdam.</a>
+                <b>Schiedamseweg 19B, 3026 AB Rotterdam</b>
               </li>
             </ul>
           </div>
@@ -74,7 +75,7 @@ const Sundays = () => {
                 great care of your kids while you attend the gathering. Check-in
                 opens as early as 8:45 am, and you can plan to pick up your
                 child after the gathering ends.  Students (6th-8th) will
-                meet in the Shipyard (Atlantisplein 1, 1093NE Amsterdam).
+                meet in the Shipyard (Schiedamseweg 19B, 3026 AB Rotterdam).
               </li>
             </ul>
           </div>
@@ -157,6 +158,7 @@ const Sundays = () => {
       </div>
       <Footer />
     </div>
+    </section>
   );
 };
 

@@ -29,7 +29,7 @@ const Trilith = () => {
           </div>
         <div className="tril-text">
             <div className="main-text">
-            <div className={`city ${hoverVid1 || hoverVid2 ? "coloured" :''}`}>A PLACE IN OUR HOUSE FOR ALL AGES</div>
+            <div className={`city ${hoverVid1 || hoverVid2 || hoverVid3 || hoverVid4 ? "coloured" :''}`}>A PLACE IN OUR HOUSE FOR ALL AGES</div>
           <div
             // className="bloom"
             onMouseEnter={() => setHoverVid1(true)}

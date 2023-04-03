@@ -56,7 +56,7 @@ const Sundays = () => {
             <ul>
               <li>
                 We gather on Sundays at 9:30 am! We are located at
-                <a href="#">Parkhof 67, 1106SZ Amsterdam.</a>
+                <b >Atlantisplein 1, 1093 NE Amsterdam</b>
               </li>
             </ul>
           </div>
@@ -71,7 +71,7 @@ const Sundays = () => {
                 great care of your kids while you attend the gathering. Check-in
                 opens as early as 8:45 am, and you can plan to pick up your
                 child after the gathering ends.  Students (6th-8th) will
-                meet in the Shipyard (Parkhof 67, 1106SZ Amsterdam).
+                meet in the Shipyard (Atlantisplein 1, 1093 NE Amsterdam).
               </li>
             </ul>
           </div>

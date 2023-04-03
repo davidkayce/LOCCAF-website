@@ -10,7 +10,7 @@ body.active-modal{
     z-index: 5;
     justify-content: space-between;
     mix-blend-mode: difference;
-  
+    
     .logo1-con{
         margin: 2rem;
         // display: none;
@@ -33,13 +33,9 @@ body.active-modal{
 
             }
             p{
-                i{
                     font-size: 11px;
                     font-family: 'GTAmerica1';
-                    font-weight: 700;
-                }
-              
-
+                    font-weight: 500;
             }
            
         }
@@ -209,7 +205,7 @@ body.active-modal{
                 background: none;
                 border: none;
                 color: white;
-                font-size: 9px;
+                font-size: 11px;
             font-family: 'GTAmerica';
             font-weight: 100;
                 position: relative;
@@ -291,7 +287,10 @@ body.active-modal{
        
        
     }
+
+   
 }
+
 @media (width <= 950px) {
     nav{
         .hide{
