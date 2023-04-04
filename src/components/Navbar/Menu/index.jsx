@@ -52,7 +52,7 @@ const Menu = () => {
                 onMouseLeave={() => setHover(false)}
               >
                 <button className="drop-btn">
-                  NETHERLAND <FiChevronDown />
+                  NETHERLANDs <FiChevronDown />
                 </button>
                 <div className="menu">
                   <ul>
