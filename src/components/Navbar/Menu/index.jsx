@@ -9,7 +9,7 @@ import { useGlobalContext } from "../../../context";
 import "./index.scss";
 
 const Menu = () => {
-  const {setOpenMenu, handleTest} = useGlobalContext()
+  const {setOpenMenu} = useGlobalContext()
   const [hover, setHover] = useState(false);
 
   return (
