@@ -22,12 +22,12 @@ import { useLocation } from 'react-router-dom';
       }
       if (location.pathname === "/amsterdam"){
         setroth("ams")
-        console.log(location)
+        setOpenMenu(false)
 
       }
       if (location.pathname === "/rotterdam" || location.pathname === "/rotterdam/sundays" ){
         setroth("roth")
-        console.log(location)
+        setOpenMenu(false)
       }
       
 
@@ -41,7 +41,6 @@ import { useLocation } from 'react-router-dom';
    
     useEffect(() =>{
       handleTest()
-      console.log(location.pathname)
     },[location])
      
       

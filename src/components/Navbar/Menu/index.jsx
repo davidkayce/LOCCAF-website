@@ -11,7 +11,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 
 const Menu = () => {
-  const {setOpenMenu,handleOpenChurch, handleCloseChurch} = useGlobalContext()
+  const {setOpenMenu, handleTest} = useGlobalContext()
 
   const [hover, setHover] = useState(false);
 
@@ -68,17 +68,20 @@ const Menu = () => {
                 <div className="menu">
                   <ul>
                     <li>
-                      <Link 
-                      to="/amsterdam"
+                      <a 
+                      href="/amsterdam"
                       id="ams"
-                      onClick={handleOpenChurch}>Amsterdam</Link>
+                      // onClick={handleTest}
+                      >
+                        Amsterdam</a>
                     </li>
                     <li>
-                      <Link 
-                      to="/rotterdam"
+                      <a 
+                      href="/rotterdam"
                       id="roth" 
-                      onClick={handleOpenChurch}>Rotterdam
-                      </Link>
+                      // onClick={handleTest}
+                      >Rotterdam
+                      </a>
                     </li>
                   </ul>
                 </div>
