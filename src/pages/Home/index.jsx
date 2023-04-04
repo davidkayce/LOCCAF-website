@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import Slider from "./Slider";
 import Locations from "./Locations";
 import Events from "./Events";
 import Footer from "../../components/Footer";
