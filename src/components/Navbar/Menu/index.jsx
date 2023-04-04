@@ -1,21 +1,16 @@
 import React, { useState, useEffect } from "react";
-import "./index.scss";
 import Thumb2 from "../../../assets/images/thumb2.jpg";
 import { Link } from "react-router-dom";
-import Pastor from "../../../assets/images/mess5.jpg";
 import { FiChevronDown } from "react-icons/fi";
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import Logo from "../../../assets/images/logo.png";
 import { useGlobalContext } from "../../../context";
 
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import "./index.scss";
 
 const Menu = () => {
-  const { setOpenMenu, handleOpenChurch, handleCloseChurch } =
-    useGlobalContext();
-
+  const {setOpenMenu, handleTest} = useGlobalContext()
   const [hover, setHover] = useState(false);
-
-  
 
   return (
     <div className="menu-modalCon">
@@ -62,18 +57,20 @@ const Menu = () => {
                 <div className="menu">
                   <ul>
                     <li>
-                      <Link to="/amsterdam" id="ams" onClick={handleOpenChurch}>
-                        Amsterdam
-                      </Link>
+                      <a 
+                      href="/amsterdam"
+                      id="ams"
+                      // onClick={handleTest}
+                      >
+                        Amsterdam</a>
                     </li>
                     <li>
-                      <Link
-                        to="/rotterdam"
-                        id="roth"
-                        onClick={handleOpenChurch}
-                      >
-                        Rotterdam
-                      </Link>
+                      <a 
+                      href="/rotterdam"
+                      id="roth" 
+                      // onClick={handleTest}
+                      >Rotterdam
+                      </a>
                     </li>
                   </ul>
                 </div>
