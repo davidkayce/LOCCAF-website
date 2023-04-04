@@ -12,8 +12,6 @@ const Navbar = () => {
     setOpenMenu,
     openMenu,
     roth,
-    handleCurrentChurch,
-    setroth,
     handleTest,
   } = useGlobalContext();
 
