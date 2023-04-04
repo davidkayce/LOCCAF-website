@@ -38,7 +38,7 @@ const Navbar = () => {
             </Link>
             <div className="dropdown">
               <button className="drop-btn">
-                Netherlands <FiChevronDown />
+                Netherland <FiChevronDown />
               </button>
               <div className="menu">
                 <ul>
