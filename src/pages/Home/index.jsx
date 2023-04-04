@@ -39,11 +39,7 @@ const Home = () => {
         </div>
 
         {/* Place in the church */}
-
         <div className="contain">
-          <div className="carousel">
-            <Slider />
-          </div>
           <Locations />
         </div>
         {/* <Messages/> */}

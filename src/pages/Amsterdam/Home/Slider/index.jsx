@@ -4,7 +4,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
 
-
 const Slider = () => {
   const responsive = {
     superLargeDesktop: {
@@ -57,9 +56,9 @@ const Slider = () => {
   };
   return (
     <>
-     <div className='place'>
-        <h4>FIND YOUR PLACE AT AMSTERDAM CITY CHURCH</h4>       
-       </div>
+      <div className="place">
+        <h4>FIND YOUR PLACE AT AMSTERDAM CITY CHURCH</h4>
+      </div>
       <Carousel
         responsive={responsive}
         swipeable={true}
@@ -73,7 +72,7 @@ const Slider = () => {
         <div className="slides">
           <Link className="start-box" to="/start">
             <div className="overlay2"></div>
-            <h6>NEW TO PASSION CITY CHURCH?</h6>
+            <h6>NEW TO AMSTERDAM CITY CHURCH?</h6>
             <h2>START HERE</h2>
             <p>
               Our desire is that everybody at Amsterdam City Church feels seen
@@ -127,7 +126,13 @@ const Slider = () => {
               One of the best ways to meet people, develop relationships, and
               grow as a follower of Christ is to serve the church
             </p>
-            <a>SERVE &rarr;</a>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdtXPd1CX6lOMDHHrOwqyBwK8pH5dqYTGCrbbguVIWgohNTiA/viewform"
+              target="_blank"
+              rel="noreferrer"
+            >
+              SERVE &rarr;
+            </a>
           </Link>
         </div>
         <div className="slides">
@@ -147,9 +152,7 @@ const Slider = () => {
             <div className="overlay2"></div>
             <h6>LET US PRAY FOR YOU</h6>
             <h2>PRAYER REQUEST</h2>
-            <p>
-             We would love to pray for you.
-            </p>
+            <p>We would love to pray for you.</p>
             <a> PRAYER REQUEST &rarr;</a>
           </Link>
         </div>

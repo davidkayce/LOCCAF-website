@@ -25,7 +25,7 @@ const Footer = () => {
             </form>
           </div>
           <div className="mid-right">
-          <div className="locate-city right">
+            <div className="locate-city right">
               <h5>LOCATIONS</h5>
               <a href="/">Amsterdam</a>
               <a href="#">Rotterdam</a>
@@ -33,7 +33,13 @@ const Footer = () => {
             <div className="passion-city right">
               <h5>CITY CHURCH </h5>
               <a href="us">Us</a>
-              <a href="serve">Serve</a>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdtXPd1CX6lOMDHHrOwqyBwK8pH5dqYTGCrbbguVIWgohNTiA/viewform"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Serve
+              </a>
               <a href="baptism">Baptism</a>
               <a href="prayer-request">Prayer request</a>
             </div>

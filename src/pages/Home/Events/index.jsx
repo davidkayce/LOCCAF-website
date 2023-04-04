@@ -403,10 +403,10 @@ const Events = () => {
           <img src={Leader} alt="" />
           <div className="pastor-contents">
             <h5>OUR LEADERSHIP</h5>
-            <h1>ELDER</h1>
+            <h1>REV.</h1>
             <h1>JOHN</h1>
             <h1>ANGOH</h1>
-            <p>John is the Presiding Overseer of the Amsterdam City Church .</p>
+            <p>John is the Presiding Overseer of the City CHurch District.</p>
             <h3>
               <Link className="pastor-info" to="/pastor">
                 MORE INFO &rarr;
@@ -415,9 +415,9 @@ const Events = () => {
           </div>
           <div className="pastor-contents1">
             <h5>OUR LEADERSHIP</h5>
-            <h1>ELDER JOHN </h1>
+            <h1>REV. JOHN </h1>
             <h1>ANGOH</h1>
-            <p>John is the Presiding Overseer of the Amsterdam City Church .</p>
+            <p>John is the Presiding Overseer of the City CHurch District.</p>
 
             <h3>
               <Link className="pastor-info" to="#">
