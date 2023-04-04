@@ -37,11 +37,7 @@ const Menu = () => {
                         <input type="text" placeholder='SEARCH PASSION'/>
                     </div> */}
           </div>
-          <div className="top-mid">
-            <h5>
-              GATHERING TIMES: ATL 9:30A + 11:45A EST // D.C. 9:30A + 11:30A EST
-            </h5>
-          </div>
+
           <div className="top-right">
             <button onClick={() => setOpenMenu(false)}>CLOSE</button>
           </div>

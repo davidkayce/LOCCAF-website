@@ -133,7 +133,7 @@ const Navbar = () => {
               <h3>CHURCH</h3>
               <h3>DISTRICT</h3>
               <p>
-                <i> The more you know Jesus. The more you know you!</i>
+                The more you know Jesus. The more you know you!
               </p>
             </Link>
           <Link to="/rotterdam" >
@@ -231,7 +231,7 @@ const Navbar = () => {
               <h3>CHURCH</h3>
               <h3>DISTRICT</h3>
               <p>
-                <i> The more you know Jesus. The more you know you!</i>
+                The more you know Jesus. The more you know you!
               </p>
             </Link>
           <Link to="/" >
