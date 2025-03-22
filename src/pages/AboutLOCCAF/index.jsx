@@ -11,6 +11,17 @@ import SundaySamuel from "../../assets/images/sunday-samuel.jpeg";
 import GabrielOmin from "../../assets/images/gabriel.jpg";
 import Usi from "../../assets/images/usi.jpg";
 import MatthewAbebe from "../../assets/images/matthew.jpg";
+import PatOA from "../../assets/images/pat-oa.jpg";
+import Forsyth from "../../assets/images/forsyth.jpg";
+import Rasheed from "../../assets/images/rasheed.jpg";
+import Steven from "../../assets/images/steven.jpg";
+import Frank from "../../assets/images/frank.jpg";
+import Kingsley from "../../assets/images/kingsley.jpg";
+import Sunny from "../../assets/images/sunny.jpg";
+import PstBankie from "../../assets/images/bankie.jpg";
+import MumBukky from "../../assets/images/bukky.jpg";
+import PaOti from "../../assets/images/oti.jpg";
+
 
 import Community from "../../assets/images/community.jpg";
 import "./index.scss";
@@ -186,23 +197,21 @@ const Start = () => {
 
               <div className="kingdom-pics">
                 <Link className="k-pics kp1" >
-                  <img src={Courage} alt="" />
+                  <img src={PstBankie} alt="" />
                   <div className="k-contents">
                     <h1>PST. BANKIE OLUSINA</h1>
                   </div>
                 </Link>
                 <Link className="k-pics kp1" >
-                  <img src={AnnOjimba} alt="" />
+                  <img src={MumBukky} alt="" />
                   <div className="k-contents">
-                    <h6 className="color">GLOBAL VICE-PRESIDENT</h6>
-                    <h1>DR. ANN OJIMBA</h1>
+                    <h1>BUKKY ISICHEI</h1>
                   </div>
                 </Link>
                 <Link className="k-pics kp1" >
-                  <img src={MikeUhumwangho} alt="" />
+                  <img src={PaOti} alt="" />
                   <div className="k-contents">
-                    <h6 className="color">GLOBAL GENERAL SECRETARY</h6>
-                    <h1>PROF. MIKE UHUMWANGHO</h1>
+                    <h1>OTI OGBE</h1>
                   </div>
                 </Link>
               </div>
@@ -216,59 +225,52 @@ const Start = () => {
 
               <div className="kingdom-pics">
                 <Link className="k-pics kp1" >
-                  <img src={Courage} alt="" />
+                  <img src={Rasheed} alt="" />
                   <div className="k-contents">
-                    <h6 className="color">GLOBAL PRESIDENT</h6>
-                    <h1>PST. COURAGE ODE</h1>
+                    <h6 className="color">NORTH AMERICA</h6>
+                    <h1>RASHEED ARUNA</h1>
                   </div>
                 </Link>
                 <Link className="k-pics kp1" >
-                  <img src={AnnOjimba} alt="" />
+                  <img src={Forsyth} alt="" />
                   <div className="k-contents">
-                    <h6 className="color">GLOBAL VICE-PRESIDENT</h6>
-                    <h1>DR. ANN OJIMBA</h1>
+                    <h6 className="color">EUROPE</h6>
+                    <h1>FORSYTH ONWUKA</h1>
                   </div>
                 </Link>
                 <Link className="k-pics kp1" >
-                  <img src={MikeUhumwangho} alt="" />
+                  <img src={Steven} alt="" />
                   <div className="k-contents">
-                    <h6 className="color">GLOBAL GENERAL SECRETARY</h6>
-                    <h1>PROF. MIKE UHUMWANGHO</h1>
+                    <h6 className="color">LAGOS</h6>
+                    <h1>STEVEN OBASUYI</h1>
                   </div>
                 </Link>
                 <Link className="k-pics kp1" >
-                  <img src={OderaOkonkwo} alt="" />
+                  <img src={Frank} alt="" />
                   <div className="k-contents">
-                    <h6 className="color">ASSISTANT SECRETARY</h6>
-                    <h1>ODERA OKONKNWO</h1>
+                    <h6 className="color">PORT-HARCOURT</h6>
+                    <h1>FRANK UZOR</h1>
                   </div>
                 </Link>
                 <Link className="k-pics kp1" >
-                  <img src={SundaySamuel} alt="" />
+                  <img src={Kingsley} alt="" />
                   <div className="k-contents">
-                    <h6 className="color">FINANCIAL SCERETARY</h6>
-                    <h1>SUNDAY SAMUEL</h1>
+                    <h6 className="color">BENIN</h6>
+                    <h1>KINGSLEY MADUBUKO</h1>
                   </div>
                 </Link>
                 <Link className="k-pics kp1" >
-                  <img src={GabrielOmin} alt="" />
+                  <img src={Sunny} alt="" />
                   <div className="k-contents">
-                    <h6 className="color">PUBLIC RELATIONS OFFICER</h6>
-                    <h1>GABRIEL OMIN</h1>
+                    <h6 className="color">WARRI</h6>
+                    <h1>SUNNY IFESEMEN</h1>
                   </div>
                 </Link>
                 <Link className="k-pics kp1" >
-                  <img src={Usi} alt="" />
+                  <img src={PatOA} alt="" />
                   <div className="k-contents">
-                    <h6 className="color">TREASURER</h6>
-                    <h1>USI OSAZUWA</h1>
-                  </div>
-                </Link>
-                <Link className="k-pics kp1" >
-                  <img src={MatthewAbebe} alt="" />
-                  <div className="k-contents">
-                    <h6 className="color">LEGAL OFFICER</h6>
-                    <h1>MATTHEW ABEBE</h1>
+                    <h6 className="color">ABUJA</h6>
+                    <h1>PAT OYEMI-ASEMWOTA</h1>
                   </div>
                 </Link>
               </div>

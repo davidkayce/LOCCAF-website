@@ -81,34 +81,27 @@ const Footer = () => {
             </div>
 
             <div className="movement right">
-              <h5>PODCAST</h5>
+              <h5>AUDIO</h5>
               <a
-                href="https://anchor.fm/city-church-district/episodes/The-Cross---Part-2-2-e20amke"
+                href="https://drive.google.com/file/d/116Sg6-NAg58br_BxuFzJrwa7ra2wCZ2k/view?usp=drive_link"
                 target="_blank"
                 rel="noreferrer"
               >
-                The Cross - Part 2.2
+                LOCCAF 23 - Day 1 Pst Bankie
               </a>
               <a
-                href="https://anchor.fm/city-church-district/episodes/The-Cross---Part-2-e20am3u"
+                href="https://drive.google.com/file/d/1l4jfYFQkZ_YnXyQbL9W9LQTdR42-qXC8/view?usp=drive_link"
                 target="_blank"
                 rel="noreferrer"
               >
-                The Cross - Part 2
+                 LOCCAF 23 - Day 1 Pst Bankie II
               </a>
               <a
-                href="https://anchor.fm/city-church-district/episodes/The-Cross---Part-1-2-e200na8"
+                href="https://drive.google.com/file/d/1tSxXaN89N2Zdt_s0qdCz1Y0Tw7NPSIzG/view?usp=drive_link"
                 target="_blank"
                 rel="noreferrer"
               >
-                The Cross - Part 1.2
-              </a>
-              <a
-                href="https://anchor.fm/city-church-district/episodes/The-Cross---Part-1-e200mpp"
-                target="_blank"
-                rel="noreferrer"
-              >
-                The Cross - Part 1
+                 LOCCAF 23 - Day 2 Workshop
               </a>
             </div>
           </div>

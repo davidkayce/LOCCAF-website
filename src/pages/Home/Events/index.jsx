@@ -7,11 +7,10 @@ import Pastor from "../../../assets/images/pastor.jpg";
 import LoccafChildren from "../../../assets/images/loccaf-children.jpg";
 import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
-// import Pic5 from "../../../assets/images/mess5.jpg";
-import Thumb1 from "../../../assets/images/loccaf-children.jpg";
-import Thumb2 from "../../../assets/images/loccaf-children.jpg";
-import Thumb3 from "../../../assets/images/loccaf-children.jpg";
-import Thumb4 from "../../../assets/images/loccaf-children.jpg";
+import Thumb1 from "../../../assets/images/lcc-conv-23-1.webp";
+import Thumb2 from "../../../assets/images/lcc-conv-23-2.webp";
+import Thumb3 from "../../../assets/images/lcc-conv-23-3.webp";
+
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -152,8 +151,8 @@ const Events = () => {
                 rel="noreferrer"
               >
                 <div className="passion-overlay"></div>
-                <FaFacebook color="#000" />
-                <p>Follow us on Facebook.</p>
+                <img src={Convention} alt="" />
+                <p>CONVENTION</p>
                 <h4>CLICK HERE &rarr;</h4>
               </a>
             </div>
@@ -315,7 +314,7 @@ const Events = () => {
               <YouTube
                 containerClassName="tube-con"
                 className="y-vid"
-                videoId="bozhvs9kalA"
+                videoId="XoFVdvFoYM4"
                 onReady={onReady1}
                 opts={{
                   height: "100%",
@@ -329,8 +328,8 @@ const Events = () => {
               />
             </div>
             <div className="body-bot">
-              <h4>THE CROSS PART 2.1</h4>
-              <h4>Rev. John Angoh</h4>
+              <h4>LOCCAF CONVENTION '23 DAY 4</h4>
+              <h4>Pst Courage Ode</h4>
             </div>
           </div>
           <div
@@ -345,9 +344,8 @@ const Events = () => {
                 className={`img ${hide === "two" ? "hide" : ""}`}
               />
               <YouTube
-                // containerClassName='y-vid'
                 className="y-vid"
-                videoId="cpHTzvDKUYE"
+                videoId="S-85k3wTfSg"
                 onReady={onReady2}
                 opts={{
                   height: "100%",
@@ -361,10 +359,12 @@ const Events = () => {
               />
             </div>
             <div className="body-bot">
-              <h4>THE CROSS PART 1.1</h4>
-              <h4>Elder Owusu Asare</h4>
+              <h4>LOCCAF CONVENTION '23 DAY 2</h4>
+              <h4>Ann Ojimba</h4>
             </div>
           </div>
+
+
           <div
             className="tube"
             onMouseEnter={onPlayHandler3}
@@ -377,9 +377,8 @@ const Events = () => {
                 className={`img ${hide === "three" ? "hide" : ""}`}
               />
               <YouTube
-                // containerClassName='y-vid'
                 className="y-vid"
-                videoId="p4x_DOlqcGA"
+                videoId="-7mh-LLpGa8"
                 onReady={onReady3}
                 opts={{
                   height: "100%",
@@ -393,47 +392,15 @@ const Events = () => {
               />
             </div>
             <div className="body-bot">
-              <h4>LIFT HIM UP PART 4.1</h4>
-              <h4>Rev. John Angoh</h4>
-            </div>
-          </div>
-          <div
-            className="tube"
-            onMouseEnter={onPlayHandler4}
-            onMouseLeave={onPauseHandler4}
-          >
-            <div className="body-top">
-              <img
-                src={Thumb4}
-                alt=""
-                className={`img ${hide === "four" ? "hide" : ""}`}
-              />
-              <YouTube
-                // containerClassName='y-vid'
-                className="y-vid"
-                videoId="lKX5v4gPzu0"
-                onReady={onReady4}
-                opts={{
-                  height: "100%",
-                  width: "100%",
-                  playerVars: {
-                    controls: 1,
-                    autoplay: 1,
-                    mute: 1,
-                  },
-                }}
-              />
-            </div>
-            <div className="body-bot">
-              <h4>LIFT HIM UP PART 3.1</h4>
-              <h4>Elder Junior Obeng Eshun</h4>
+              <h4>LOCCAF CONVENTION '23 DAY 4</h4>
+              <h4>Bro. Ziki Dolor</h4>
             </div>
           </div>
         </div>
         <div className="text">
           Would you love to watch more of our messages?
           <a
-            href="https://www.youtube.com/channel/UCvx240pRUOBgxMo4ZRNscxA?sub_confirmation=1"
+            href="https://www.youtube.com/@loccafmedia8814/featured"
             target="_blank"
             rel="noreferrer"
           >
