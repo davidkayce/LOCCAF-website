@@ -23,7 +23,7 @@ import MumBukky from "../../assets/images/bukky.jpg";
 import PaOti from "../../assets/images/oti.jpg";
 
 
-import Community from "../../assets/images/community.jpg";
+import Community from "../../assets/images/hugging.jpg";
 import "./index.scss";
 
 const Start = () => {
@@ -286,12 +286,11 @@ const Start = () => {
                 <img src={Community} alt="" width={500} />
               </div>
               <div className="comm-contents">
-                <h6>BIG CHURCH MADE SMALL</h6>
+                <h6>A FAMILY ANYWHERE</h6>
                 <h1>COMMUNITY</h1>
                 <p>
-                  Our desire is for everyone who attends City Church District to
-                  find lasting community here. Through Community Groups and
-                  Connect Groups, you can find smaller groups of people to live
+                  Our desire is for every alumni of LCC, their spouses and children to
+                  find lasting community here. Through your zonal groups, you can find smaller groups of people to live
                   life with here. Click below to learn more and find your group!
                 </p>
                 <a href="#">FIND COMMUNITY &rarr;</a>

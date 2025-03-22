@@ -125,7 +125,7 @@ const Events = () => {
   };
   return (
     <>
-      <div className="events">
+      {/* <div className="events">
         <div className="events-top">
           <h1 style={{ fontSize: "1.4rem" }}>UPCOMING EVENTS</h1>
         </div>
@@ -194,7 +194,7 @@ const Events = () => {
             </div>
           </Carousel>
         </div>
-      </div>
+      </div> */}
 
 
       <div className="pastor-con">

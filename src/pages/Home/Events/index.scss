@@ -96,7 +96,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 1.5rem;
-  padding-left: 6.2rem;
+  padding-left: 4rem;
 
   h1 {
     font-size: 57px;
@@ -130,8 +130,6 @@
       }
     }
   }
-
-
 }
 
 @media (width <=930px) {
@@ -462,19 +460,16 @@
 
 
 .passion-con {
+  margin-top: -6.5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 
-  // .passion-slide{
-  //     border: 1px solid blue;
-  //     // height: 20rem;
-  // }
 
   #passion {
-    //  width: 80%;
-    //  text-align: left;
-    //  padding: 3rem;
+     width: 80%;
+     text-align: left;
+     padding: 3rem;
   }
 }
 
