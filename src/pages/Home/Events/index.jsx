@@ -1,15 +1,17 @@
 import React from "react";
 import "./index.scss";
-import Pic1 from "../../../assets/images/mess1.jpg";
+
+import Convention from "../../../assets/images/convention25.jpeg";
 import Pic2 from "../../../assets/images/mess2.jpg";
 import Pastor from "../../../assets/images/pastor.jpg";
-import Leader from "../../../assets/images/leader.jpg";
+import LoccafChildren from "../../../assets/images/loccaf-children.jpg";
 import { Link } from "react-router-dom";
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 // import Pic5 from "../../../assets/images/mess5.jpg";
-import Thumb1 from "../../../assets/images/thumb1.jpg";
-import Thumb2 from "../../../assets/images/thumb2.jpg";
-import Thumb3 from "../../../assets/images/thumb3.jpg";
-import Thumb4 from "../../../assets/images/thumb4.jpg";
+import Thumb1 from "../../../assets/images/loccaf-children.jpg";
+import Thumb2 from "../../../assets/images/loccaf-children.jpg";
+import Thumb3 from "../../../assets/images/loccaf-children.jpg";
+import Thumb4 from "../../../assets/images/loccaf-children.jpg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -23,8 +25,6 @@ const Events = () => {
   const [player4, setPlayer4] = useState(null);
 
   const [hide, setHide] = useState("");
-
-  // const youtubeID1 = ;
 
   const onReady1 = (e) => {
     setPlayer1(e.target.playVideo());
@@ -128,40 +128,174 @@ const Events = () => {
     <>
       <div className="events">
         <div className="events-top">
-          {/* <h5>UPCOMING EVENTS</h5> */}
-          <h1>UPCOMING EVENTS</h1>
+          <h1 style={{ fontSize: "1.4rem" }}>UPCOMING EVENTS</h1>
         </div>
-        <div className="events-con">
-          <Link className="event event1" to="#">
-            <div className="event-pic">
-              <img src={Pic1} alt="" />
+      </div>
+
+      <div className="passion-con">
+        <div className="passion-slide">
+          <Carousel
+            responsive={responsive}
+            swipeable={true}
+            draggable={true}
+            containerClass="carousel-container"
+            className="caros"
+            arrows={false}
+            renderButtonGroupOutside={true}
+            customButtonGroup={<ButtonGroup />}
+          >
+            <div className="passion-slides">
+              <a
+                className="passion-box"
+                href=""
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="passion-overlay"></div>
+                <FaFacebook color="#000" />
+                <p>Follow us on Facebook.</p>
+                <h4>CLICK HERE &rarr;</h4>
+              </a>
             </div>
-            <div className="event-text">
-              <h6>JANUARY 3-5, 2024</h6>
-              <h1>PRAISE 2024</h1>
-              <h6>AMSTERDAM, NL</h6>
-              <p className="note">
-                Join us in Amsterdam, NL on january 3-5, 2024 for Praise 2024.
-                We can't wait to gather a generation together to call on Heaven.
-                Get your tickets today!
-              </p>
+            <div className="passion-slides">
+              <a
+                className="passion-box"
+                href=""
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="passion-overlay"></div>
+                <FaInstagram color="#000" />
+                <p>Follow us on Instagram.</p>
+                <h4>CLICK HERE &rarr;</h4>
+              </a>
             </div>
-          </Link>
-          <Link className="event" to="/#">
-            <div className="event-pic">
-              <img src={Pic2} alt="" />
+
+            <div className="passion-slides">
+              <a className="passion-box" href="" target="_blank">
+                <div className="passion-overlay"></div>
+                <FaYoutube color="#000" />
+                <p>Subcribe to our Youtube channel.</p>
+                <h4>CLICK HERE &rarr;</h4>
+              </a>
             </div>
-            <div className="event-text">
-              <h6>JANUARY 3-5, 2024</h6>
-              <h1>ENCOUNTER 2024</h1>
-              <h6>HABOUR, NL</h6>
-              <p className="note">
-                Join us in Habour, NL on january 3-5, 2024 for Encounter 2024.
-                We can't wait to gather a generation together to call on Heaven.
-                Get your tickets today!
-              </p>
+
+            <div className="passion-slides">
+              <Link
+                className="passion-box"
+                to="#"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="passion-overlay"></div>
+                <FaTwitter color="#000" />
+                <p>Follow us Twitter.</p>
+                <h4>CLICK HERE &rarr;</h4>
+              </Link>
             </div>
-          </Link>
+          </Carousel>
+        </div>
+      </div>
+
+
+      <div className="pastor-con">
+        <div className="pastor">
+          <div className="pics">
+            <div className="over"></div>
+            <img src={LoccafChildren} alt="" />
+          </div>
+
+          <div className="pastor-contents">
+            <h5 style={{ fontSize: "16px" }}>CHILDREN"S CORNER</h5>
+            <h1 style={{ fontWeight: "bold", paddingTop: "1rem" }}>
+              BIBLE VERSES TO MERMORIZE
+            </h1>
+            <p>
+              As we prepare for the gathering of the Tribe, you know our kids
+              are not left out.
+            </p>
+            <p style={{ marginTop: "1rem" }}>
+              They will also have their Bible Quiz this year and as parents, let
+              us help them prepare for it. Please note that we will use the NIV
+              Translation alone for easy reading and uniformity.
+            </p>
+            <p style={{ marginTop: "1rem" }}>
+              Kindly find your child(ren) section below and help convey the
+              message of their reading focus to them. We are counting on your
+              support to help and guide them.
+            </p>
+
+            <h2 style={{ fontWeight: "bold", paddingTop: "1rem" }}>
+              Pry 1 - 3 ( or Year 1-3)
+            </h2>
+            <p> 1 John | 2 John </p>
+
+            <h2 style={{ fontWeight: "bold", paddingTop: "1rem" }}>
+              Pry 4 - 6 (Year 4-6)
+            </h2>
+            <p> 1 John | 2 John | 3 John</p>
+
+            <h2 style={{ fontWeight: "bold", paddingTop: "1rem" }}>
+              JSS 1 - 3 (Year 7-9)
+            </h2>
+            <p> 1 John | 2 John | 3 John | Jude 1 | 1 Cor 13</p>
+
+            <h2 style={{ fontWeight: "bold", paddingTop: "1rem" }}>
+              SSS 1 - 3 (Year 10-12)
+            </h2>
+            <p> 1 John | 2 John | 3 John | Jude 1 | 1 Cor 13 | Rom 5 | Rom 8</p>
+
+            <p style={{ fontWeight: "bold", paddingTop: "2rem" }}>
+              Also, please note that the quiz will be written on the evening of
+              Friday, May 2nd 2025. Thank you and God bless.
+            </p>
+          </div>
+
+          <div className="pastor-contents1">
+            <h5 style={{ fontSize: "16px" }}>CHILDREN"S CORNER</h5>
+            <h1 style={{ fontWeight: "bold", paddingTop: "1rem" }}>
+              BIBLE VERSES TO MERMORIZE
+            </h1>
+            <p>
+              As we prepare for the gathering of the Tribe, you know our kids
+              are not left out.
+            </p>
+            <p>
+              They will also have their Bible Quiz this year and as parents, let
+              us help them prepare for it. Please note that we will use the NIV
+              Translation alone for easy reading and uniformity.
+            </p>
+            <p>
+              Kindly find your child(ren) section below and help convey the
+              message of their reading focus to them. We are counting on your
+              support to help and guide them.
+            </p>
+
+            <h2 style={{ fontWeight: "bold", paddingTop: "1rem" }}>
+              Pry 1 - 3 ( or Year 1-3)
+            </h2>
+            <p> 1 John | 2 John </p>
+
+            <h2 style={{ fontWeight: "bold", paddingTop: "1rem" }}>
+              Pry 4 - 6 (Year 4-6)
+            </h2>
+            <p> 1 John | 2 John | 3 John</p>
+
+            <h2 style={{ fontWeight: "bold", paddingTop: "1rem" }}>
+              JSS 1 - 3 (Year 7-9)
+            </h2>
+            <p> 1 John | 2 John | 3 John | Jude 1 | 1 Cor 13</p>
+
+            <h2 style={{ fontWeight: "bold", paddingTop: "1rem" }}>
+              SSS 1 - 3 (Year 10-12)
+            </h2>
+            <p> 1 John | 2 John | 3 John | Jude 1 | 1 Cor 13 | Rom 5 | Rom 8</p>
+
+            <p style={{ fontWeight: "bold", paddingTop: "2rem" }}>
+              Also, please note that the quiz will be written on the evening of
+              Friday, May 2nd 2025. Thank you and God bless.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -179,7 +313,7 @@ const Events = () => {
                 className={`img ${hide === "one" ? "hide" : ""}`}
               />
               <YouTube
-                containerClassName='tube-con'
+                containerClassName="tube-con"
                 className="y-vid"
                 videoId="bozhvs9kalA"
                 onReady={onReady1}
@@ -297,7 +431,7 @@ const Events = () => {
           </div>
         </div>
         <div className="text">
-          Would you love to watch more of our messages? 
+          Would you love to watch more of our messages?
           <a
             href="https://www.youtube.com/channel/UCvx240pRUOBgxMo4ZRNscxA?sub_confirmation=1"
             target="_blank"
@@ -305,126 +439,6 @@ const Events = () => {
           >
             Click here &rarr;
           </a>
-        </div>
-      </div>
-      <div className="passion-con">
-        <div className="passion-slide">
-          <Carousel
-            responsive={responsive}
-            swipeable={true}
-            draggable={true}
-            containerClass="carousel-container"
-            className="caros"
-            arrows={false}
-            renderButtonGroupOutside={true}
-            customButtonGroup={<ButtonGroup />}
-          >
-            <div className="passion-slides">
-              <a
-                className="passion-box"
-                href="https://www.facebook.com/amsterdamcitychurch"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className="passion-overlay"></div>
-                <h2>FACEBOOK</h2>
-                <p>Follow us on Facebook.</p>
-                <h4>CLICK HERE &rarr;</h4>
-              </a>
-            </div>
-            <div className="passion-slides">
-              <a
-                className="passion-box"
-                href="https://www.instagram.com/amsterdamcitychurch"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className="passion-overlay"></div>
-                <h2>INSTAGRAM</h2>
-                <p>Follow us on Instagram.</p>
-                <h4>CLICK HERE &rarr;</h4>
-              </a>
-            </div>
-
-            <div className="passion-slides">
-              <a className="passion-box" href="https://www.youtube.com/channel/UCvx240pRUOBgxMo4ZRNscxA" target="_blank">
-                <div className="passion-overlay"></div>
-                <h2>YOUTUBE</h2>
-                <p>Subcribe to our Youtube channel.</p>
-                <h4>CLICK HERE &rarr;</h4>
-              </a>
-            </div>
-            <div className="passion-slides">
-              <a
-                className="passion-box"
-                href="https://tiktok.com/@amsterdamcitychurch"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className="passion-overlay"></div>
-                <h2>TIKTOK</h2>
-                <p>Follow us on Tiktok.</p>
-                <h4>CLICK HERE &rarr;</h4>
-              </a>
-            </div>
-            <div className="passion-slides">
-              <Link
-                className="passion-box"
-                to="#"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className="passion-overlay"></div>
-                <h2>TWITTER</h2>
-                <p>Follow us Twitter.</p>
-                <h4>CLICK HERE &rarr;</h4>
-              </Link>
-            </div>
-            {/* <div className="passion-slides">
-              <Link className="passion-box" to="/core" target="_blank">
-                <div className="passion-overlay"></div>
-                <h2>START HERE</h2>
-                <p>
-                  Our desire is that everybody at Passion City Church feels seen
-                  and can find lasting community
-                </p>
-                <h4>
-                  {" "}
-                  LEARN MORE &rarr;
-                </h4>
-              </Link>
-            </div> */}
-          </Carousel>
-        </div>
-      </div>
-
-      <div className="pastor-con">
-        <div className="pastor">
-          <img src={Leader} alt="" />
-          <div className="pastor-contents">
-            <h5>OUR LEADERSHIP</h5>
-            <h1>REV.</h1>
-            <h1>JOHN</h1>
-            <h1>ANGOH</h1>
-            <p>John is the Presiding Overseer of the City CHurch District.</p>
-            <h3>
-              <Link className="pastor-info" to="/pastor">
-                MORE INFO &rarr;
-              </Link>
-            </h3>
-          </div>
-          <div className="pastor-contents1">
-            <h5>OUR LEADERSHIP</h5>
-            <h1>REV. JOHN </h1>
-            <h1>ANGOH</h1>
-            <p>John is the Presiding Overseer of the City CHurch District.</p>
-
-            <h3>
-              <Link className="pastor-info" to="#">
-                MORE INFO &rarr;
-              </Link>
-            </h3>
-          </div>
         </div>
       </div>
     </>

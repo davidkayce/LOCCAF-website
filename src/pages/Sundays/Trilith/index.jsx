@@ -2,7 +2,7 @@ import React, { useState }  from "react";
 import House from "../../../assets/images/House.jpg";
 import Leader from "../../../assets/images/leadership.jpg";
 import WorshipPic from "../../../assets/images/start-worship.jpg";
-import Welcome from "../../../assets/images/welcome.jpg";
+import Welcome from "../../../assets/images/start-worship.jpg";
 import "./index.scss";
 
 const Trilith = () => {
